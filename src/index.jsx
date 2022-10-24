@@ -1,13 +1,53 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+} from 'react-router-dom';
 
-const root = createRoot(document.getElementById('root'));
+import Root from './routes/root.jsx';
+import ErrorPage from './error-page.jsx';
+import MVP from './routes/mvp.jsx';
+import SDC from './routes/sdc.jsx';
+import BlueOcean from './routes/blueOcean.jsx';
+import Photography from './routes/photography.jsx';
+import '../public/index.css';
 
-const App = () => {
-return (
-  <div>
-    <h1>Hello World</h1>
-  </div>
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: 'mvp',
+        element: <MVP />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: 'sdc',
+        element: <SDC />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: 'BlueOcean',
+        element: <BlueOcean />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: 'Photography',
+        element: <Photography />,
+        errorElement: <ErrorPage />,
+      },
+    ]
+  },
+]);
+
+  const root = createRoot(document.getElementById('root'));
+  root.render(
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
   );
-}
-root.render(<App />);
