@@ -12,7 +12,7 @@ import MVP from './routes/mvp.jsx';
 import SDC from './routes/sdc.jsx';
 import BlueOcean from './routes/blueOcean.jsx';
 import Photography from './routes/photography.jsx';
-import '../public/index.css';
+import '../public/styles.css';
 
 
 const router = createBrowserRouter([
