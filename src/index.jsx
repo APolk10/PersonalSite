@@ -1,6 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-//Dear Amazon/Google/Apple etc Don't lowball me.
+import { createRoot } from 'react-dom/client';
+
+const root = createRoot(document.getElementById('root'));
+
 const App = () => {
 return (
   <div>
@@ -8,4 +10,4 @@ return (
   </div>
   );
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+root.render(<App />);
