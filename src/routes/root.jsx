@@ -13,6 +13,11 @@ export default function Root() {
     document.getElementById("main").style.marginLeft = "250px";
   }
 
+  // const clearBackground = function() {
+  //   setEntry();
+  //   document.body.style.backgroundImage = 'none'
+
+  // }
   function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
@@ -22,7 +27,8 @@ export default function Root() {
     <div>
     {isEntered ?
       <div id="container">
-        <div id="sidebar">
+        <div id="mySidebar" className="sidebar">
+          <a className="closebtn" onClick={closeNav}>&times;</a>
           <h1 id="sidebarNameHeader">Adam</h1>
           <div id="sidebarListHeader">
             My Work
@@ -49,14 +55,14 @@ export default function Root() {
             </ul>
           </nav>
         </div>
-        <div id="detail">
-          <Outlet />
+        <div id="main">
+          <button className="openbtn" onClick={openNav}>&#9776; Open Sidebar</button>
+          <div id="detail">
+            <Outlet />
+          </div>
         </div>
       </div> :
-      <div id="entryButton" /*styles={{
-        backgroundImage:
-        "url('https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1')",
-        }}*/>
+      <div id="entryButton">
         <button type="button" onClick={setEntry}>Click Here To Enter </button>
       </div>
     }
