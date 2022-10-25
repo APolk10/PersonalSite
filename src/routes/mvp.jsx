@@ -3,7 +3,7 @@ import React from 'react';
 function MVP() {
 
   return (
-    <div>
+    <div id="project">
       MVP:
     </div>
   )
