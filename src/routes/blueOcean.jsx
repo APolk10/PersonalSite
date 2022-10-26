@@ -3,7 +3,7 @@ import React from 'react';
 function BlueOcean() {
   return (
     <div>
-      BlueOcean:
+      Duguid Construction App
     </div>
   )
 }

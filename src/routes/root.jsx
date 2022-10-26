@@ -36,16 +36,16 @@ export default function Root() {
           <nav>
             <ul id="navbarList">
               <li>
-                <Link to={`/mvp`}>MVP</Link>
+                <Link to={`/mvp`}>Music By Country Application</Link>
               </li>
               <li>
-                <Link to={`sdc`}>SDC</Link>
+                <Link to={`sdc`}>Server and Database Overhaul</Link>
               </li>
               <li>
-                <Link to={`blueOcean`}>BlueOcean</Link>
+                <Link to={`blueOcean`}>Contruction Website</Link>
               </li>
               <li>
-                <Link to={`photography`}>Photography</Link>
+                <Link to={`photography`}>Client's Photography Website</Link>
               </li>
               <li>
                 <Link to={"/"}>
@@ -56,14 +56,14 @@ export default function Root() {
           </nav>
         </div>
         <div id="main">
-          <button className="openbtn" onClick={openNav}>&#9776; Open Sidebar</button>
+          <button className="openbtn" onClick={openNav}>&#9776; Menu</button>
           <div id="detail">
             <Outlet />
           </div>
         </div>
       </div> :
       <div id="entryButton">
-        <button type="button" onClick={setEntry}>Click Here To Enter </button>
+        <button type="button" onClick={setEntry}>Click To Enter</button>
       </div>
     }
     </div>

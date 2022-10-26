@@ -3,7 +3,7 @@ import React from 'react';
 function SDC() {
   return (
     <div>
-      SDC:
+      Server Rebuild for RESTful API
     </div>
   )
 }
