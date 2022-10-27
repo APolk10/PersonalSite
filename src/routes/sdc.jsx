@@ -1,4 +1,5 @@
 import React from 'react';
+import PortfolioCarousel from '../components/carouselBuilder.jsx';
 
 function SDC() {
   return (
