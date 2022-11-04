@@ -1,6 +1,7 @@
 import React from 'react';
 import PortfolioCarousel from '../components/carouselBuilder.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 function MVP() {
   const URLs = [
     'https://res.cloudinary.com/dijhxevwz/image/upload/v1666815461/home_avkzzg.jpg',
@@ -14,6 +15,7 @@ function MVP() {
       <span id="projectTopBar"></span>
       <div id="project">
         <p id="projectHeader">Discover Music By Country</p>
+        <a id="githubLink" href="https://github.com/APolk10/MVP">View on github</a>
         <div id="projectCarouselAndStack">
           <PortfolioCarousel imageURLs={URLs}/>
           <div id="stackColumn">

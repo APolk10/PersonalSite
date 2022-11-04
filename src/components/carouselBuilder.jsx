@@ -26,7 +26,6 @@ function PortfolioCarousel({ imageURLs }) {
           />
           <Carousel.Caption>
             <h3>Hovering Over Countries</h3>
-            <p>From here the</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -38,7 +37,6 @@ function PortfolioCarousel({ imageURLs }) {
           />
           <Carousel.Caption>
             <h3>Clicking A Country</h3>
-            <p>From here the</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -49,8 +47,7 @@ function PortfolioCarousel({ imageURLs }) {
             id="mvpImg"
           />
           <Carousel.Caption>
-            <h3>Multiple Slides</h3>
-            <p>From here the</p>
+            <h3>Multiple Artist Slides</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -62,7 +59,6 @@ function PortfolioCarousel({ imageURLs }) {
           />
           <Carousel.Caption>
             <h3>Clicking The "Listen Here" Button</h3>
-            <p>From here the</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
