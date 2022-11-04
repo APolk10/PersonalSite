@@ -13,11 +13,6 @@ export default function Root() {
     document.getElementById("main").style.marginLeft = "250px";
   }
 
-  // const clearBackground = function() {
-  //   setEntry();
-  //   document.body.style.backgroundImage = 'none'
-
-  // }
   function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";

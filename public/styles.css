@@ -158,25 +158,43 @@ table {
   height: 5vh;
   background-color: lightslategray;
 }
-#mvpCarousel {
-  border: black solid 4px;
-  margin-top: 2vh;
-  margin-left: 5vw;
-  height: 40.8vh;
-  width: 30vw;
-}
-#mvpImg {
-  height: 40vh;
-  width: 30vw;
-  max-width: 30vw;
-}
 #projectHeader {
   font-size: 3vw;
   font-style: italic;
   padding-bottom: 2vh;
 }
+#projectCarouselAndStack {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+}
+#mvpCarousel {
+  border: black groove 8px;
+  margin-top: 2vh;
+  margin-left: 5vw;
+  height: fit-content;
+  width: 30vw;
+}
+#mvpImg {
+  object-fit: contain;
+}
+#stackColumn {
+  font-size: 1.5vw;
+  border-left: solid black 2px;
+  margin-top: 2vh;
+  padding-left: 1vw;
+}
+#techList {
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  gap: .5vh;
+}
 #projectDescription {
-  margin-top: 3vh;
-  margin-left: 3vw;
-  width: 40vw;
+  text-align: center;
+  margin-top: 5vh;
+  margin-left: 2.8vw;
+  width: 35vw;
 }
