@@ -5,6 +5,7 @@ import MVP from './mvp.jsx';
 import SDC from './sdc.jsx';
 import BlueOcean from './blueOcean.jsx';
 import Photography from './photography.jsx';
+import Footer from '../components/footer.jsx';
 
 export default function Root() {
   const[isEntered, setEntry] = useState(false);
@@ -12,8 +13,8 @@ export default function Root() {
 
   function openAndCloseNav() {
     if (isOpen === false) {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("mySidebar").style.width = "15vw";
+      document.getElementById("main").style.marginLeft = "15vw";
       setOpen(true);
     } else {
       document.getElementById("mySidebar").style.width = "0";
@@ -57,6 +58,7 @@ export default function Root() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

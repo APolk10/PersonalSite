@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   /* background-image: url('https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1'); */
-  overflow: scroll;
+  overflow-y: scroll;
+  min-height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -96,7 +97,8 @@ table {
   background-color: rgb(0, 0, 0);
   color: white;
   padding: 10px 15px;
-  margin-left: 1.2vw;
+  margin-top: 1vh;
+  margin-left: 1.5vw;
   margin-bottom: 1vh;
   border: none;
 }
@@ -108,7 +110,6 @@ table {
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -117,10 +118,35 @@ table {
   .sidebar a {font-size: 18px;}
 }
 
-
+#aboutMeHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 2.75vw;
+  font-style: italic;
+  margin-bottom: 9vh;
+}
+#aboutMeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 65vw;
+  gap: 5vw;
+}
+#aboutMeBio {
+  font-size: 1.1vw;
+  text-indent: 2vw;
+  text-align: start;
+  padding-top: 3vh;
+  width: 30vw;
+}
+#aboutMeHeadshot {
+  border: black 2px solid;
+}
 #container {
   display: flex;
   flex-direction: row;
+  /* margin-left: 10vw; */
 }
 #entryButton {
   background-repeat: no-repeat;
@@ -152,9 +178,10 @@ table {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   padding-top: 5vh;
-  padding-left: 10vw;
+  margin-left: 10vw;
+  min-height: 100vh;
 }
 #projectTopBar {
   width: 100%;
@@ -163,11 +190,11 @@ table {
 }
 #projectHeader {
   font-size: 3vw;
-  font-style: italic;
-  padding-bottom: 2vh;
+
 }
 #githubLink {
-  margin-left: 2vw;
+  font-size: 1vw;
+  padding-right: 25vw;
 }
 #projectCarouselAndStack {
   display: flex;
@@ -190,6 +217,7 @@ table {
   border-left: solid black 3px;
   margin-top: 2vh;
   padding-left: 2vw;
+  height: 60vh;
 }
 #techList {
   font-size: 1.15vw;
@@ -200,9 +228,52 @@ table {
   gap: .5vh;
 }
 #projectDescription {
-  text-align: left;
+  text-align: center;
+  text-indent: 3vw;
+  font-size: 1.3vw;
+  margin-left: 1.1vw;
+  margin-bottom: 5vh;
+  width: 43vw;
+}
+#sdc-outer-container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+#sdc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  align-items: center;
+  text-align: center;
+  width: 60vw;
+}
+#sdc-title {
+  font-size: 3vw;
+}
+#sdc-github {
+  display: flex;
+  font-size: 1vw;
+  padding-right: 25vw;
+}
+#sdc-images {
+  border: black 2px solid;
+  width: 50vw;
+  height: auto;
+}
+.sdc-paragraphs {
+  width: 45vw;
+  font-style: italic;
+  font-size: 2vw;
+  margin-bottom: 8vh;
+}
+#siteFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   font-size: 1.5vw;
-  margin-top: 5vh;
-  margin-left: 2vw;
-  width: 35vw;
+  width: 80vw;
+  margin-top: 1vh;
+  background-color: rgb(220, 220, 220);
+  height: 10vh;
 }
