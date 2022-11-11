@@ -1,13 +1,10 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-} from 'react-router-dom';
-
+import Route from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root.jsx';
 import ErrorPage from './error-page.jsx';
+import Home from './routes/home.jsx';
 import MVP from './routes/mvp.jsx';
 import SDC from './routes/sdc.jsx';
 import BlueOcean from './routes/blueOcean.jsx';
@@ -21,6 +18,11 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: 'home',
+        element: <Home />,
+        errorElement: <ErrorPage />,
+      },
       {
         path: 'mvp',
         element: <MVP />,

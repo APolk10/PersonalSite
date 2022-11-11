@@ -31,7 +31,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
   /* background-image: url('https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1'); */
-  overflow: hidden;
+  overflow-y: scroll;
+  min-height: 100vh;
 }
 ol, ul {
 	list-style: none;
@@ -60,8 +61,9 @@ table {
   left: 0;
   background-color: rgb(0, 0, 0); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  padding-top: 3vh;
+  padding-left: 1vw;
+  transition: 0.8s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
 /* The sidebar links */
@@ -90,12 +92,17 @@ table {
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 20px;
+  font-size: 1.2vw;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   color: white;
-  padding: 10px 15px;
+  padding: .5vw 1vw;
+  margin-top: 1vh;
+  margin-left: 1.5vw;
+  margin-bottom: 1vh;
   border: none;
+  width: 8vw;
+  height: 6vh;
 }
 
 .openbtn:hover {
@@ -104,8 +111,7 @@ table {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
-  padding: 20px;
+  transition: margin-left .8s; /* If you want a transition effect */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -114,7 +120,40 @@ table {
   .sidebar a {font-size: 18px;}
 }
 
-
+.firstLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  width: 80vw;
+  height: 60vh;
+}
+#aboutMeHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 2.75vw;
+  font-style: italic;
+  margin-bottom: 9vh;
+}
+#aboutMeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 65vw;
+  gap: 5vw;
+}
+#aboutMeBio {
+  font-size: 1.1vw;
+  text-indent: 2vw;
+  text-align: start;
+  padding-top: 3vh;
+  width: 30vw;
+}
+#aboutMeHeadshot {
+  border: black 2px solid;
+}
 #container {
   display: flex;
   flex-direction: row;
@@ -132,12 +171,12 @@ table {
 #sidebarNameHeader {
   padding-left: 2vw;
   padding-bottom: 1vw;
-  font-size: 2vw;
+  font-size: 2.5vw;
   color: white;
 }
 #sidebarListHeader {
   padding-left: 3vw;
-  font-size: 1.5vw;
+  font-size: 2vw;
   color: white;
 }
 #navbarList {
@@ -145,7 +184,160 @@ table {
   padding-left: 2vw;
   color: white;
 }
+
 #detail {
-  padding-top: 3vh;
-  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 5vh;
+  margin-left: 10vw;
+  min-height: 100vh;
+}
+#mvp-outer-container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+#mvp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  width: 60vw;
+}
+#mvp-header {
+  font-size: 3vw;
+}
+#mvp-githubLink {
+  padding-right: 25vw;
+  font-size: 1vw;
+}
+#mvpCarousel {
+  border: black groove 8px;
+  height: 55vh;
+  width: 40vw;
+  color: blue;
+}
+
+#mvpImg {
+  width: 55vw;
+  height: 53.3vh;
+}
+#mvp-paragraph {
+  width: 45vw;
+  font-style: italic;
+  padding-right: .5vw;
+  font-size: 1.25vw;
+  margin-bottom: 8vh;
+}
+#stackColumn {
+  font-size: 1.75vw;
+  border-left: solid black 3px;
+  margin-top: 2vh;
+  padding-left: 2vw;
+  height: 60vh;
+}
+#techList {
+  font-size: 1.15vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  gap: .5vh;
+}
+
+#sdc-outer-container {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+}
+#sdc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  align-items: center;
+  text-align: center;
+  width: 60vw;
+}
+#sdc-title {
+  font-size: 3vw;
+}
+#sdc-github {
+  display: flex;
+  font-size: 1vw;
+  padding-right: 25vw;
+}
+#sdc-images {
+  border: black 2px solid;
+  width: 50vw;
+  height: auto;
+}
+.sdc-paragraphs {
+  width: 45vw;
+  font-style: italic;
+  padding-right: .5vw;
+  font-size: 1.25vw;
+  margin-bottom: 8vh;
+}
+#constructionContainer {
+  display: flex;
+  flex-direction: row;
+}
+#constructionLeftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  width: 60vw;
+}
+#construction-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.2vw;
+  gap: .6vh;
+}
+#construction-subheader {
+  font-size: 1vw;
+  font-style: italic;
+}
+.construction-img {
+  /* border: 2px black solid; */
+  margin: 1vh;
+}
+#construction-main {
+  border-bottom: black 2px solid;
+  border-right: black 5px solid;
+}
+#flatAccordion {
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+  border-top: black 1px solid;
+}
+#openAccordion {
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+  border-top: black 1px solid;
+}
+#mapToolboxAccordion {
+  border-top: black 1px solid;
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+
+}
+#mapToolbox {
+display: flex;
+width: 40vw;
+}
+#siteFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5vw;
+  width: 85vw;
+  margin-top: 1vh;
+  background-color: rgb(220, 220, 220);
+  height: 10vh;
 }
