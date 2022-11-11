@@ -8,13 +8,12 @@ import Photography from './photography.jsx';
 import Footer from '../components/footer.jsx';
 
 export default function Root() {
-  const[isEntered, setEntry] = useState(false);
   const[isOpen, setOpen] = useState(false);
 
   function openAndCloseNav() {
     if (isOpen === false) {
       document.getElementById("mySidebar").style.width = "15vw";
-      document.getElementById("main").style.marginLeft = "15vw";
+      document.getElementById("main").style.marginLeft = "14vw";
       setOpen(true);
     } else {
       document.getElementById("mySidebar").style.width = "0";
@@ -29,15 +28,18 @@ export default function Root() {
         <div id="mySidebar" className="sidebar">
           <h1 id="sidebarNameHeader">Adam</h1>
           <div id="sidebarListHeader">
-            My Work
+            Portfolio
           </div>
           <nav>
             <ul id="navbarList">
               <li>
-                <Link to={'/home'}>Home</Link>
+                <Link to={'/home'}>About Me</Link>
               </li>
               <li>
-                <Link to={`/mvp`}>Music By Country Application</Link>
+                <Link to={`/mvp`}>
+                  <p>Music By</p>
+                  <p>Country Application</p>
+                </Link>
               </li>
               <li>
                 <Link to={`sdc`}>Server and Database Overhaul</Link>
@@ -57,6 +59,7 @@ export default function Root() {
             <Outlet />
           </div>
         </div>
+
       </div>
       <Footer />
     </div>

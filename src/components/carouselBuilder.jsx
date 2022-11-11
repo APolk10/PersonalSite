@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function PortfolioCarousel({ imageURLs }) {
   return (
     <div id="mvpCarousel">
-      <Carousel fade>
+      <Carousel fade id="carousel">
         <Carousel.Item>
           <img
             className="d-block w-100"

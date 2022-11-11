@@ -63,7 +63,7 @@ table {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 3vh;
   padding-left: 1vw;
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  transition: 0.8s; /* 0.5 second transition effect to slide in the sidebar */
 }
 
 /* The sidebar links */
@@ -92,15 +92,17 @@ table {
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 20px;
+  font-size: 1.2vw;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   color: white;
-  padding: 10px 15px;
+  padding: .5vw 1vw;
   margin-top: 1vh;
   margin-left: 1.5vw;
   margin-bottom: 1vh;
   border: none;
+  width: 8vw;
+  height: 6vh;
 }
 
 .openbtn:hover {
@@ -109,7 +111,7 @@ table {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
+  transition: margin-left .8s; /* If you want a transition effect */
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -118,6 +120,15 @@ table {
   .sidebar a {font-size: 18px;}
 }
 
+.firstLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  width: 80vw;
+  height: 60vh;
+}
 #aboutMeHeader {
   display: flex;
   justify-content: center;
@@ -146,7 +157,6 @@ table {
 #container {
   display: flex;
   flex-direction: row;
-  /* margin-left: 10vw; */
 }
 #entryButton {
   background-repeat: no-repeat;
@@ -174,6 +184,7 @@ table {
   padding-left: 2vw;
   color: white;
 }
+
 #detail {
   display: flex;
   flex-direction: column;
@@ -183,34 +194,43 @@ table {
   margin-left: 10vw;
   min-height: 100vh;
 }
-#projectTopBar {
-  width: 100%;
-  height: 5vh;
-  background-color: lightslategray;
-}
-#projectHeader {
-  font-size: 3vw;
-
-}
-#githubLink {
-  font-size: 1vw;
-  padding-right: 25vw;
-}
-#projectCarouselAndStack {
+#mvp-outer-container {
   display: flex;
   flex-direction: row;
-  gap: 5vw;
+  width: auto;
+}
+#mvp-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  width: 60vw;
+}
+#mvp-header {
+  font-size: 3vw;
+}
+#mvp-githubLink {
+  padding-right: 25vw;
+  font-size: 1vw;
 }
 #mvpCarousel {
   border: black groove 8px;
-  margin-top: 2vh;
-  /* margin-left: 3vw; */
   height: 55vh;
-  width: 45vw;
+  width: 40vw;
+  color: blue;
 }
+
 #mvpImg {
   width: 55vw;
   height: 53.3vh;
+}
+#mvp-paragraph {
+  width: 45vw;
+  font-style: italic;
+  padding-right: .5vw;
+  font-size: 1.25vw;
+  margin-bottom: 8vh;
 }
 #stackColumn {
   font-size: 1.75vw;
@@ -227,18 +247,11 @@ table {
   margin-left: 1vw;
   gap: .5vh;
 }
-#projectDescription {
-  text-align: center;
-  text-indent: 3vw;
-  font-size: 1.3vw;
-  margin-left: 1.1vw;
-  margin-bottom: 5vh;
-  width: 43vw;
-}
+
 #sdc-outer-container {
   display: flex;
   flex-direction: row;
-  width: auto;
+  width: 80vw;
 }
 #sdc-container {
   display: flex;
@@ -264,15 +277,66 @@ table {
 .sdc-paragraphs {
   width: 45vw;
   font-style: italic;
-  font-size: 2vw;
+  padding-right: .5vw;
+  font-size: 1.25vw;
   margin-bottom: 8vh;
+}
+#constructionContainer {
+  display: flex;
+  flex-direction: row;
+}
+#constructionLeftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4vh;
+  width: 60vw;
+}
+#construction-header {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.2vw;
+  gap: .6vh;
+}
+#construction-subheader {
+  font-size: 1vw;
+  font-style: italic;
+}
+.construction-img {
+  /* border: 2px black solid; */
+  margin: 1vh;
+}
+#construction-main {
+  border-bottom: black 2px solid;
+  border-right: black 5px solid;
+}
+#flatAccordion {
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+  border-top: black 1px solid;
+}
+#openAccordion {
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+  border-top: black 1px solid;
+}
+#mapToolboxAccordion {
+  border-top: black 1px solid;
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+
+}
+#mapToolbox {
+display: flex;
+width: 40vw;
 }
 #siteFooter {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.5vw;
-  width: 80vw;
+  width: 85vw;
   margin-top: 1vh;
   background-color: rgb(220, 220, 220);
   height: 10vh;
