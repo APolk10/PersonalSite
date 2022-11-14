@@ -1,8 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
 
 function Home() {
-
     return (
       <div>
         <div id="aboutMeHeader">Former music teacher makes room for a new passion...</div>

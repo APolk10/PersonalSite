@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  /* background-image: url('https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1280&dpr=1'); */
   overflow-y: scroll;
   min-height: 100vh;
 }
@@ -51,74 +50,63 @@ table {
 }
 
 
-/* The sidebar menu */
+
 .sidebar {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  height: 100%;
+  width: 0;
+  min-width: 0;
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0); /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
   padding-top: 3vh;
-  padding-left: 1vw;
-  transition: 0.8s; /* 0.5 second transition effect to slide in the sidebar */
+  transition: 0.8s;
 }
 
 /* The sidebar links */
 .sidebar a {
-  padding: 8px 8px 8px 32px;
+  margin: 1.5vh 1.5vh 1.5vh 6vh;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 2.5vh;
   color: #ffffff;
   display: block;
   transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
 .sidebar a:hover {
   color: #767474;
 }
 
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
 .openbtn {
-  font-size: 1.2vw;
+  font-size: 1.6vw;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
   color: white;
   padding: .5vw 1vw;
-  margin-top: 1vh;
+  margin-top: 2vh;
   margin-left: 1.5vw;
   margin-bottom: 1vh;
   border: none;
-  width: 8vw;
-  height: 6vh;
+  width: 15vw;
+  height: 8vh;
+  transition: 0.8s;
 }
 
 .openbtn:hover {
   background-color: #444;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .8s; /* If you want a transition effect */
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)
 @media screen and (max-height: 450px) {
   .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
+  .sidebar a {font-size: 1.5vw;}
+} */
 
 .firstLogin {
   display: flex;
@@ -135,6 +123,7 @@ table {
   font-size: 2.75vw;
   font-style: italic;
   margin-bottom: 9vh;
+  margin-top: 2vh;
 }
 #aboutMeContainer {
   display: flex;
@@ -153,6 +142,7 @@ table {
 }
 #aboutMeHeadshot {
   border: black 2px solid;
+  width: 25vw;
 }
 #container {
   display: flex;
@@ -169,20 +159,24 @@ table {
   width: 10vw;
 }
 #sidebarNameHeader {
-  padding-left: 2vw;
+  padding-left: 3vw;
   padding-bottom: 1vw;
   font-size: 2.5vw;
   color: white;
 }
 #sidebarListHeader {
-  padding-left: 3vw;
-  font-size: 2vw;
+  padding-left: 4.25vw;
+  padding-bottom: 2.2vh;
+  font-size: 2.3vw;
   color: white;
+  border-bottom: 2px white solid;
 }
 #navbarList {
-  padding-top: .8vw;
-  padding-left: 2vw;
+  opacity: 0;
+  padding-top: .7vw;
+  font-size: 1.6vw;
   color: white;
+  transition: 3s;
 }
 
 #detail {
@@ -190,7 +184,7 @@ table {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 5vh;
+  padding-top: 3vh;
   margin-left: 10vw;
   min-height: 100vh;
 }
@@ -211,19 +205,16 @@ table {
   font-size: 3vw;
 }
 #mvp-githubLink {
-  padding-right: 25vw;
   font-size: 1vw;
 }
 #mvpCarousel {
   border: black groove 8px;
-  height: 55vh;
-  width: 40vw;
-  color: blue;
+  height: 60vh;
+  width: 45vw;
 }
 
 #mvpImg {
-  width: 55vw;
-  height: 53.3vh;
+  height: 58.3vh;
 }
 #mvp-paragraph {
   width: 45vw;
@@ -267,7 +258,6 @@ table {
 #sdc-github {
   display: flex;
   font-size: 1vw;
-  padding-right: 25vw;
 }
 #sdc-images {
   border: black 2px solid;
@@ -296,12 +286,16 @@ table {
 #construction-header {
   display: flex;
   flex-direction: column;
-  font-size: 2.2vw;
+  font-size: 3vw;
   gap: .6vh;
 }
 #construction-subheader {
   font-size: 1vw;
   font-style: italic;
+}
+#bo-githubLink {
+  margin-top: 1vh;
+  font-size: 1vw;
 }
 .construction-img {
   /* border: 2px black solid; */
@@ -331,12 +325,23 @@ table {
 display: flex;
 width: 40vw;
 }
+
+#photography-outer-container {
+  display: flex;
+  flex-direction: row;
+}
+#photography-container {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
 #siteFooter {
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-size: 1.5vw;
-  width: 85vw;
+  width: 90vw;
+  margin-left: 5vw;
   margin-top: 1vh;
   background-color: rgb(220, 220, 220);
   height: 10vh;

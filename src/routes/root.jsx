@@ -13,11 +13,21 @@ export default function Root() {
   function openAndCloseNav() {
     if (isOpen === false) {
       document.getElementById("mySidebar").style.width = "15vw";
-      document.getElementById("main").style.marginLeft = "14vw";
+      document.getElementById("main").style.marginLeft = "10vw";
+      document.getElementById("menubtn").style.marginLeft = "7vw";
+      document.getElementById("menubtn").style.width = "8vw";
+      document.getElementById("menubtn").style.height = "6vh";
+      document.getElementById("menubtn").style.fontSize = "1.2vw";
+      document.getElementById("navbarList").style.opacity = "1";
       setOpen(true);
     } else {
       document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.getElementById("menubtn").style.marginLeft = "2vw";
+      document.getElementById("menubtn").style.width = "15vw";
+      document.getElementById("menubtn").style.height = "8vh";
+      document.getElementById("menubtn").style.fontSize = "1.6vw";
+      document.getElementById("navbarList").style.opacity = "0";
       setOpen(false);
     }
   }
@@ -26,7 +36,7 @@ export default function Root() {
     <div>
       <div id="container">
         <div id="mySidebar" className="sidebar">
-          <h1 id="sidebarNameHeader">Adam</h1>
+          <h1 id="sidebarNameHeader">Adam's</h1>
           <div id="sidebarListHeader">
             Portfolio
           </div>
@@ -54,12 +64,11 @@ export default function Root() {
           </nav>
         </div>
         <div id="main">
-          <button className="openbtn" onClick={openAndCloseNav}>&#9776; Menu</button>
+          <button id="menubtn" className="openbtn" onClick={openAndCloseNav}>&#9776; Menu</button>
           <div id="detail">
             <Outlet />
           </div>
         </div>
-
       </div>
       <Footer />
     </div>
