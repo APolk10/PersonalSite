@@ -17,16 +17,16 @@ function SDC() {
       </p>
     </div>
     <div>
-    <div id="stackColumn">
-      Tech Stack
-      <ul id="techList">
-        <li>Nginx</li>
-        <li>ExpressJS</li>
-        <li>PostgreSQL</li>
-        <li>Amazon Web Services</li>
-      </ul>
     </div>
-    </div>
+      <div id="stackColumn">
+        Tech Stack
+        <ul id="techList">
+          <li>Nginx</li>
+          <li>ExpressJS</li>
+          <li>PostgreSQL</li>
+          <li>Amazon Web Services</li>
+        </ul>
+      </div>
     </div>
   )
 }

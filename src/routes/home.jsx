@@ -2,8 +2,8 @@ import React from 'react';
 
 function Home() {
     return (
-      <div>
-        <div id="aboutMeHeader">Former music teacher makes room for a new passion...</div>
+      <div id="aboutMeOuter">
+        <div id="aboutMeHeader">Former music teacher explores a new passion...</div>
         <div id="aboutMeContainer">
           <div id="aboutMeBio">
             <p>Hey there!</p>

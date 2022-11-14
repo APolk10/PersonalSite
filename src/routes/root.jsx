@@ -43,22 +43,34 @@ export default function Root() {
           <nav>
             <ul id="navbarList">
               <li>
-                <Link to={'/home'}>About Me</Link>
+                <Link to={'/home'} onClick={openAndCloseNav}>About Me</Link>
               </li>
               <li>
-                <Link to={`/mvp`}>
+                <Link to={`/mvp`} onClick={openAndCloseNav}>
                   <p>Music By</p>
-                  <p>Country Application</p>
+                  <p>Country</p>
+                  <p>Application</p>
                 </Link>
               </li>
               <li>
-                <Link to={`sdc`}>Server and Database Overhaul</Link>
+                <Link to={`sdc`} onClick={openAndCloseNav}>
+                  <p>Server and</p>
+                  <p>Database</p>
+                  <p>Overhaul</p>
+                </Link>
               </li>
               <li>
-                <Link to={`blueOcean`}>Contruction Website</Link>
+                <Link to={`blueOcean`} onClick={openAndCloseNav}>
+                  <p>Construction</p>
+                  <p>Job Portal</p>
+                  <p>Website</p>
+                </Link>
               </li>
               <li>
-                <Link to={`photography`}>Client's Photography Website</Link>
+                <Link to={`photography`} onClick={openAndCloseNav}>
+                  <p>McMillan</p>
+                  <p>Photography</p>
+                  </Link>
               </li>
             </ul>
           </nav>
@@ -67,10 +79,11 @@ export default function Root() {
           <button id="menubtn" className="openbtn" onClick={openAndCloseNav}>&#9776; Menu</button>
           <div id="detail">
             <Outlet />
+            <Footer />
           </div>
         </div>
       </div>
-      <Footer />
+
     </div>
   );
 }
