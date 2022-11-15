@@ -129,12 +129,14 @@ table {
   margin-bottom: 9vh;
   margin-top: 2vh;
 }
+#aboutMeOuter {
+  margin-left: 5vw;
+}
 #aboutMeContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  width: 65vw;
+  width: 75vw;
   gap: 5vw;
 }
 #aboutMeBio {
@@ -356,6 +358,6 @@ width: 40vw;
   margin-right: 10vw;
   padding-top: 4vh;
   border-top: 2px black solid;
-  width: 55vw;
+  width: 65vw;
   height: 10vh;
 }
