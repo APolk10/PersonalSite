@@ -6,6 +6,7 @@ function Photography() {
     <div id="photography-outer-container">
       <div id="photography-container">
         Client Photography Site
+        <div>In Progress</div>
       </div>
       <div id="stackColumn">
         Tech Stack

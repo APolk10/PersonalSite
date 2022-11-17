@@ -7,7 +7,7 @@ function SDC() {
     <div id="sdc-container">
       <p id="sdc-title">Server Rebuild for RESTful API</p>
       <a id="sdc-github" target="_blank" href="https://github.com/APolk10/SEGA-Project-Atelier.git">View on github</a>
-      <img id="sdc-images" src="https://res.cloudinary.com/dijhxevwz/image/upload/v1667864881/PersonalSite/Screenshot_from_2022-11-07_17-46-22_vcnhau.png" />
+      <img id="sdc-images" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668710535/SDC/SDC_workflow_xsxuzy.png" />
       <p className="sdc-paragraphs">
         The above screenshot showcases the end goal for the rebuild. I would have an Nginx load balancer intance that split my web traffic into thirds with each pointing to different server instances. One of the instances houses the PostgreSQL database I made and the other two connected remotely to it. This process allowed for the best results for the GET request for product reviews.
       </p >
