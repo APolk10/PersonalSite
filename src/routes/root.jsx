@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import Home from './home.jsx';
+import Entry from './entry.jsx';
 import MVP from './mvp.jsx';
 import SDC from './sdc.jsx';
 import BlueOcean from './blueOcean.jsx';
@@ -9,6 +10,7 @@ import Footer from '../components/footer.jsx';
 
 export default function Root() {
   const[isOpen, setOpen] = useState(false);
+  const[hasEntered, setEntered] = useState(false)
 
   function openAndCloseNav() {
     if (isOpen === false) {
@@ -33,57 +35,61 @@ export default function Root() {
   }
 
   return (
-    <div>
-      <div id="container">
-        <div id="mySidebar" className="sidebar">
-          <h1 id="sidebarNameHeader">Adam's</h1>
-          <div id="sidebarListHeader">
-            Portfolio
+    <>
+      { hasEntered ?
+        <div>
+          <div id="container">
+            <div id="mySidebar" className="sidebar">
+              <h1 id="sidebarNameHeader">Adam's</h1>
+              <div id="sidebarListHeader">
+                Portfolio
+              </div>
+              <nav>
+                <ul id="navbarList">
+                  <li>
+                    <Link to={'/home'} onClick={openAndCloseNav}>About Me</Link>
+                  </li>
+                  <li>
+                    <Link to={`/mvp`} onClick={openAndCloseNav}>
+                      <p>Music By</p>
+                      <p>Country</p>
+                      <p>Application</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={`sdc`} onClick={openAndCloseNav}>
+                      <p>Server and</p>
+                      <p>Database</p>
+                      <p>Overhaul</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={`blueOcean`} onClick={openAndCloseNav}>
+                      <p>Construction</p>
+                      <p>Job Portal</p>
+                      <p>Website</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={`photography`} onClick={openAndCloseNav}>
+                      <p>McMillan</p>
+                      <p>Photography</p>
+                      </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div id="main">
+              <button id="menubtn" className="openbtn" onClick={openAndCloseNav}>&#9776; Menu</button>
+              <div id="detail">
+                <Outlet />
+                <Footer />
+              </div>
+            </div>
           </div>
-          <nav>
-            <ul id="navbarList">
-              <li>
-                <Link to={'/home'} onClick={openAndCloseNav}>About Me</Link>
-              </li>
-              <li>
-                <Link to={`/mvp`} onClick={openAndCloseNav}>
-                  <p>Music By</p>
-                  <p>Country</p>
-                  <p>Application</p>
-                </Link>
-              </li>
-              <li>
-                <Link to={`sdc`} onClick={openAndCloseNav}>
-                  <p>Server and</p>
-                  <p>Database</p>
-                  <p>Overhaul</p>
-                </Link>
-              </li>
-              <li>
-                <Link to={`blueOcean`} onClick={openAndCloseNav}>
-                  <p>Construction</p>
-                  <p>Job Portal</p>
-                  <p>Website</p>
-                </Link>
-              </li>
-              <li>
-                <Link to={`photography`} onClick={openAndCloseNav}>
-                  <p>McMillan</p>
-                  <p>Photography</p>
-                  </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div id="main">
-          <button id="menubtn" className="openbtn" onClick={openAndCloseNav}>&#9776; Menu</button>
-          <div id="detail">
-            <Outlet />
-            <Footer />
-          </div>
-        </div>
-      </div>
-
-    </div>
+        </div> :
+        <Entry setEntered={setEntered} />
+      }
+    </>
   );
 }

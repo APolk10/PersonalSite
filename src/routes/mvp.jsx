@@ -5,11 +5,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function MVP() {
 
   const URLs = [
-  'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/home_avkzzg_powa0p.jpg',
-  'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040572/Personal%20Site/highlight_sranqm_f9oncb.jpg',
-  'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/popup_zbdptd_dqksar.jpg',
-  'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/nextSlide_n9xmw4_wbmwv2.jpg',
-  'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/resultOfRedirect_msp8ag_sqlwoy.jpg'
+    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/home_avkzzg_powa0p.jpg',
+    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040572/Personal%20Site/highlight_sranqm_f9oncb.jpg',
+    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/popup_zbdptd_dqksar.jpg',
+    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/nextSlide_n9xmw4_wbmwv2.jpg',
+    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/resultOfRedirect_msp8ag_sqlwoy.jpg'
   ]
 
   return (
