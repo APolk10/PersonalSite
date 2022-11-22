@@ -393,8 +393,8 @@ width: 40vw;
 }
 
 #segmentPath {
-  width: 4vw;
-  height: 4vw;
+  width: 2vw;
+  height: 2vw;
   opacity: 1;
   animation: segmentX 10s alternate infinite linear;
 }
