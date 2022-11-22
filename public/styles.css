@@ -374,6 +374,37 @@ width: 40vw;
   width: 4vw;
   height: auto;
 }
+#ll-gamebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px black solid;
+  margin-right: 10vw;
+  width: 75vw;
+  height: 70vh;
+}
+
+@keyframes segmentX {
+  to {transform: translateX(70vw);}
+}
+
+@keyframes segmentY {
+  from { transform: translateY(60vh)}
+}
+
+#segmentPath {
+  width: 4vw;
+  height: 4vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+}
+#segment {
+  background-color: purple;
+  border-radius: 100%;
+  width: 4vw;
+  height: 4vw;
+  animation: segmentY 1s alternate infinite ease-in-out;
+}
 #siteFooter {
   display: flex;
   justify-content: center;

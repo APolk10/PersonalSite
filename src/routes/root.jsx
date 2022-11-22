@@ -6,6 +6,7 @@ import MVP from './mvp.jsx';
 import SDC from './sdc.jsx';
 import BlueOcean from './blueOcean.jsx';
 import Photography from './photography.jsx';
+import LinkedListGame from './linkedListGame.jsx';
 import Footer from '../components/footer.jsx';
 
 export default function Root() {
@@ -75,6 +76,12 @@ export default function Root() {
                       <p>McMillan</p>
                       <p>Photography</p>
                       </Link>
+                  </li>
+                  <li>
+                    <Link to={`linkedListGame`} onClick={openAndCloseNav}>
+                      <p>Linked List</p>
+                      <p>Game</p>
+                    </Link>
                   </li>
                 </ul>
               </nav>

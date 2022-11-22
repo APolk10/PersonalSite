@@ -10,6 +10,7 @@ import MVP from './routes/mvp.jsx';
 import SDC from './routes/sdc.jsx';
 import BlueOcean from './routes/blueOcean.jsx';
 import Photography from './routes/photography.jsx';
+import LinkedListGame from './routes/linkedListGame.jsx';
 import '../public/styles.css';
 
 
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
       {
         path: 'Photography',
         element: <Photography />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: 'LinkedListGame',
+        element: <LinkedListGame />,
         errorElement: <ErrorPage />,
       },
       {
