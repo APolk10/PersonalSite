@@ -219,7 +219,7 @@ table {
   align-items: center;
   text-align: center;
   padding-top: 3vh;
-  margin-left: 7vw;
+  margin-left: 3vw;
   min-height: 100vh;
 }
 #mvp-outer-container {
@@ -232,21 +232,42 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4vh;
   width: 60vw;
 }
 #mvp-header {
   font-size: 3vw;
+  font-weight: 500;
+  margin-bottom: 1vh;
 }
 #mvp-githubLink {
-  font-size: 1vw;
+  font-size: 1.25vw;
+  margin-bottom: 15vh;
+}
+
+#mvp-aboveCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  width: 50vw;
+  font-size: 1.15vw;
+  margin-bottom: 6vh;
+  text-indent: 3vw;
+  padding-bottom: 5vh;
+  border-bottom: 1px black solid;
+}
+#mvp-paragraphQuestion {
+  font-size: 2.25vw;
+  font-weight: 200;
+  margin-bottom: 6vh;
+  font-style: italic;
+  text-indent: 0;
 }
 #mvpCarousel {
   border: black groove 8px;
   height: 60vh;
   width: 45vw;
 }
-
 #mvpImg {
   height: 58.3vh;
 }
@@ -258,18 +279,39 @@ table {
   margin-bottom: 8vh;
 }
 #stackColumn {
-  font-size: 1.75vw;
-  border-left: solid black 3px;
-  margin-top: 10vh;
-  padding-left: 2vw;
-  height: 60vh;
-}
-#techList {
-  font-size: 1.15vw;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  font-size: 2vw;
+  color: whitesmoke;
+  background-image: linear-gradient(to right, rgb(74, 74, 74), black);
+  background-color: rgb(59, 59, 59);
+  position: fixed;
+  margin-left: 60vw;
+  padding-top: 5vh;
+  padding-left: -5vw;
+  margin-top: -14vh;
+  height: 110%;
+  width: 35vw;
+}
+#stackTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: white 2px solid;
+  width: 20vw;
+  height: 5vh;
+  margin-left: 5vw;
+}
+#techList {
+  font-size: 1.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 3vh;
-  margin-left: 1vw;
+  margin-left: 6vw;
   gap: .5vh;
 }
 
@@ -389,7 +431,15 @@ width: 40vw;
 }
 
 @keyframes segmentY {
-  from { transform: translateY(60vh)}
+  from { transform: translateY(50vh)}
+}
+
+@keyframes segmentX-2 {
+  to {transform: translateX(70vw);}
+}
+
+@keyframes segmentY-2 {
+  from { transform: translateY(50vh)}
 }
 
 .segmentPath {
@@ -403,7 +453,7 @@ width: 40vw;
   border-radius: 100%;
   width: 4vw;
   height: 4vw;
-  animation: segmentY 1s alternate infinite ease-in-out;
+  animation: segmentY 2s alternate infinite ease-in-out;
 }
 #siteFooter {
   display: flex;

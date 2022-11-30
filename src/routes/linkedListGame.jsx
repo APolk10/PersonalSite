@@ -42,8 +42,12 @@ function LinkedListGame() {
   function addMonsterSegment() {
     const newSegment = addSegment("purple");
     setSegments(newSegment);
-    setAnimationOne("none");
-    setAnimationTwo("none");
+    // setAnimationOne("none");
+    // setAnimationTwo("none");
+    document.getAnimations().forEach((anim) => {
+      anim.cancel();
+      anim.play();
+    });
   }
 
   function monsterIteration() {
@@ -60,14 +64,12 @@ function LinkedListGame() {
   }
 
   function resetAnimation() {
-    const stylesStringOne = "segmentY 1s alternate infinite ease-in-out";
-    const stylesStringTwo = "segmentX 10s alternate infinite linear";
+    // const stylesStringOne = "segmentX-2 10s alternate infinite linear";
+    // const stylesStringTwo = "segmentY-2 2s alternate infinite ease-in-out";
 
-    // setAnimationOne("none");
-    setAnimationOne(stylesStringOne);
+    // setAnimationOne(stylesStringOne);
 
-    // setAnimationTwo("none");
-    setAnimationTwo(stylesStringTwo);
+    // setAnimationTwo(stylesStringTwo);
   }
 
   useEffect(() => {

@@ -17,17 +17,26 @@ function MVP() {
       <div id="mvp-container">
         <p id="mvp-header">Discover Music By Country</p>
         <a id="mvp-githubLink" target="_blank" href="https://github.com/APolk10/MVP">View on github</a>
+        <div id="mvp-aboveCarousel">
+          <p id="mvp-paragraphQuestion">What does this application do?</p>
+          This application connects the user to music from any country selected. Upon user click the artist data is presented to the user and can be sifted through via the left and right arrows. If the user finds something that particularly intestests them, clicking the blue button near the bottom redirects them to Spotify with the search query supplied and activated.
+        </div>
         <div id="mvp-carousel">
           <PortfolioCarousel imageURLs={URLs}/>
         </div>
-        <p id="mvp-paragraph">I created this application over the course of two days as a sprint project. I was inspired by my background as a musician and educator and my interest in music from around the globe. I wanted to show world music in a way I had not seen before and help connect people to artists they would not normally find. This app allows for users to click a country on an interactive map and discover musicians and artists from that country. The user can sift through up to 25 artists from the country clicked as well as click the link which redirects them off of the page to spotify on desktop with the artist already searched for them.</p>
+        <p id="mvp-paragraphQuestion">Why did I make this?</p>
+        <p id="mvp-paragraph">I created this application over the course of <u>two days</u>. My musical background fueled my creativity for this project. I wanted to show world music in a way I had not seen before and help connect people to artists they would not normally find. </p>
       </div>
       <div id="stackColumn">
-        Tech Stack
+        <p id="stackTitle">Tech Stack</p>
         <ul id="techList">
+          <li>JavaScript</li>
+          <li>NodeJS</li>
           <li>ReactJS</li>
           <li>ExpressJS</li>
           <li>MySQL</li>
+          <li>mysql2</li>
+          <li>Axios</li>
           <li>MusicBrainz API</li>
         </ul>
       </div>
