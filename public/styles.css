@@ -89,12 +89,12 @@ table {
   z-index: 2;
   color: white;
   padding: .5vw 1vw;
-  margin-top: 2vh;
-  margin-left: 1.5vw;
+  margin-top: 1.5vh;
+  margin-left: -12vw;
   margin-bottom: 1vh;
   border: none;
   width: 15vw;
-  height: 8vh;
+  height: 6vh;
   transition: 0.8s;
 }
 
@@ -104,6 +104,10 @@ table {
 
 #main {
   transition: margin-left .8s; /* If you want a transition effect */
+  margin-left: 13vw;
+  animation: entryFadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)
@@ -152,16 +156,19 @@ table {
   justify-content: center;
   font-family: Apple Chancery, cursive;
   font-size: 2.75vw;
+  margin-left: -11vw;
   margin-bottom: 9vh;
   margin-top: 2vh;
 }
 #aboutMeOuter {
-  margin-left: 5vw;
+  margin-left: 8vw;
+  padding-left: 5vw;
 }
 #aboutMeContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 10vw;
   width: 75vw;
   gap: 5vw;
 }
@@ -182,6 +189,7 @@ table {
 }
 #container {
   display: flex;
+  position: absolute;
   flex-direction: row;
 }
 #sidebarNameHeader {
@@ -218,9 +226,9 @@ table {
   gap: 5vh;
   align-items: center;
   text-align: center;
-  padding-top: 3vh;
-  margin-left: 3vw;
+  margin-top: -3vh;
   min-height: 100vh;
+  width: 65vw;
 }
 #mvp-outer-container {
   display: flex;
@@ -237,10 +245,12 @@ table {
 #mvp-header {
   font-size: 3vw;
   font-weight: 500;
+  margin-top: 1vh;
   margin-bottom: 1vh;
 }
 #mvp-githubLink {
   font-size: 1.25vw;
+  margin-top: 1vh;
   margin-bottom: 15vh;
 }
 
@@ -259,7 +269,7 @@ table {
 #mvp-paragraphQuestion {
   font-size: 2.25vw;
   font-weight: 200;
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
   font-style: italic;
   text-indent: 0;
 }
@@ -267,6 +277,7 @@ table {
   border: black groove 8px;
   height: 60vh;
   width: 45vw;
+  margin-bottom: 3vh;
 }
 #mvpImg {
   height: 58.3vh;
@@ -284,41 +295,41 @@ table {
   align-items: flex-start;
   justify-content: left;
   font-size: 2vw;
-  color: whitesmoke;
-  background-image: linear-gradient(to right, rgb(74, 74, 74), black);
-  background-color: rgb(59, 59, 59);
+  color: black;
+  /* background-image: linear-gradient(to right, rgba(74, 74, 74, .5), black);
+  background-color: rgba(59, 59, 59, .5); */
   position: fixed;
   margin-left: 60vw;
-  padding-top: 5vh;
+  padding-top: 12vh;
   padding-left: -5vw;
   margin-top: -14vh;
   height: 110%;
-  width: 35vw;
+  width: 30vw;
 }
 #stackTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  border: white 2px solid;
+  border: black 2px solid;
   width: 20vw;
   height: 5vh;
-  margin-left: 5vw;
+  margin-left: 1.75vw;
 }
 #techList {
-  font-size: 1.25vw;
+  font-size: 1.4vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 3vh;
-  margin-left: 6vw;
-  gap: .5vh;
+  margin-left: 4.5vw;
+  gap: .75vh;
 }
 
 #sdc-outer-container {
   display: flex;
   flex-direction: row;
-  width: 80vw;
+  width: auto;
 }
 #sdc-container {
   display: flex;
@@ -326,7 +337,6 @@ table {
   gap: 4vh;
   align-items: center;
   text-align: center;
-  margin-left: 4.5vw;
   width: 60vw;
 }
 #sdc-title {
@@ -416,45 +426,142 @@ width: 40vw;
   width: 4vw;
   height: auto;
 }
+#ll-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+}
 #ll-gamebox {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   border: 2px black solid;
   margin-right: 10vw;
-  width: 75vw;
+  width: 55vw;
   height: 70vh;
 }
 
 @keyframes segmentX {
-  to {transform: translateX(70vw);}
+  to {transform: translateX(50vw);}
 }
 
 @keyframes segmentY {
-  from { transform: translateY(50vh)}
+  from { transform: translateY(60vh)}
 }
 
 @keyframes segmentX-2 {
-  to {transform: translateX(70vw);}
+  to {transform: translateX(50vw);}
 }
 
 @keyframes segmentY-2 {
-  from { transform: translateY(50vh)}
+  from { transform: translateY(60vh)}
+}
+@keyframes segmentX-3 {
+  to {transform: translateX(50vw);}
 }
 
-.segmentPath {
+@keyframes segmentY-3 {
+  from { transform: translateY(60vh)}
+}
+@keyframes segmentX-4 {
+  to {transform: translateX(50vw);}
+}
+
+@keyframes segmentY-4 {
+  from { transform: translateY(60vh)}
+}
+
+.segmentPath-0 {
+  position: fixed;
   width: 2vw;
   height: 2vw;
   opacity: 1;
   animation: segmentX 10s alternate infinite linear;
 }
-.segment {
+.segment-0 {
+  position: fixed;
   background-color: purple;
   border-radius: 100%;
   width: 4vw;
   height: 4vw;
-  animation: segmentY 2s alternate infinite ease-in-out;
+  z-index: 10;
+  animation: segmentY 2.5s alternate infinite ease-in-out;
 }
+.segmentPath-1 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: .25s;
+}
+.segment-1 {
+  position: fixed;
+  background-color: yellow;
+  border-radius: 100%;
+  width: 4vw;
+  height: 4vw;
+  z-index: 9;
+  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation-delay: .25s;
+}
+.segmentPath-2 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: .5s;
+}
+.segment-2 {
+  position: fixed;
+  background-color: blue;
+  border-radius: 100%;
+  width: 4vw;
+  height: 4vw;
+  z-index: 8;
+  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation-delay: .5s;
+}
+.segmentPath-3 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: .75s;
+}
+.segment-3 {
+  position: fixed;
+  background-color: green;
+  border-radius: 100%;
+  width: 4vw;
+  height: 4vw;
+  z-index: 7;
+  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation-delay: .75s;
+}
+.segmentPath-4 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: 1s;
+}
+.segment-4 {
+  position: fixed;
+  background-color: orange;
+  border-radius: 100%;
+  width: 4vw;
+  height: 4vw;
+  z-index: 6;
+  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation-delay: 1s;
+}
+
 #siteFooter {
   display: flex;
   justify-content: center;
@@ -462,9 +569,8 @@ width: 40vw;
   gap: 15vw;
   font-size: 1.5vw;
   margin-bottom: 5vh;
-  margin-right: 10vw;
   padding-top: 4vh;
   border-top: 2px black solid;
-  width: 65vw;
+  width: 55vw;
   height: 10vh;
 }

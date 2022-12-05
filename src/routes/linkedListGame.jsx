@@ -16,7 +16,7 @@ class MonsterSegment {
 
 // allow for adding segments to monster
 function addSegment(color) {
-  currentTimeToWait += .25;
+  currentTimeToWait += 1;
   let newSegment = new MonsterSegment(color);
   newSegment.next = head;
   head = newSegment;
@@ -28,8 +28,6 @@ function LinkedListGame() {
   const [color, setColor] = useState("purple");
   const [segments, setSegments] = useState({});
   const [segmentContainer, setSegmentContainer] = useState([]);
-  const [animationOne, setAnimationOne] = useState("segmentY 1s alternate infinite ease-in-out");
-  const [animationTwo, setAnimationTwo] = useState("segmentX 10s alternate infinite linear");
 
   var test;
 
@@ -42,8 +40,6 @@ function LinkedListGame() {
   function addMonsterSegment() {
     const newSegment = addSegment("purple");
     setSegments(newSegment);
-    // setAnimationOne("none");
-    // setAnimationTwo("none");
     document.getAnimations().forEach((anim) => {
       anim.cancel();
       anim.play();
@@ -56,20 +52,19 @@ function LinkedListGame() {
 
     if (copyOfSegments.next) {
       while (copyOfSegments.next) {
-        collectionOfSegmentData.push(copyOfSegments.data)
+        collectionOfSegmentData.unshift(copyOfSegments.data)
         copyOfSegments = copyOfSegments.next;
       }
+      collectionOfSegmentData.push(0);
+    }
+    if (collectionOfSegmentData.length === 0) {
+      return [0];
     }
     return collectionOfSegmentData;
   }
 
   function resetAnimation() {
-    // const stylesStringOne = "segmentX-2 10s alternate infinite linear";
-    // const stylesStringTwo = "segmentY-2 2s alternate infinite ease-in-out";
 
-    // setAnimationOne(stylesStringOne);
-
-    // setAnimationTwo(stylesStringTwo);
   }
 
   useEffect(() => {
@@ -79,11 +74,14 @@ function LinkedListGame() {
   }, [segments])
 
   return (
-    <div>
+    <div id="ll-container">
       <div id="ll-gamebox">
-        {/* This will be where all nodes will be rendered */}
-        <div id="segmentPath" className="segmentPath" styles={{animation: animationOne}}>
-          {segmentContainer.length > 0 ? segmentContainer.map(segment => <div key={`segment-${segment}`} className="segment" styles={{animation: animationTwo}}></div>) : <></>}
+        <div>
+          {segmentContainer.length > 0 ? segmentContainer.map(segment =>
+          <div key={`segmentPath-${segment}`} className={`segmentPath-${segment}`}>
+            <div key={`segment-${segment}`} className={`segment-${segment}`}></div>
+          </div>
+          ) : <></>}
         </div>
       </div>
       <button type="button" onClick={addMonsterSegment}>Add segment</button>

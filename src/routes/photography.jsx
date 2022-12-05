@@ -9,12 +9,12 @@ function Photography() {
         <div>In Progress</div>
       </div>
       <div id="stackColumn">
-        Tech Stack
+        <p id="stackTitle">Tech Stack</p>
         <ul id="techList">
-          <li>NextJS</li>
-          <li>ReactJS</li>
-          <li>TypeScript</li>
-          <li>Cloudinary API</li>
+        <li>NextJS</li>
+        <li>ReactJS</li>
+        <li>TypeScript</li>
+        <li>Cloudinary API</li>
         </ul>
       </div>
     </div>

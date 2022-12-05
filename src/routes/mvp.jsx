@@ -24,7 +24,7 @@ function MVP() {
         <div id="mvp-carousel">
           <PortfolioCarousel imageURLs={URLs}/>
         </div>
-        <p id="mvp-paragraphQuestion">Why did I make this?</p>
+        <p id="mvp-paragraphQuestion">What was my inspiration?</p>
         <p id="mvp-paragraph">I created this application over the course of <u>two days</u>. My musical background fueled my creativity for this project. I wanted to show world music in a way I had not seen before and help connect people to artists they would not normally find. </p>
       </div>
       <div id="stackColumn">

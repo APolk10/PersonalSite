@@ -23,9 +23,10 @@ function BlueOcean() {
         </div>
       </div>
       <div id="stackColumn">
-        Tech Stack
+        <p id="stackTitle">Tech Stack</p>
         <ul id="techList">
-          <li>NextJS</li>
+        <li>Nginx</li>
+        <li>NextJS</li>
           <li>ReactJS</li>
           <li>MongoDB</li>
           <li>Mongoose</li>

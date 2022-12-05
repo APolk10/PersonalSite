@@ -19,9 +19,9 @@ function SDC() {
     <div>
     </div>
       <div id="stackColumn">
-        Tech Stack
+        <p id="stackTitle">Tech Stack</p>
         <ul id="techList">
-          <li>Nginx</li>
+        <li>Nginx</li>
           <li>ExpressJS</li>
           <li>PostgreSQL</li>
           <li>Amazon Web Services</li>
