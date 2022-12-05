@@ -487,7 +487,7 @@ width: 40vw;
   width: 4vw;
   height: 4vw;
   z-index: 10;
-  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation: segmentY 2.5s alternate infinite linear;
 }
 .segmentPath-1 {
   position: fixed;
@@ -504,7 +504,7 @@ width: 40vw;
   width: 4vw;
   height: 4vw;
   z-index: 9;
-  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation: segmentY 2.5s alternate infinite linear;
   animation-delay: .25s;
 }
 .segmentPath-2 {
@@ -522,7 +522,7 @@ width: 40vw;
   width: 4vw;
   height: 4vw;
   z-index: 8;
-  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation: segmentY 2.5s alternate infinite linear;
   animation-delay: .5s;
 }
 .segmentPath-3 {
@@ -540,7 +540,7 @@ width: 40vw;
   width: 4vw;
   height: 4vw;
   z-index: 7;
-  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation: segmentY 2.5s alternate infinite linear;
   animation-delay: .75s;
 }
 .segmentPath-4 {
@@ -558,7 +558,7 @@ width: 40vw;
   width: 4vw;
   height: 4vw;
   z-index: 6;
-  animation: segmentY 2.5s alternate infinite ease-in-out;
+  animation: segmentY 2.5s alternate infinite linear;
   animation-delay: 1s;
 }
 
