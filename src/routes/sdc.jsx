@@ -7,6 +7,7 @@ function SDC() {
       <div id="sdc-container">
         <p id="sdc-title">Server Rebuild for RESTful API</p>
         <a id="sdc-github" target="_blank" href="https://github.com/APolk10/SEGA-Project-Atelier.git">View on github</a>
+        <div>Tech Stack</div>
         <div>What does this application do?</div>
         <p>
           This API rebuild provides over 100X faster performance for a backend to an eCommerce website that was struggling due to increased web traffic. It services the ratings and reviews component of the eCommerce site but the principals could be applied to any large database. It combines a multitude of different strategies that I will dive into below to allow for the website to operate with thousands of concurrent users while still loading at a response time under 30 ms.

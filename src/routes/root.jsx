@@ -16,14 +16,14 @@ export default function Root() {
   function openAndCloseNav() {
     if (isOpen === false) {
       document.getElementById("mySidebar").style.width = "15vw";
-      document.getElementById("menubtn").style.marginLeft = "3vw";
+      document.getElementById("menubtn").style.marginLeft = "1vw";
       document.getElementById("menubtn").style.width = "8vw";
       document.getElementById("menubtn").style.fontSize = "1.2vw";
       document.getElementById("navbarList").style.opacity = "1";
       setOpen(true);
     } else {
       document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("menubtn").style.marginLeft = "-12vw";
+      document.getElementById("menubtn").style.marginLeft = "-16vw";
       document.getElementById("menubtn").style.width = "15vw";
       document.getElementById("menubtn").style.fontSize = "1.6vw";
       document.getElementById("navbarList").style.opacity = "0";
@@ -32,8 +32,6 @@ export default function Root() {
   }
 
   return (
-    <>
-      { hasEntered ?
         <div>
           <div id="container">
             <div id="mySidebar" className="sidebar">
@@ -90,9 +88,6 @@ export default function Root() {
               </div>
             </div>
           </div>
-        </div> :
-        <Entry setEntered={setEntered} />
-      }
-    </>
+        </div>
   );
 }
