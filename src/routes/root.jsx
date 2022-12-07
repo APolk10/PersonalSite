@@ -14,6 +14,9 @@ export default function Root() {
   const[hasEntered, setEntered] = useState(false)
 
   function openAndCloseNav() {
+    // allows initial render to have fade in but no other lifecycle changes
+    document.getElementById("detail").style.animation = "none";
+
     if (isOpen === false) {
       document.getElementById("mySidebar").style.width = "15vw";
       document.getElementById("menubtn").style.marginLeft = "1vw";

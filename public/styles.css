@@ -76,7 +76,7 @@ table {
 }
 
 .sidebar a:hover {
-  color: #767474;
+  color: black;
 }
 
 .openbtn {
@@ -105,9 +105,6 @@ table {
   transition: margin-left .8s; /* If you want a transition effect */
   margin-left: 17vw;
   background-color: whitesmoke;
-  animation: entryFadeIn ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)
@@ -154,7 +151,7 @@ table {
   align-items: center;
   margin-bottom: 10vh;
 }
-#entryButton {
+/* #entryButton {
   margin-top: 5vh;
   width: 16vw;
 }
@@ -162,7 +159,7 @@ table {
   animation: entryFadeOut ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
-}
+} */
 #aboutMeHeader {
   display: flex;
   justify-content: center;
@@ -180,7 +177,7 @@ table {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 6vw;
+  margin-left: 12vw;
   width: 75vw;
   gap: 2.5vw;
 }
@@ -190,11 +187,11 @@ table {
   text-align: start;
   font-style: italic;
   padding-top: 3vh;
-  width: 30vw;
+  width: 25vw;
 }
 #aboutMeHeadshot {
   border: black 2px solid;
-  width: 25vw;
+  width: 20vw;
 }
 #aboutMeOuter {
   margin-bottom: 5vh;
@@ -241,6 +238,9 @@ table {
   margin-top: -3vh;
   min-height: 100vh;
   width: 65vw;
+  /* animation: entryFadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
 }
 #mvp-outer-container {
   display: flex;
@@ -454,6 +454,10 @@ width: 40vw;
   width: 65vw;
 }
 #linkedIn {
+  width: 4.25vw;
+  height: auto;
+}
+#github {
   width: 4vw;
   height: auto;
 }
@@ -472,6 +476,22 @@ width: 40vw;
   margin-right: 10vw;
   width: 55vw;
   height: 70vh;
+  /* animation: entryFadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+@keyframes showAnimation {
+  from {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  to {
+    visibility: visible;
+    height: 4vw;
+    width: 4vw;
+  }
 }
 
 @keyframes segmentX {
@@ -479,28 +499,6 @@ width: 40vw;
 }
 
 @keyframes segmentY {
-  from { transform: translateY(60vh)}
-}
-
-@keyframes segmentX-2 {
-  to {transform: translateX(50vw);}
-}
-
-@keyframes segmentY-2 {
-  from { transform: translateY(60vh)}
-}
-@keyframes segmentX-3 {
-  to {transform: translateX(50vw);}
-}
-
-@keyframes segmentY-3 {
-  from { transform: translateY(60vh)}
-}
-@keyframes segmentX-4 {
-  to {transform: translateX(50vw);}
-}
-
-@keyframes segmentY-4 {
   from { transform: translateY(60vh)}
 }
 
@@ -532,10 +530,9 @@ width: 40vw;
   position: fixed;
   background-color: yellow;
   border-radius: 100%;
-  width: 4vw;
-  height: 4vw;
   z-index: 9;
-  animation: segmentY 2.5s alternate infinite linear;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
   animation-delay: .25s;
 }
 .segmentPath-2 {
@@ -550,10 +547,9 @@ width: 40vw;
   position: fixed;
   background-color: blue;
   border-radius: 100%;
-  width: 4vw;
-  height: 4vw;
   z-index: 8;
-  animation: segmentY 2.5s alternate infinite linear;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
   animation-delay: .5s;
 }
 .segmentPath-3 {
@@ -568,10 +564,9 @@ width: 40vw;
   position: fixed;
   background-color: green;
   border-radius: 100%;
-  width: 4vw;
-  height: 4vw;
   z-index: 7;
-  animation: segmentY 2.5s alternate infinite linear;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
   animation-delay: .75s;
 }
 .segmentPath-4 {
@@ -586,11 +581,95 @@ width: 40vw;
   position: fixed;
   background-color: orange;
   border-radius: 100%;
-  width: 4vw;
-  height: 4vw;
   z-index: 6;
-  animation: segmentY 2.5s alternate infinite linear;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
   animation-delay: 1s;
+}
+.segmentPath-5 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: 1.25s;
+}
+.segment-5 {
+  position: fixed;
+  background-color: rgb(37, 147, 155);
+  border-radius: 100%;
+  z-index: 6;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.25s;
+}
+.segmentPath-6 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: 1.5s;
+}
+.segment-6 {
+  position: fixed;
+  background-color: rgb(182, 24, 35);
+  border-radius: 100%;
+  z-index: 6;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+}
+.segmentPath-7 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: 1.75s;
+}
+.segment-7 {
+  position: fixed;
+  background-color: rgb(71, 162, 32);
+  border-radius: 100%;
+  z-index: 6;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 1.75s;
+}
+.segmentPath-8 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: 2s;
+}
+.segment-8 {
+  position: fixed;
+  background-color: rgb(115, 106, 106);
+  border-radius: 100%;
+  z-index: 6;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+}
+.segmentPath-9 {
+  position: fixed;
+  width: 2vw;
+  height: 2vw;
+  opacity: 1;
+  animation: segmentX 10s alternate infinite linear;
+  animation-delay: 2.25s;
+}
+.segment-9 {
+  position: fixed;
+  background-color: rgb(149, 99, 200);
+  border-radius: 100%;
+  z-index: 6;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.25s;
 }
 
 #siteFooter {

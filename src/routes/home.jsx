@@ -15,7 +15,7 @@ function Home() {
             <p>- Adam</p>
           </div>
           <div>
-            <img id="aboutMeHeadshot" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/ProfilePhotoAdamReduced_abs1uh_yxh0hs.jpg" width="450vw" height="auto"></img>
+            <img id="aboutMeHeadshot" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670438935/Personal%20Site/IMG_5342_n6cjh6.jpg" width="450vw" height="auto"></img>
           </div>
         </div>
       </div>
