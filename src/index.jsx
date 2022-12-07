@@ -4,7 +4,6 @@ import Route from 'react-router-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './routes/root.jsx';
 import ErrorPage from './error-page.jsx';
-import Entry from './routes/entry.jsx';
 import Home from './routes/home.jsx';
 import MVP from './routes/mvp.jsx';
 import SDC from './routes/sdc.jsx';
@@ -48,11 +47,6 @@ const router = createBrowserRouter([
       {
         path: 'LinkedListGame',
         element: <LinkedListGame />,
-        errorElement: <ErrorPage />,
-      },
-      {
-        path: 'entry',
-        element: <Entry />,
         errorElement: <ErrorPage />,
       },
     ]

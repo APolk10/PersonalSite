@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import Home from './home.jsx';
-import Entry from './entry.jsx';
 import MVP from './mvp.jsx';
 import SDC from './sdc.jsx';
 import BlueOcean from './blueOcean.jsx';
