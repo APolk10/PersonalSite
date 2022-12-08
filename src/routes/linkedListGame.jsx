@@ -64,7 +64,9 @@ function LinkedListGame() {
   }
 
   function resetAnimation() {
-
+    // let oldState = {color: "purple", data: 0, next: undefined};
+    // setSegments({});
+    // setSegmentContainer([]);
   }
 
   useEffect(() => {
@@ -74,17 +76,26 @@ function LinkedListGame() {
   }, [segments])
 
   return (
-    <div id="ll-container">
-      <div id="ll-gamebox">
-        <div>
-          {segmentContainer.length > 0 ? segmentContainer.map(segment =>
-          <div key={`segmentPath-${segment}`} className={`segmentPath-${segment}`}>
-            <div key={`segment-${segment}`} className={`segment-${segment}`}></div>
+    <div>
+      <div id='ll-title'>Linked List Monster!</div>
+      <div>
+        <p id='ll-description'>I created this to entertain myself as well as others with a visualization of linked lists.</p>
+      </div>
+      <div id="ll-container">
+        <div id="ll-gamebox">
+          <div>
+            {segmentContainer.length > 0 ? segmentContainer.map(segment =>
+            <div key={`segmentPath-${segment}`} className={`segmentPath-${segment}`}>
+              <div key={`segment-${segment}`} className={`segment-${segment}`}></div>
+            </div>
+            ) : <></>}
           </div>
-          ) : <></>}
+        </div >
+        <div id="ll-buttonBox">
+          <button className="ll-buttons" type="button" onClick={resetAnimation}>Reset worm</button>
+          <button className="ll-buttons" type="button" onClick={addMonsterSegment}>Add segment</button>
         </div>
       </div>
-      <button type="button" onClick={addMonsterSegment}>Add segment</button>
     </div>
   )
 }

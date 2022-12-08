@@ -1,6 +1,7 @@
 import React from 'react';
 import PortfolioCarousel from '../components/carouselBuilder.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TechStackCards from '../components/techStackCards.jsx';
 
 function MVP() {
 
@@ -15,8 +16,12 @@ function MVP() {
   return (
     <div id="mvp-outer-container">
       <div id="mvp-container">
-        <p id="mvp-header">Discover Music By Country</p>
-        <a id="mvp-githubLink" target="_blank" href="https://github.com/APolk10/MVP">View on github</a>
+        <div id="mvp-title-logo">
+          <a target="_blank" href="https://github.com/APolk10/MVP">
+            <img id="mvp-githubLink" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png"></img>
+          </a>
+          <p id="mvp-header">Discover Music By Country</p>
+        </div>
         <div id="mvp-aboveCarousel">
           <p id="mvp-paragraphQuestion-1" className="mvp-paragraphQuestions">What does this application do?</p>
           <u id="mvp-underlinedText">Discover Music by Country connects the user to music from any country in the world.</u>
@@ -46,19 +51,10 @@ function MVP() {
           </p>
         <p className="mvp-paragraphQuestions">What was my inspiration?</p>
         <p id="mvp-paragraph-1">I created this application over the course of <u>two days</u>. My musical background fueled my creativity for this project. I wanted to show world music in a way I had not seen before and help connect people to artists they would not normally find. </p>
+      <div>
+          <p id="icon-header">Technologies used:</p>
+          <TechStackCards technologies={['JavaScript', 'NodeJS', 'ReactJS', 'ExpressJS', 'MySQL', 'MusicBrainz API']}>          </TechStackCards>
       </div>
-      <div id="stackColumn">
-        <p id="stackTitle">Tech Stack</p>
-        <ul id="techList">
-          <li>JavaScript</li>
-          <li>NodeJS</li>
-          <li>ReactJS</li>
-          <li>ExpressJS</li>
-          <li>MySQL</li>
-          <li>mysql2</li>
-          <li>Axios</li>
-          <li>MusicBrainz API</li>
-        </ul>
       </div>
     </div>
   )

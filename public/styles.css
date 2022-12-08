@@ -245,6 +245,7 @@ table {
 #mvp-outer-container {
   display: flex;
   flex-direction: row;
+  margin-top: -6.5vh;
   width: auto;
 }
 #mvp-container {
@@ -254,24 +255,37 @@ table {
   align-items: center;
   width: 60vw;
 }
-#mvp-header {
+#mvp-title-logo {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
   font-size: 3.5vw;
   font-weight: 500;
   margin-top: 1vh;
   margin-bottom: 1vh;
+  background-color: rgba(205, 227, 225, .5);
+  width: 65vw;
+  height: 16vh;
 }
 #mvp-githubLink {
-  font-size: 1.25vw;
-  margin-top: 1vh;
-  margin-bottom: 10vh;
+  width: 6vw;
+}
+#icon-header {
+  font-style: italic;
+  margin-top: 4vh;
+  padding-top: 2vh;
+  font-size: 2.5vw;
+  width: 60vw;
 }
 #mvp-paragraph-1 {
-  margin-top: 2vh;
+  margin-top: 4vh;
   margin-bottom: 2vh;
   font-style: oblique;
   text-align: start;
-  width: 50vw;
-  font-size: 1vw;
+  width: 60vw;
 }
 #mvp-paragraph-headers {
   font-size: 1.5vw;
@@ -282,8 +296,7 @@ table {
   flex-direction: column;
   align-items: center;
   text-align: left;
-  width: 50vw;
-  font-size: 1.15vw;
+  width: 60vw;
   margin-bottom: 4vh;
   text-indent: 3vw;
   /* border-bottom: 1px black solid; */
@@ -291,65 +304,54 @@ table {
 .mvp-paragraphQuestions {
   font-size: 2.5vw;
   font-weight: 200;
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
   font-style: italic;
   text-indent: 0;
 }
+#mvp-paragraphQuestion-1 {
+  margin-top: 3vh;
+}
 #mvp-underlinedText {
-  margin-top: 1vh;
   font-size: 1.25vw;
+  margin-top: -.5vh;
+  margin-bottom: 1vh;
 }
 #mvpCarousel {
   border: black groove 8px;
   height: 60vh;
   width: 45vw;
   margin-bottom: 4vh;
+  margin-top: -2vh;
 }
 #mvpImg {
   height: 58.3vh;
 }
-#mvp-paragraph {
-  width: 45vw;
-  font-style: italic;
-  padding-right: .5vw;
-  font-size: 1.25vw;
-  margin-bottom: 8vh;
-}
-#stackColumn {
+
+#techCardGroup {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: left;
-  font-size: 2vw;
-  color: black;
-  position: fixed;
-  margin-left: 60vw;
-  padding-top: 15vh;
-  padding-left: -5vw;
-  margin-top: -14vh;
-  height: 110%;
-  width: 30vw;
-}
-#stackTitle {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  border: black 2px solid;
-  width: 20vw;
-  height: 5vh;
-  margin-left: 1.75vw;
+  gap: 3vw;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+  width: 60vw;
 }
-#techList {
-  font-size: 1.4vw;
+#techCard {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 3vh;
-  margin-left: 4.5vw;
-  gap: .75vh;
+  gap: 5vh;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+  height: 24vh;
+  width: 12vw;
+  font-size: 2vh;
 }
 
+#cardIcon {
+  width: 8vw;
+}
 #sdc-outer-container {
   display: flex;
   flex-direction: row;
@@ -468,6 +470,25 @@ width: 40vw;
   align-items: center;
   margin-left: 10vw;
 }
+#ll-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  /* border: 2px black solid;
+  background-color: lightseagreen; */
+  width: 55vw;
+  height: 15vh;
+  margin-left: 10vw;
+}
+#ll-description {
+  width: 45vw;
+  font-style: italic;
+  padding-right: .5vw;
+  font-size: 1.25vw;
+  margin-left: 15vw;
+  margin-bottom: 8vh;
+}
 #ll-gamebox {
   display: flex;
   flex-direction: column;
@@ -503,23 +524,22 @@ width: 40vw;
 }
 
 .segmentPath-0 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
   animation: segmentX 10s alternate infinite linear;
 }
 .segment-0 {
-  position: fixed;
+  position: absolute;
   background-color: purple;
   border-radius: 100%;
-  width: 4vw;
-  height: 4vw;
   z-index: 10;
-  animation: segmentY 2.5s alternate infinite linear;
+  animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in;
+  animation-fill-mode: forwards;
 }
 .segmentPath-1 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -527,7 +547,7 @@ width: 40vw;
   animation-delay: .25s;
 }
 .segment-1 {
-  position: fixed;
+  position: absolute;
   background-color: yellow;
   border-radius: 100%;
   z-index: 9;
@@ -536,7 +556,7 @@ width: 40vw;
   animation-delay: .25s;
 }
 .segmentPath-2 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -544,7 +564,7 @@ width: 40vw;
   animation-delay: .5s;
 }
 .segment-2 {
-  position: fixed;
+  position: absolute;
   background-color: blue;
   border-radius: 100%;
   z-index: 8;
@@ -553,7 +573,7 @@ width: 40vw;
   animation-delay: .5s;
 }
 .segmentPath-3 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -561,7 +581,7 @@ width: 40vw;
   animation-delay: .75s;
 }
 .segment-3 {
-  position: fixed;
+  position: absolute;
   background-color: green;
   border-radius: 100%;
   z-index: 7;
@@ -570,7 +590,7 @@ width: 40vw;
   animation-delay: .75s;
 }
 .segmentPath-4 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -578,7 +598,7 @@ width: 40vw;
   animation-delay: 1s;
 }
 .segment-4 {
-  position: fixed;
+  position: absolute;
   background-color: orange;
   border-radius: 100%;
   z-index: 6;
@@ -587,7 +607,7 @@ width: 40vw;
   animation-delay: 1s;
 }
 .segmentPath-5 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -595,7 +615,7 @@ width: 40vw;
   animation-delay: 1.25s;
 }
 .segment-5 {
-  position: fixed;
+  position: absolute;
   background-color: rgb(37, 147, 155);
   border-radius: 100%;
   z-index: 6;
@@ -604,7 +624,7 @@ width: 40vw;
   animation-delay: 1.25s;
 }
 .segmentPath-6 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -612,7 +632,7 @@ width: 40vw;
   animation-delay: 1.5s;
 }
 .segment-6 {
-  position: fixed;
+  position: absolute;
   background-color: rgb(182, 24, 35);
   border-radius: 100%;
   z-index: 6;
@@ -621,7 +641,7 @@ width: 40vw;
   animation-delay: 1.5s;
 }
 .segmentPath-7 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -629,7 +649,7 @@ width: 40vw;
   animation-delay: 1.75s;
 }
 .segment-7 {
-  position: fixed;
+  position: absolute;
   background-color: rgb(71, 162, 32);
   border-radius: 100%;
   z-index: 6;
@@ -638,7 +658,7 @@ width: 40vw;
   animation-delay: 1.75s;
 }
 .segmentPath-8 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -646,7 +666,7 @@ width: 40vw;
   animation-delay: 2s;
 }
 .segment-8 {
-  position: fixed;
+  position: absolute;
   background-color: rgb(115, 106, 106);
   border-radius: 100%;
   z-index: 6;
@@ -655,7 +675,7 @@ width: 40vw;
   animation-delay: 2s;
 }
 .segmentPath-9 {
-  position: fixed;
+  position: absolute;
   width: 2vw;
   height: 2vw;
   opacity: 1;
@@ -663,7 +683,7 @@ width: 40vw;
   animation-delay: 2.25s;
 }
 .segment-9 {
-  position: fixed;
+  position: absolute;
   background-color: rgb(149, 99, 200);
   border-radius: 100%;
   z-index: 6;
@@ -671,7 +691,21 @@ width: 40vw;
   animation-fill-mode: forwards;
   animation-delay: 2.25s;
 }
-
+#ll-buttonBox {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  align-items: center;
+  justify-content: center;
+  width: 55vw;
+  margin-top: 4vh;
+  margin-right: 10vw;
+}
+.ll-buttons {
+  font-size: 2.5vh;
+  width: 15vw;
+  height: 6vh;
+}
 #siteFooter {
   display: flex;
   justify-content: center;
