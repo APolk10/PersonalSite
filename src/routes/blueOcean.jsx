@@ -5,11 +5,15 @@ function BlueOcean() {
   return (
     <div id="constructionContainer">
       <div id="constructionLeftContainer">
+      <div id="sdc-title">
+        <a target="_blank" href="https://github.com/APolk10/DuguidConstruction">
+          <img id="mvp-githubLink" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png"></img>
+        </a>
         <div id="construction-header">
           <p>Construction Application</p>
           <p id="construction-subheader">(Fondly nicknamed Duguid Construction)</p>
-          <a id="bo-githubLink" target="_blank" href="https://github.com/APolk10/MVP">View on github</a>
         </div>
+      </div>
         <img className="construction-img" id="construction-main" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127646/Personal%20Site/Screenshot_from_2022-11-09_18-01-24_ftoiig.png" width="450vw" height="auto"></img>
         <div id="construction-accordion">
           <img className="construction-img" id="flatAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-18_wudfxd.png" width="450vw" height="auto"></img>
@@ -22,7 +26,7 @@ function BlueOcean() {
           <img className="construction-img" id="mapZoomInMore" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127644/Personal%20Site/Screenshot_from_2022-11-09_17-58-07_upja4g.png" width="450vw" height="auto"></img>
         </div>
       </div>
-      <div id="stackColumn">
+      {/* <div id="stackColumn">
         <p id="stackTitle">Tech Stack</p>
         <ul id="techList">
         <li>Nginx</li>
@@ -34,7 +38,7 @@ function BlueOcean() {
           <li>node-geocoder</li>
           <li>Cloudinary</li>
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }

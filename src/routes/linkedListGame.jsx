@@ -79,7 +79,10 @@ function LinkedListGame() {
     <div>
       <div id='ll-title'>Linked List Monster!</div>
       <div>
-        <p id='ll-description'>I created this to entertain myself as well as others with a visualization of linked lists.</p>
+        <p id='ll-description'>I created this out of an effort to create entertaining visualizations for data structures.</p>
+        <p id='ll-description'>
+          I got the idea from a game I had played called Terraria where there is a boss who resembles a segmented worm. When fighting this worm each link could be broken and new worms would be formed. One became two and if you broke one of those worms they would subdivide futher until you beat the boss.
+        </p>
       </div>
       <div id="ll-container">
         <div id="ll-gamebox">

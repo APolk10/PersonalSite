@@ -104,7 +104,7 @@ table {
 #main {
   transition: margin-left .8s; /* If you want a transition effect */
   margin-left: 17vw;
-  background-color: whitesmoke;
+  background-color: rgb(229, 229, 229);
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)
@@ -129,37 +129,7 @@ table {
     opacity: 0;
   }
 }
-#entryContainer {
-  display: flex;
-  background-color: rgb(40, 64, 40);
-  color: white;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 3vw;
-  gap: 5vh;
-  width: 100%;
-  height: 100vh;
-  animation: entryFadeIn ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-#entryCenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10vh;
-}
-/* #entryButton {
-  margin-top: 5vh;
-  width: 16vw;
-}
-#entryButton:active {
-  animation: entryFadeOut ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
-} */
+
 #aboutMeHeader {
   display: flex;
   align-items: center;
@@ -170,7 +140,6 @@ table {
   margin-left: 4.5vw;
   margin-bottom: 4vh;
   margin-top: -6vh;
-
   background-color: rgba(205, 227, 225, .5);
   width: 65vw;
   height: 20vh;
@@ -377,17 +346,17 @@ table {
 }
 #sdc-title {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  font-size: 3vw;
-  border: 2px black solid;
-  background-color: lightseagreen;
-  width: 55vw;
-  height: 15vh;
-}
-#sdc-github {
-  display: flex;
-  font-size: 1vw;
+  justify-content: center;
+  gap: 2vw;
+  font-size: 3.5vw;
+  font-weight: 500;
+  margin-top: -5.5vh;
+  margin-bottom: 1vh;
+  background-color: rgba(205, 227, 225, .5);
+  width: 65vw;
+  height: 16vh;
 }
 #sdc-images {
   border: black 2px solid;
@@ -400,6 +369,14 @@ table {
   padding-right: .5vw;
   font-size: 1.25vw;
   margin-bottom: 8vh;
+}
+
+#sdc-paragraphQuestions {
+  font-size: 2.5vw;
+  font-weight: 200;
+  margin-bottom: 3vh;
+  font-style: italic;
+  text-indent: 0;
 }
 #constructionContainer {
   display: flex;
@@ -416,16 +393,12 @@ table {
 #construction-header {
   display: flex;
   flex-direction: column;
-  font-size: 3vw;
+  font-size: 3.5vw;
   gap: .6vh;
 }
 #construction-subheader {
   font-size: 1vw;
   font-style: italic;
-}
-#bo-githubLink {
-  margin-top: 1vh;
-  font-size: 1vw;
 }
 .construction-img {
   /* border: 2px black solid; */
@@ -484,12 +457,13 @@ width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vw;
-  /* border: 2px black solid;
-  background-color: lightseagreen; */
-  width: 55vw;
+  font-size: 3.5vw;
+  background-color: rgba(205, 227, 225, .5);
+  width: 65vw;
   height: 15vh;
-  margin-left: 10vw;
+  margin-left: 5vw;
+  margin-top: -5.5vh;
+  margin-bottom: 4vh;
 }
 #ll-description {
   width: 45vw;
