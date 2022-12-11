@@ -63,8 +63,6 @@ table {
   padding-top: 3vh;
   transition: 0.8s;
 }
-
-/* The sidebar links */
 .sidebar a {
   margin: 1.5vh 1.5vh 1.5vh 6vh;
   text-decoration: none;
@@ -102,7 +100,7 @@ table {
 }
 
 #main {
-  transition: margin-left .8s; /* If you want a transition effect */
+  transition: margin-left .8s;
   margin-left: 17vw;
   background-color: rgb(229, 229, 229);
 }
@@ -278,7 +276,6 @@ table {
   width: 60vw;
   margin-bottom: 4vh;
   text-indent: 3vw;
-  /* border-bottom: 1px black solid; */
 }
 .mvp-paragraphQuestions {
   font-size: 2.5vw;
@@ -358,10 +355,28 @@ table {
   width: 65vw;
   height: 16vh;
 }
+#sdc-intro-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  width: 55vw;
+  justify-content: center;
+  align-items: center;
+}
+#sdc-intro-text {
+  width: 20vw;
+}
 #sdc-images {
   border: black 2px solid;
-  width: 50vw;
+  width: 40vw;
   height: auto;
+}
+#sdc-schema {
+  width: 40vw;
+  border: 1px black solid;
+}
+#sdc-gif {
+  width: 40vw;
 }
 .sdc-paragraphs {
   width: 45vw;

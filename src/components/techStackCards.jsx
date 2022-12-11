@@ -9,6 +9,9 @@ const icons = {
   ExpressJS: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670464862/Personal%20Site/Expressjs_sieqxt.png",
   MySQL: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670465094/Personal%20Site/logo-mysql-170x115_ovxpyy.png",
   'MusicBrainz API': "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670465087/Personal%20Site/MusicBrainz_Logo_Transparent_tf5pw2.png",
+  AWS: "https://d0.awsstatic.com/logos/powered-by-aws.png",
+  PostgreSQL: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670791044/Personal%20Site/PostgreSQL_logo.3colors.120x120_y7dkkm.png",
+  NGINX: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670791211/Personal%20Site/icons8-nginx-96_nr26du.png",
 }
 function TechStackCards({...stack}) {
   return (
