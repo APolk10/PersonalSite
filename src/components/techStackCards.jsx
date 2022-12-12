@@ -12,6 +12,10 @@ const icons = {
   AWS: "https://d0.awsstatic.com/logos/powered-by-aws.png",
   PostgreSQL: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670791044/Personal%20Site/PostgreSQL_logo.3colors.120x120_y7dkkm.png",
   NGINX: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670791211/Personal%20Site/icons8-nginx-96_nr26du.png",
+  MongoDB: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670818567/Personal%20Site/MongoDB_ForestGreen_vuvole.png",
+  NextJS: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670818526/Personal%20Site/next-js-icon-logo-EE302D5DBD-seeklogo.com_tetsw2.png",
+  Cloudinary: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670819148/Personal%20Site/cloudinary_logo_blue_0720_svg_q3muaw.svg",
+  GoogleMaps: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670818517/Personal%20Site/Google_Maps_Logo_2020.svg_siboqc.png",
 }
 function TechStackCards({...stack}) {
   return (

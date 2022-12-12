@@ -1,5 +1,6 @@
 import React from 'react';
 import PortfolioCarousel from '../components/carouselBuilder.jsx';
+import TechStackCards from '../components/techStackCards.jsx';
 
 function BlueOcean() {
   return (
@@ -25,20 +26,8 @@ function BlueOcean() {
           <img className="construction-img" id="mapZoomIn" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127644/Personal%20Site/Screenshot_from_2022-11-09_17-57-54_sp5v4r.png" width="450vw" height="auto"></img>
           <img className="construction-img" id="mapZoomInMore" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127644/Personal%20Site/Screenshot_from_2022-11-09_17-58-07_upja4g.png" width="450vw" height="auto"></img>
         </div>
+        <TechStackCards technologies={['JavaScript', 'NodeJS', 'NextJS', 'GoogleMaps', 'AWS', 'MongoDB', 'Cloudinary']}></TechStackCards>
       </div>
-      {/* <div id="stackColumn">
-        <p id="stackTitle">Tech Stack</p>
-        <ul id="techList">
-        <li>Nginx</li>
-        <li>NextJS</li>
-          <li>ReactJS</li>
-          <li>MongoDB</li>
-          <li>Mongoose</li>
-          <li>Google Maps API</li>
-          <li>node-geocoder</li>
-          <li>Cloudinary</li>
-        </ul>
-      </div> */}
     </div>
   )
 }

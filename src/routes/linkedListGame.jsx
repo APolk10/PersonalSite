@@ -64,25 +64,27 @@ function LinkedListGame() {
   }
 
   function resetAnimation() {
-    // let oldState = {color: "purple", data: 0, next: undefined};
-    // setSegments({});
-    // setSegmentContainer([]);
+    // sets state to original version
+    head = {color: "purple", data: 0, next: undefined};
+    currentTimeToWait = 0;
+    setSegments({});
+    setSegmentContainer([]);
   }
 
   useEffect(() => {
     const segmentsToTrack = monsterIteration();
     setSegmentContainer(segmentsToTrack);
-    resetAnimation();
   }, [segments])
 
   return (
     <div>
       <div id='ll-title'>Linked List Monster!</div>
       <div>
-        <p id='ll-description'>I created this out of an effort to create entertaining visualizations for data structures.</p>
+        <p id='ll-description'>I created this as a visual aid for linked lists as I found many online representations less interesting to look at.</p>
         <p id='ll-description'>
-          I got the idea from a game I had played called Terraria where there is a boss who resembles a segmented worm. When fighting this worm each link could be broken and new worms would be formed. One became two and if you broke one of those worms they would subdivide futher until you beat the boss.
+          I got the core idea from a game I had played called Terraria. In this game there is a boss who resembles a segmented worm. When fighting this worm, each link can be attacked and broken individually, creating new and indpendent worms. One became two and so the subdivision would continue, until the boss was defeated.
         </p>
+        <p id='ll-description'>Below is my representation using vanilla CSS, JavaScript and React.</p>
       </div>
       <div id="ll-container">
         <div id="ll-gamebox">

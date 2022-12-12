@@ -261,8 +261,9 @@ table {
   margin-top: 4vh;
   margin-bottom: 2vh;
   font-style: oblique;
-  text-align: start;
-  width: 60vw;
+  text-align: center;
+  font-size: .9vw;
+  width: 55vw;
 }
 #mvp-paragraph-headers {
   font-size: 1.5vw;
@@ -385,6 +386,10 @@ table {
   font-size: 1.25vw;
   margin-bottom: 8vh;
 }
+#sdc-answers {
+  width: 55vw;
+  font-size: .95vw;
+}
 
 #sdc-paragraphQuestions {
   font-size: 2.5vw;
@@ -453,6 +458,23 @@ width: 40vw;
   flex-direction: column;
   width: 65vw;
 }
+#photography-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Apple Chancery, cursive;
+  font-size: 3.5vw;
+  font-weight: 500;
+  margin-left: 0vw;
+  margin-bottom: 4vh;
+  margin-top: -6vh;
+  background-color: rgba(205, 227, 225, .5);
+  width: 65vw;
+  height: 20vh;
+}
+#photography-placeholder {
+  font-size: 2.5vw;
+}
 #linkedIn {
   width: 4.25vw;
   height: auto;
@@ -493,6 +515,8 @@ width: 40vw;
   flex-direction: column;
   justify-content: flex-start;
   border: 2px black solid;
+  background-color: rgb(86, 166, 198);
+  background-image: linear-gradient(rgb(86, 166, 198), rgb(74, 38, 38));
   margin-right: 10vw;
   width: 55vw;
   height: 70vh;
