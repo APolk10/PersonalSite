@@ -62,7 +62,7 @@ function SDC() {
         <div>
           <p id="icon-header">Technologies used:</p>
           <TechStackCards technologies={['JavaScript', 'NodeJS', 'ExpressJS', 'PostgreSQL', 'AWS', 'NGINX']}>          </TechStackCards>
-      </div>
+      `</div>
       </div>
     </div>
   )
