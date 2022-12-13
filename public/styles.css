@@ -138,9 +138,10 @@ table {
   margin-left: 4.5vw;
   margin-bottom: 4vh;
   margin-top: -6vh;
-  background-color: rgba(205, 227, 225, .5);
+  background-color: rgba(205, 227, 225, .8);
   width: 65vw;
   height: 20vh;
+  text-shadow: 2px 2px gray;
 }
 #aboutMeOuter {
   margin-left: 8vw;
@@ -243,9 +244,10 @@ table {
   font-weight: 500;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  background-color: rgba(205, 227, 225, .5);
+  background-color: rgba(205, 227, 225, .8);
   width: 65vw;
   height: 16vh;
+  text-shadow: 2px 2px gray;
 }
 #mvp-githubLink {
   width: 6vw;
@@ -321,9 +323,14 @@ table {
   position: relative;
   align-items: center;
   justify-content: end;
-  height: 24vh;
+  padding-bottom: 2vh;
+  height: 26vh;
   width: 12vw;
   font-size: 2vh;
+  text-shadow: 1px 1px gray;
+}
+#techCard:hover {
+  /* background-color: whitesmoke; */
 }
 
 #cardIcon {
@@ -352,9 +359,10 @@ table {
   font-weight: 500;
   margin-top: -5.5vh;
   margin-bottom: 1vh;
-  background-color: rgba(205, 227, 225, .5);
+  background-color: rgba(205, 227, 225, .8);
   width: 65vw;
   height: 16vh;
+  text-shadow: 2px 2px gray;
 }
 #sdc-intro-container {
   display: flex;
@@ -388,7 +396,13 @@ table {
 }
 #sdc-answers {
   width: 55vw;
-  font-size: .95vw;
+  /* font-size: .95vw; */
+  font-size: 1.15vw;
+}
+#sdc-answers-special {
+  width: 55vw;
+  font-size: 1.05vw;
+  text-decoration: underline;
 }
 
 #sdc-paragraphQuestions {
@@ -396,6 +410,13 @@ table {
   font-weight: 200;
   margin-bottom: 3vh;
   font-style: italic;
+  text-indent: 0;
+}
+#sdc-steps {
+  font-size: 1.75vw;
+  font-weight: 200;
+  margin-bottom: 3vh;
+  text-decoration: underline;
   text-indent: 0;
 }
 #constructionContainer {
@@ -419,6 +440,7 @@ table {
 #construction-subheader {
   font-size: 1vw;
   font-style: italic;
+  text-shadow: none;
 }
 .construction-img {
   /* border: 2px black solid; */
@@ -468,7 +490,7 @@ width: 40vw;
   margin-left: 0vw;
   margin-bottom: 4vh;
   margin-top: -6vh;
-  background-color: rgba(205, 227, 225, .5);
+  background-color: rgba(205, 227, 225, .8);
   width: 65vw;
   height: 20vh;
 }
@@ -495,12 +517,13 @@ width: 40vw;
   justify-content: center;
   align-items: center;
   font-size: 3.5vw;
-  background-color: rgba(205, 227, 225, .5);
+  background-color: rgba(205, 227, 225, .8);
   width: 65vw;
   height: 15vh;
   margin-left: 5vw;
   margin-top: -5.5vh;
   margin-bottom: 4vh;
+  text-shadow: 2px 2px gray;
 }
 #ll-description {
   width: 45vw;

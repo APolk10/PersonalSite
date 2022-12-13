@@ -15,11 +15,13 @@ function BlueOcean() {
           <p id="construction-subheader">(Fondly nicknamed Duguid Construction)</p>
         </div>
       </div>
-        <img className="construction-img" id="construction-main" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127646/Personal%20Site/Screenshot_from_2022-11-09_18-01-24_ftoiig.png" width="450vw" height="auto"></img>
-        <div id="construction-accordion">
-          <img className="construction-img" id="flatAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-18_wudfxd.png" width="450vw" height="auto"></img>
-          <img className="construction-img" id="openAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-04_a4xfiy.png" width="450vw" height="auto"></img>
-        </div>
+      <p>This website was built based on the detailed request of a client. Their service consisted mainly of home repairs and improvements and their business was growing.</p>
+      <img className="construction-img" id="construction-main" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127646/Personal%20Site/Screenshot_from_2022-11-09_18-01-24_ftoiig.png" width="450vw" height="auto"></img>
+      <div id="construction-accordion">
+        <img className="construction-img" id="flatAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-18_wudfxd.png" width="450vw" height="auto"></img>
+         <img className="construction-img" id="openAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-04_a4xfiy.png" width="450vw" height="auto"></img>
+      </div>
+      <p>This website was built</p>
         <img className="construction-img" id="mapToolboxAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-33_cajgg5.png" width="450vw" height="auto"></img>
         <img className="construction-img" id="mapToolbox" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-01-04_xg2wkj.png" width="450vw" height="auto"></img>
         <div id="construction-maps">

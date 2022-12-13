@@ -14,38 +14,37 @@ function SDC() {
         </div>
         <div id="sdc-paragraphQuestions">What is this application?</div>
         <p id="sdc-answers">
-          The website seen below struggled under the load of increased web traffic. I rebuilt the backend of a legacy API that services the ratings and reviews section of the site so that it could support 100+ users/second at a response time under 100ms.
+          This was an overhaul of a legacy server of an eCommerce site that I had worked on a team to rebuild. The website (see below) struggled under the load of increased web traffic. I rebuilt the backend of a legacy API that services the ratings and reviews section of the site. It was expected to support 100+ users/second at a response time under 100ms after the upgrade.
         </p>
-        <p id="sdc-answers">I was given roughly a week to do this.</p>
+        <p id="sdc-answers-special">I was given a week to do this.</p>
         <img id="sdc-gif" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670788042/Personal%20Site/FEC_gif_xosd4d.gif"></img>
-        <div id="sdc-paragraphQuestions">How did I manage this project?</div>
-        <p id="sdc-answers">The approach I took and the steps to get there are outlined below:</p>
-        <div id="sdc-paragraphQuestions">
+        <div id="sdc-paragraphQuestions">This was my process:</div>
+        <div id="sdc-steps">
           Step One: Transfer databases
         </div>
         <img id="sdc-schema" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670790427/Personal%20Site/Adam_Polk_SDC_Schema_and_Model_s4mcem.jpg"></img>
         <p id="sdc-answers">
            I researched a database management system that would fit the needs of the data. There were millions of data entries that had some existing relationships and I knew that thoughtfully taking advantage of this leaning would allow me to scale my architecture later on. Although I saw it as a more difficult undertaking, I chose to go with a relational database and worked with the schema as seen above, with a few tweaks. I decided upon PostgreSQL because I knew I wanted to take advantage of the helpful aggregate functionality to return the nested data that the front end was expecting with little to no refactor.
         </p>
-        <div id="sdc-paragraphQuestions">
+        <div id="sdc-steps">
           Step Two: Rewrite server routes
         </div>
         <p id="sdc-answers">
           After building the new database and a successful ETL, I began writing my SQL style queries. It was challenging to create the nested structures for gathering metadata across multiple tables all in one query. The front end expected objects with many nested objects and arrays within with different sets of data for the front end. Eventually, I was able to accomplish this task and return the complete object with little serverside modification. I was excited to find this success as I knew the database would be faster and more optimized than the processing that could have taken place within my ExpressJS server.
         </p>
-        <div id="sdc-paragraphQuestions">
+        <div id="sdc-steps">
           Step Three: Local performance tests
         </div>
         <p id="sdc-answers">
           Now it was time to begin testing. I wrote a few K6 scripts in NodeJS to allow for local testing and after running the first test, I was disappointed. Multiple seconds for each call even with light numbers of requests/second. This meant I needed to work to streamline the process. The biggest change was adding indexes to the most trafficed request points. By picking coordinated table locations and ID's that were most used within query lookups I was able to see significant gains. My numbers looked much better. I was able to achieve under a 10ms response time well past 1000 requests per second for both of the main API calls. To further test I randomized the product ID sent to the database between 1-1,000,000 to avoid the database caching and the results were still looking good. Around a 15-20ms response time at the 1000 requests/second threshold. I was feeling pretty good so I moved to deploy.
         </p>
-        <div id="sdc-paragraphQuestions">
+        <div id="sdc-steps">
           Step Four: Deployment to AWS
         </div>
         <p id="sdc-answers">
           I launched an AWS instance using the free tier hardware and deployed my application there. After setup I began stress testing the application using Loader.io. I saw a performance hit right off the bat. One of the two main API calls was nearly halved. I began optimizing all the ways I could find from compressing the server headers to minimizing any computation on the server side. It became obvious that this API call was stressing the free tier AWS instance and I would need to work around this or fork over some cash to buy a stronger machine. I decided to circumvent this issue by load balancing.
         </p>
-        <div id="sdc-paragraphQuestions">
+        <div id="sdc-steps">
           Step Five: Load balancing with Nginx
         </div>
         <img id="sdc-images" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668710535/SDC/SDC_workflow_xsxuzy.png" />
