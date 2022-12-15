@@ -17,8 +17,8 @@ export default function Root() {
     document.getElementById("detail").style.animation = "none";
 
     if (isOpen === false) {
-      document.getElementById("mySidebar").style.width = "15vw";
-      document.getElementById("menubtn").style.marginLeft = "1vw";
+      document.getElementById("mySidebar").style.width = "17vw";
+      document.getElementById("menubtn").style.marginLeft = ".5vw";
       document.getElementById("menubtn").style.width = "8vw";
       document.getElementById("menubtn").style.fontSize = "1.2vw";
       document.getElementById("navbarList").style.opacity = "1";
