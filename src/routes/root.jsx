@@ -17,17 +17,21 @@ export default function Root() {
     document.getElementById("detail").style.animation = "none";
 
     if (isOpen === false) {
-      document.getElementById("mySidebar").style.width = "17vw";
+      document.getElementById("mySidebar").style.width = "30vw";
       document.getElementById("menubtn").style.marginLeft = ".5vw";
-      document.getElementById("menubtn").style.width = "8vw";
+      document.getElementById("menubtn").style.width = "10vw";
       document.getElementById("menubtn").style.fontSize = "1.2vw";
+      document.getElementById("menubtn").style.backgroundColor = "whitesmoke";
+      document.getElementById("menubtn").style.color = "grey";
       document.getElementById("navbarList").style.opacity = "1";
+      document.getElementById("navbarList").style.paddingLeft = "-5vw";
       setOpen(true);
     } else {
       document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("menubtn").style.marginLeft = "-16vw";
+      // document.getElementById("menubtn").style.marginLeft = "-16vw";
       document.getElementById("menubtn").style.width = "15vw";
       document.getElementById("menubtn").style.fontSize = "1.6vw";
+      document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
       document.getElementById("navbarList").style.opacity = "0";
       setOpen(false);
     }
@@ -43,40 +47,40 @@ export default function Root() {
               </div>
               <nav>
                 <ul id="navbarList">
-                  <li>
-                    <Link to={'/home'} onClick={openAndCloseNav}>About Me</Link>
+                  <li id="listName">
+                    <Link id="listBlock" to={'/home'} onClick={openAndCloseNav}>About Me</Link>
                   </li>
-                  <li>
-                    <Link to={`/mvp`} onClick={openAndCloseNav}>
-                      <p>Music By</p>
-                      <p>Country</p>
-                      <p>Application</p>
+                  <li id="listName">
+                    <Link id="listBlock" to={`/mvp`} onClick={openAndCloseNav}>
+                      <p id="listText">Music By</p>
+                      <p id="listText">Country</p>
+                      <p id="listText">Application</p>
                     </Link>
                   </li>
-                  <li>
-                    <Link to={`sdc`} onClick={openAndCloseNav}>
-                      <p>Server and</p>
-                      <p>Database</p>
-                      <p>Overhaul</p>
+                  <li id="listName">
+                    <Link id="listBlock" to={`sdc`} onClick={openAndCloseNav}>
+                      <p id="listText">Server and</p>
+                      <p id="listText">Database</p>
+                      <p id="listText">Overhaul</p>
                     </Link>
                   </li>
-                  <li>
-                    <Link to={`blueOcean`} onClick={openAndCloseNav}>
-                      <p>Construction</p>
-                      <p>Job Portal</p>
-                      <p>Website</p>
+                  <li id="listName">
+                    <Link id="listBlock" to={`blueOcean`} onClick={openAndCloseNav}>
+                      <p id="listText">Construction</p>
+                      <p id="listText">Job Portal</p>
+                      <p id="listText">Website</p>
                     </Link>
                   </li>
-                  <li>
-                    <Link to={`photography`} onClick={openAndCloseNav}>
-                      <p>McMillan</p>
-                      <p>Photography</p>
+                  <li id="listName">
+                    <Link id="listBlock" to={`photography`} onClick={openAndCloseNav}>
+                      <p id="listText">McMillan</p>
+                      <p id="listText">Photography</p>
                       </Link>
                   </li>
-                  <li>
-                    <Link to={`linkedListGame`} onClick={openAndCloseNav}>
-                      <p>Linked List</p>
-                      <p>Game</p>
+                  <li id="listName">
+                    <Link id="listBlock" to={`linkedListGame`} onClick={openAndCloseNav}>
+                      <p id="listText">Linked List</p>
+                      <p id="listText">Game</p>
                     </Link>
                   </li>
                 </ul>
