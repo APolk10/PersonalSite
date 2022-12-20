@@ -223,6 +223,9 @@ table {
   width: 65vw;
   gap: 5vw;
 }
+#aboutMeGreeting {
+  padding-right: 12.5vw;
+}
 #aboutMeBioGreeting, #aboutMeBioClosing {
   display: flex;
   flex-direction: column;
@@ -231,6 +234,14 @@ table {
   font-weight: 500;
   width: 25vw;
   gap: 2vw;
+}
+#aboutMeBioGreeting {
+  margin-top: 5vh;
+  margin-right: 3vw;
+}
+#aboutMeBioClosing {
+  padding-right: 40vw;
+  margin-top: -5vh;
 }
 #aboutMeBio {
   display: flex;
@@ -245,11 +256,21 @@ table {
 .aboutMeRow {
   display: flex;
   flex-direction: row;
-  gap: 5vw;
+  gap: 3vw;
 }
 #aboutMeHeadshot {
   border: black 2px solid;
+  width: 18vw;
+}
+#aboutMePython {
+  margin-top: 5vh;
   width: 20vw;
+  height: 10vh;
+}
+#aboutMeHackReactor {
+  margin-top: 3vh;
+  width: 25vw;
+  height: 7.5vh;
 }
 #aboutMeOuter {
   margin-bottom: 5vh;

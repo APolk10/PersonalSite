@@ -16,7 +16,9 @@ const icons = {
   NextJS: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670818526/Personal%20Site/next-js-icon-logo-EE302D5DBD-seeklogo.com_tetsw2.png",
   Cloudinary: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670819148/Personal%20Site/cloudinary_logo_blue_0720_svg_q3muaw.svg",
   GoogleMaps: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670818517/Personal%20Site/Google_Maps_Logo_2020.svg_siboqc.png",
+  Python: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1671507266/Personal%20Site/python-logo-generic_ej8vix.svg",
 }
+
 function TechStackCards({...stack}) {
   return (
     <div id="techCardGroup">
