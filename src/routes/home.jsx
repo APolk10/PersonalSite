@@ -15,7 +15,7 @@ function Home() {
               </div>
               <img id="aboutMeHeadshot" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670438935/Personal%20Site/IMG_5342_n6cjh6.jpg" width="450vw" height="auto"></img>
             </div>
-          <div className="aboutMeRow">
+          <div className="aboutMeRow" id="aboutMeRowTwo">
           <img id="aboutMePython" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1671507266/Personal%20Site/python-logo-generic_ej8vix.svg"></img>
             <div>
               <p id="aboutMeBio">
@@ -30,7 +30,6 @@ function Home() {
               </p>
             </div>
             <img id="aboutMeHackReactor" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1671507178/Personal%20Site/HR_h9ibly.png"></img>
-
           </div>
           <div className="aboutMeRow">
             <p id="aboutMeBioClosing">Adam</p>

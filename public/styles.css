@@ -28,11 +28,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
+  height: 100%;
 	line-height: 1;
-  overflow-y: scroll;
-  /* min-height: 100vh; */
   background-image: url("https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670295857/Personal%20Site/pexels-rudolf-jakkel-418831_u57yaq.jpg");
+}
+#root {
+  height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -53,7 +56,6 @@ table {
 
 }
 .sidebar {
-  height: 100%;
   width: 0;
   min-width: 0;
   position: fixed;
@@ -100,11 +102,11 @@ table {
 .openbtn:hover {
   background-color: rgb(25, 193, 212);
 }
-
 #main {
   transition: margin-left .8s;
   margin-left: 17vw;
   background-color: rgb(229, 229, 229);
+
 }
 
 /* MOBILE */
@@ -115,9 +117,13 @@ table {
   .sidebar {
 
   }
+  #container {
+    min-height: 100vh !important;
+  }
   #main {
     margin-left: 11vw;
     width: 79vw;
+
   }
   #menubtn {
     margin-left: -9vw;
@@ -155,6 +161,9 @@ table {
     font-size: 4vw !important;
     width: 65vw !important;
     text-align: center !important;
+  }
+  #aboutMeRowTwo {
+    flex-direction: column-reverse !important;
   }
   #aboutMeBioClosing, #aboutMeGreeting {
     margin-top: 3vh;
@@ -278,6 +287,7 @@ table {
 #container {
   display: flex;
   position: absolute;
+  min-height: 100vh;
   flex-direction: row;
 }
 #sidebarNameHeader {
@@ -410,7 +420,7 @@ font-size: 2vw;
   margin-top: -2vh;
 }
 #mvpImg {
-  object-fit: cover;
+  object-fit: fill;
   height: 58.3vh;
   width: 50vw;
   max-height: 100%;

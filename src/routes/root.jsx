@@ -38,7 +38,7 @@ export default function Root() {
   }
 
   return (
-        <div>
+        <div id="root">
           <div id="container">
             <div id="mySidebar" className="sidebar">
               <h1 id="sidebarNameHeader">Adam's</h1>
