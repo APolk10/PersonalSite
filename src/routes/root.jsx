@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import Home from './home.jsx';
 import MVP from './mvp.jsx';
@@ -10,32 +10,60 @@ import Footer from '../components/footer.jsx';
 
 export default function Root() {
   const[isOpen, setOpen] = useState(false);
-  const[hasEntered, setEntered] = useState(false)
+  const[hasEntered, setEntered] = useState(false);
+  const[windowSize, setWindowSize] = useState((getWindowSize()));
+
+  function getWindowSize() {
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
+  }
 
   function openAndCloseNav() {
     // allows initial render to have fade in but no other lifecycle changes
     document.getElementById("detail").style.animation = "none";
 
     if (isOpen === false) {
-      document.getElementById("mySidebar").style.width = "30vw";
-      document.getElementById("menubtn").style.marginLeft = ".5vw";
-      document.getElementById("menubtn").style.width = "10vw";
-      document.getElementById("menubtn").style.fontSize = "1.2vw";
-      document.getElementById("menubtn").style.backgroundColor = "whitesmoke";
-      document.getElementById("menubtn").style.color = "grey";
+      if (windowSize.innerWidth < 450) {
+
+      } else {
+        document.getElementById("mySidebar").style.width = "30vw";
+        document.getElementById("menubtn").style.marginLeft = "1.5vw";
+        document.getElementById("menubtn").style.width = "10vw";
+        document.getElementById("menubtn").style.fontSize = "1.2vw";
+        document.getElementById("menubtn").style.backgroundColor = "whitesmoke";
+        document.getElementById("menubtn").style.color = "grey";
+      }
+
       document.getElementById("navbarList").style.opacity = "1";
       document.getElementById("navbarList").style.paddingLeft = "-5vw";
       setOpen(true);
     } else {
-      document.getElementById("mySidebar").style.width = "0";
-      // document.getElementById("menubtn").style.marginLeft = "-16vw";
-      document.getElementById("menubtn").style.width = "15vw";
-      document.getElementById("menubtn").style.fontSize = "1.6vw";
+      if (windowSize.innerWidth < 450) {
+
+      } else {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("menubtn").style.marginLeft = "-16vw";
+        document.getElementById("menubtn").style.width = "15vw";
+        document.getElementById("menubtn").style.fontSize = "1.6vw";
+        document.getElementById("menubtn").style.color = "white";
+      }
+
       document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
       document.getElementById("navbarList").style.opacity = "0";
       setOpen(false);
     }
   }
+
+  useEffect(() => {
+
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+    window.addEventListener('resize', handleWindowResize);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    }
+  }, [])
 
   return (
         <div id="root">
