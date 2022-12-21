@@ -5,6 +5,8 @@ function useMediaQuery(query) {
   const mediaQuery = useMemo(() => window.matchMedia(query), [query]);
   const [match, setMatch] = useState(mediaQuery.matches);
 
+  console.log('in useMediaQuery');
+
   useEffect(() => {
     const onChange = () => setMatch(mediaQuery.matches);
     mediaQuery.addEventListener("change", onChange);

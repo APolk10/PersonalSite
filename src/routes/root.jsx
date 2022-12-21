@@ -11,30 +11,41 @@ import Footer from '../components/footer.jsx';
 
 export default function Root() {
   const[isOpen, setOpen] = useState(false);
-  const[hasEntered, setEntered] = useState(false);
-  const[isMobile, setIsMobile] = useState(UseMediaQuery("(max-width: 450px)"))
+  const[isMobile, setIsMobile] = useState(UseMediaQuery("screen and (max-width: 450px)"))
 
   function openAndCloseNav() {
     // allows initial render to have fade in but no other lifecycle changes
     document.getElementById("detail").style.animation = "none";
 
-    if (isOpen === false) {
+    if (!isOpen) {
       if (isMobile) {
+        document.getElementById("mySidebar").style.width = "30vw";
+        document.getElementById("menubtn").style.marginLeft = "20vw";
+        document.getElementById("menubtn").style.width = "25vw";
+        document.getElementById("menubtn").style.fontSize = "5vw";
+        document.getElementById("navbarList").style.opacity = "1";
+        document.getElementById("navbarList").style.paddingLeft = "-5vw";
         setOpen(true);
       } else {
         document.getElementById("mySidebar").style.width = "30vw";
         document.getElementById("menubtn").style.marginLeft = "1.5vw";
         document.getElementById("menubtn").style.width = "10vw";
         document.getElementById("menubtn").style.fontSize = "1.2vw";
-        document.getElementById("menubtn").style.backgroundColor = "whitesmoke";
         document.getElementById("menubtn").style.color = "grey";
+        document.getElementById("menubtn").style.backgroundColor = "whitesmoke";
         document.getElementById("navbarList").style.opacity = "1";
         document.getElementById("navbarList").style.paddingLeft = "-5vw";
         setOpen(true);
       }
-    } else {
+    }
+    if (isOpen) {
       if (isMobile) {
-        setOpen(false);
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("menubtn").style.marginLeft = "3vw";
+        document.getElementById("menubtn").style.width = "25vw";
+        document.getElementById("menubtn").style.fontSize = "5vw";
+        document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
+        document.getElementById("navbarList").style.opacity = "0";
       } else {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("menubtn").style.marginLeft = "-16vw";
@@ -43,10 +54,14 @@ export default function Root() {
         document.getElementById("menubtn").style.color = "white";
         document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
         document.getElementById("navbarList").style.opacity = "0";
-        setOpen(false);
       }
+      setOpen(false);
     }
   }
+
+  useEffect(() => {
+    console.log('fired');
+  }, [isMobile])
 
   return (
         <div id="root">

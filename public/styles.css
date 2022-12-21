@@ -82,7 +82,8 @@ table {
   color: black;
 }
 
-.openbtn {
+
+#menubtn {
   font-size: 1.6vw;
   top: 1.5vh;
   position: sticky;
@@ -112,12 +113,6 @@ table {
 
 /* MOBILE */
 @media screen and (max-width: 450px) {
-  .openbtn {
-    margin-top: 1vh !important;
-  }
-  .sidebar {
-
-  }
   #container {
     min-height: 100vh !important;
   }
@@ -127,7 +122,9 @@ table {
 
   }
   #menubtn {
-    margin-left: -9vw;
+    margin-left: 3vw;
+    width: 25vw;
+    font-size: 5vw;
   }
   #sidebarNameHeader, #sidebarListHeader {
     font-size: 7vw !important;
@@ -163,6 +160,12 @@ table {
     width: 65vw !important;
     text-align: center !important;
   }
+  .aboutMeRow {
+
+  }
+  .aboutMeBio {
+    width: 50vw;
+  }
   #aboutMeRowTwo {
     flex-direction: column-reverse !important;
   }
@@ -175,10 +178,6 @@ table {
   #aboutMeHeadshot {
     width: 45vw !important;
     margin-left: 10vw;
-  }
-  #siteFooter {
-    /* padding-top: 0vw !important;
-    margin-top: -5vw !important; */
   }
   #linkedIn, #github {
     width: 13vw !important;
@@ -211,7 +210,7 @@ table {
   font-family: Apple Chancery, cursive;
   font-size: 3.5vw;
   font-weight: 500;
-  margin-left: 0vw;
+  margin-top: -2vh;
   margin-bottom: 4vh;
   /* background-color: rgba(154, 153, 153, 0.8); */
   width: 65vw;
@@ -259,8 +258,8 @@ table {
   height: auto;
 }
 #aboutMeBio {
-  font-size: 1.4vw !important;
-  width: 20vw !important;
+  font-size: 1.4vw;
+  width: 20vw;
 }
 .aboutMeRow {
   display: flex;
