@@ -19,20 +19,18 @@ export default function Root() {
 
     if (!isOpen) {
       if (isMobile) {
-        document.getElementById("mySidebar").style.width = "30vw";
-        document.getElementById("menubtn").style.marginLeft = "20vw";
+        document.getElementById("mySidebar").style.width = "35vw";
+        document.getElementById("menubtn").style.marginLeft = "25vw";
         document.getElementById("menubtn").style.width = "25vw";
         document.getElementById("menubtn").style.fontSize = "5vw";
         document.getElementById("navbarList").style.opacity = "1";
         document.getElementById("navbarList").style.paddingLeft = "-5vw";
         setOpen(true);
       } else {
-        document.getElementById("mySidebar").style.width = "30vw";
+        document.getElementById("mySidebar").style.width = "17vw";
         document.getElementById("menubtn").style.marginLeft = "1.5vw";
         document.getElementById("menubtn").style.width = "10vw";
         document.getElementById("menubtn").style.fontSize = "1.2vw";
-        document.getElementById("menubtn").style.color = "grey";
-        document.getElementById("menubtn").style.backgroundColor = "whitesmoke";
         document.getElementById("navbarList").style.opacity = "1";
         document.getElementById("navbarList").style.paddingLeft = "-5vw";
         setOpen(true);
@@ -41,7 +39,8 @@ export default function Root() {
     if (isOpen) {
       if (isMobile) {
         document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("menubtn").style.marginLeft = "3vw";
+        document.getElementById("menubtn").style.marginLeft = "1vw";
+        document.getElementById("menubtn").style.marginTop = "-5vh";
         document.getElementById("menubtn").style.width = "25vw";
         document.getElementById("menubtn").style.fontSize = "5vw";
         document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
