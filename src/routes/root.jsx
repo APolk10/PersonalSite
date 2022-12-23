@@ -19,15 +19,15 @@ export default function Root(props) {
   function openAndCloseNav() {
     // allows initial render to have fade in but no other lifecycle changes
     document.getElementById("detail").style.animation = "none";
-
+    console.log(width);
     if (!isOpen) {
       if (width < 450) {
-        document.getElementById("mySidebar").style.width = "35vw";
-        document.getElementById("menubtn").style.marginLeft = "25vw";
+        document.getElementById("mySidebar").style.width = "45vw";
+        document.getElementById("menubtn").style.marginLeft = "60vw";
         document.getElementById("menubtn").style.width = "25vw";
         document.getElementById("menubtn").style.fontSize = "5vw";
         document.getElementById("navbarList").style.opacity = "1";
-        document.getElementById("navbarList").style.paddingLeft = "-5vw";
+        document.getElementById("navbarList").style.paddingLeft = "6vw";
         setOpen(true);
       } else {
         document.getElementById("mySidebar").style.width = "17vw";
@@ -56,6 +56,7 @@ export default function Root(props) {
         document.getElementById("menubtn").style.color = "white";
         document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
         document.getElementById("navbarList").style.opacity = "0";
+
       }
       setOpen(false);
     }

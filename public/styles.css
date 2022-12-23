@@ -155,26 +155,34 @@ table {
   #aboutMeOuter {
     margin-bottom: 1vw !important;
   }
-  #aboutMeBioGreeting, #aboutMeBio, .aboutMeRow {
+  .aboutMeRow {
     flex-direction: column !important;
     font-size: 4vw !important;
     width: 65vw !important;
+    height: 70vh !important;
     text-align: center !important;
   }
-  .aboutMeBio {
-    width: 50vw;
+  #aboutMeBioBlock {
+    width: 50vw !important;
+    height: 28vh !important;
+    font-size: 2.5vw !important;
+  }
+  #aboutMeBio, .aboutMeBio {
+    width: 50vw !important;
+    height: 28vh !important;
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
+    font-size: 3.5vw !important;
   }
   #aboutMeRowTwo {
     flex-direction: column-reverse !important;
-  }
-  #aboutMeBioClosing {
-    margin-top: 3vh;
-    margin-left: 1vw;
-    text-align: left !important;
-    font-size: 5vw !important;
+    margin-top: 4vh !important;
+    justify-content: space-around !important;
+    margin-bottom: 4vh !important;
   }
   #aboutMeHeadshot {
     width: 45vw !important;
+    height: 30vh !important;
     margin-left: 10vw;
   }
   #linkedIn, #github {
