@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import UseMediaQuery from '../components/mobileView.jsx';
 import Home from './home.jsx';
 import MVP from './mvp.jsx';
 import SDC from './sdc.jsx';
@@ -9,16 +8,20 @@ import Photography from './photography.jsx';
 import LinkedListGame from './linkedListGame.jsx';
 import Footer from '../components/footer.jsx';
 
-export default function Root() {
+export default function Root(props) {
   const[isOpen, setOpen] = useState(false);
-  const[isMobile, setIsMobile] = useState(UseMediaQuery("screen and (max-width: 450px)"))
+  const[width, setWidth] = useState(1000);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
 
   function openAndCloseNav() {
     // allows initial render to have fade in but no other lifecycle changes
     document.getElementById("detail").style.animation = "none";
 
     if (!isOpen) {
-      if (isMobile) {
+      if (width < 450) {
         document.getElementById("mySidebar").style.width = "35vw";
         document.getElementById("menubtn").style.marginLeft = "25vw";
         document.getElementById("menubtn").style.width = "25vw";
@@ -37,7 +40,7 @@ export default function Root() {
       }
     }
     if (isOpen) {
-      if (isMobile) {
+      if (width < 450) {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("menubtn").style.marginLeft = "1vw";
         document.getElementById("menubtn").style.marginTop = "-5vh";
@@ -58,9 +61,12 @@ export default function Root() {
     }
   }
 
-  useEffect(() => {
-    console.log('fired');
-  }, [isMobile])
+    useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+      }
+    }, []);
 
   return (
         <div id="root">

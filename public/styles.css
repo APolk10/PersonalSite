@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   height: 100%;
 	line-height: 1;
-  background-image: url("https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670295857/Personal%20Site/pexels-rudolf-jakkel-418831_u57yaq.jpg");
+  background-image: url("https://res.cloudinary.com/dbvgiuj6d/image/upload/q_auto:good/v1670295857/Personal%20Site/pexels-rudolf-jakkel-418831_u57yaq.jpg");
 }
 #root {
   height: 100%;
@@ -161,9 +161,6 @@ table {
     width: 65vw !important;
     text-align: center !important;
   }
-  .aboutMeRow {
-
-  }
   .aboutMeBio {
     width: 50vw;
   }
@@ -269,14 +266,13 @@ table {
   width: 60vw;
   height: 58vh;
   gap: 3vw;
-  transition: .8s;
 }
 #aboutMeHeadshot {
   border: black 2px solid;
   background-color: whitesmoke;
   margin: 1vw;
-  width: 22.5vw;
-  height: auto;
+  width: auto;
+  height: 45vh;
 }
 #aboutMePython {
   display: flex;
@@ -378,22 +374,26 @@ font-size: 1.9vw;
   width: 6vw;
 }
 #icon-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-style: italic;
   margin-top: 4vh;
-  padding-top: 2vh;
   font-size: 2.5vw;
-  width: 60vw;
+  background-color: whitesmoke;
+  height: 10vh;
+  width: 65vw;
 }
 #mvp-paragraph-1 {
   margin-top: 4vh;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
   font-style: oblique;
   text-align: center;
-  font-size: .9vw;
-  width: 55vw;
+  font-size: 1.1vw;
+  width: 50vw;
 }
 #mvp-paragraph-headers {
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   font-weight: 500;
 }
 #mvp-aboveCarousel {
@@ -406,18 +406,23 @@ font-size: 1.9vw;
   text-indent: 3vw;
 }
 .mvp-paragraphQuestions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2.5vw;
   font-weight: 200;
-  margin-bottom: 3vh;
   font-style: italic;
   text-indent: 0;
+  background-color: whitesmoke;
+  width: 65vw;
+  height: 10vh;
 }
 #mvp-paragraphQuestion-1 {
-  margin-top: 3vh;
+  margin-top: -1vh;
 }
 #mvp-underlinedText {
   font-size: 1.25vw;
-  margin-top: -.5vh;
+  margin-top: 2vh;
   margin-bottom: 1vh;
 }
 #mvpCarousel {
@@ -632,11 +637,11 @@ width: 40vw;
 }
 #linkedIn {
   width: 4.25vw;
-  height: auto;
+  height: 6vh;
 }
 #github {
   width: 4vw;
-  height: auto;
+  height: 6vh;
 }
 #ll-container {
   display: flex;

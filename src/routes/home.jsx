@@ -14,7 +14,7 @@ function Home() {
                   My name is Adam and I'm a former elementary music educator going on a new adventure. I started my coding journey in 2021 when a band director friend and I reconnected and he was raving about his new field and software job. Before I knew it, I was already thinking about whether or not this could be a good fit for me.
                 </p>
               </div>
-              <img id="aboutMeHeadshot" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670438935/Personal%20Site/IMG_5342_n6cjh6.jpg" width="450vw" height="auto"></img>
+              <img id="aboutMeHeadshot" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_480/v1670438935/Personal%20Site/IMG_5342_n6cjh6.jpg" width="450vw" height="auto"></img>
             </div>
           <div className="aboutMeRow" id="aboutMeRowTwo">
           <img id="aboutMePython" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1671507266/Personal%20Site/python-logo-generic_ej8vix.svg"></img>
@@ -32,9 +32,6 @@ function Home() {
             </div>
             <img id="aboutMeHackReactor" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1671507178/Personal%20Site/HR_h9ibly.png"></img>
           </div>
-          {/* <div className="aboutMeRow">
-            <p id="aboutMeBioClosing">Adam</p>
-          </div> */}
         </div>
       </div>
     )
