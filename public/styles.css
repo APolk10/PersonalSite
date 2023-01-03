@@ -107,7 +107,7 @@ table {
 #main {
   transition: margin-left .8s;
   margin-left: 17vw;
-  background-color: rgb(229, 229, 229);
+  background-color: rgba(229, 229, 229, .9);
 
 }
 
@@ -119,7 +119,7 @@ table {
   #main {
     margin-left: 11vw;
     width: 79vw;
-
+    background-color: rgba(229, 229, 229, .7);
   }
   #menubtn {
     margin-top: -5vh;
@@ -158,9 +158,9 @@ table {
   .aboutMeRow {
     flex-direction: column !important;
     font-size: 4vw !important;
+    justify-content: space-around !important;
     width: 65vw !important;
     height: 70vh !important;
-    text-align: center !important;
   }
   #aboutMeBioBlock {
     width: 50vw !important;
@@ -169,21 +169,28 @@ table {
   }
   #aboutMeBio, .aboutMeBio {
     width: 50vw !important;
-    height: 28vh !important;
-    padding-left: 2vw !important;
-    padding-right: 2vw !important;
+    height: fit-content !important;
+    padding: 3vw !important;
     font-size: 3.5vw !important;
   }
   #aboutMeRowTwo {
     flex-direction: column-reverse !important;
-    margin-top: 4vh !important;
     justify-content: space-around !important;
     margin-bottom: 4vh !important;
   }
   #aboutMeHeadshot {
     width: 45vw !important;
-    height: 30vh !important;
-    margin-left: 10vw;
+    height: auto !important;
+  }
+  #aboutMeHackReactor {
+    margin-top: -10vh !important;
+    width: 40vw !important;
+    height: auto !important;
+  }
+  #aboutMePython {
+    width: 50vw !important;
+    height: auto !important;
+    background-color: rgba(245, 245, 245, 0.276);
   }
   #linkedIn, #github {
     width: 13vw !important;
@@ -214,7 +221,7 @@ table {
   align-items: center;
   justify-content: center;
   font-family: Apple Chancery, cursive;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   font-weight: 500;
   margin-top: -2vh;
   margin-bottom: 4vh;
@@ -236,13 +243,10 @@ table {
   height: 2vh;
   background-color:  rgb(229, 229, 229) !important;
 }
-#aboutMeBioBlock, #aboutMeBioClosing {
+#aboutMeBioBlock {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: whitesmoke;
-  width: 28vw;
-  height: 50vh;
 }
 #aboutMeBioClosing {
   padding-right: 40vw;
@@ -255,44 +259,35 @@ table {
   font-size: 2.4vh;
   text-align: center;
   font-style: italic;
-  height: 38vh;
-  width: 22vw;
-  max-height: 45vh;
-}
-#aboutMeBio {
-  font-size: 2.5vh;
-  width: fit-content;
-  height: 38vh;
-  width: 20vw;
+  background-color: whitesmoke;
+  height: 50vh;
+
+  width: 25vw;
+  padding: 3vw;
 }
 .aboutMeRow {
   display: flex;
   flex-direction: row;
   background-color: rgba(24, 61, 37, 0.322);
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 60vw;
   height: 58vh;
-  gap: 3vw;
 }
 #aboutMeHeadshot {
   border: black 2px solid;
   background-color: whitesmoke;
   margin: 1vw;
   width: auto;
-  height: 45vh;
+  height: 49vh;
 }
 #aboutMePython {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   width: 20vw;
-  height: 10vh;
+  height: auto;
 }
 #aboutMeHackReactor {
-  margin-top: 3vh;
   width: 25vw;
-  height: 7.5vh;
+  height: auto;
 }
 #aboutMeOuter {
   margin-bottom: 5vh;
@@ -323,6 +318,7 @@ table {
   flex-direction: column;
   justify-content: center;
   margin-top: 1vh;
+  margin-left: 1.25vw;
   opacity: 0;
   padding-bottom: 1.5vw;
   font-size: 1.6vw;
@@ -333,9 +329,8 @@ table {
 #listBlock {
 display: flex;
 flex-direction: column;
-font-size: 1.9vw;
+font-size: 1.5vw;
 }
-
 #detail {
   display: flex;
   flex-direction: column;
