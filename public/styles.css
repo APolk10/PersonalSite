@@ -417,6 +417,7 @@ font-size: 1.5vw;
   font-style: italic;
   text-indent: 0;
   background-color: whitesmoke;
+  margin-bottom: 4vh;
   width: 65vw;
   height: 10vh;
 }
@@ -430,14 +431,14 @@ font-size: 1.5vw;
 }
 #mvpCarousel {
   border: black groove 8px;
-  height: 60vh;
+  height: auto;
   width: 50vw;
   margin-bottom: 4vh;
   margin-top: -2vh;
 }
 #mvpImg {
   object-fit: fill;
-  height: 58.3vh;
+  height: auto;
   width: 50vw;
   max-height: 100%;
   max-width: 100%;
@@ -522,7 +523,13 @@ font-size: 1.5vw;
   height: auto;
 }
 #sdc-schema {
-  width: 40vw;
+  width: 50vw;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: auto;
+  background-color: white;
   border: 1px black solid;
 }
 #sdc-gif {
@@ -640,11 +647,11 @@ width: 40vw;
 }
 #linkedIn {
   width: 4.25vw;
-  height: 6vh;
+  height: auto;
 }
 #github {
   width: 4vw;
-  height: 6vh;
+  height: auto;
 }
 #ll-container {
   display: flex;

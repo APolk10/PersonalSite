@@ -22,7 +22,7 @@ function SDC() {
         <div id="sdc-steps">
           Step One: Transfer databases
         </div>
-        <img id="sdc-schema" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670790427/Personal%20Site/Adam_Polk_SDC_Schema_and_Model_s4mcem.jpg"></img>
+        <img id="sdc-schema" src="http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_900/v1670790427/Personal%20Site/Adam_Polk_SDC_Schema_and_Model_s4mcem.jpg"></img>
         <p id="sdc-answers">
            I researched a database management system that would fit the needs of the data. There were millions of data entries that had some existing relationships and I knew that thoughtfully taking advantage of this leaning would allow me to scale my architecture later on. Although I saw it as a more difficult undertaking, I chose to go with a relational database and worked with the schema as seen above, with a few tweaks. I decided upon PostgreSQL because I knew I wanted to take advantage of the helpful aggregate functionality to return the nested data that the front end was expecting with little to no refactor.
         </p>

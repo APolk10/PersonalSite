@@ -14,7 +14,7 @@ function PortfolioCarousel({ imageURLs }) {
             id="mvpImg"
           />
           <Carousel.Caption>
-            <h3>Main Page</h3>
+            <h3>Map Highlighting USA</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -25,40 +25,51 @@ function PortfolioCarousel({ imageURLs }) {
             id="mvpImg"
           />
           <Carousel.Caption>
-            <h3>Hovering Over Countries</h3>
+            <h3>Ivestigating USA</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={imageURLs[2]}
-            alt="Second slide"
+            alt="Third slide"
             id="mvpImg"
           />
           <Carousel.Caption>
-            <h3>Clicking A Country</h3>
+            <h3>Map highlighting Australia</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={imageURLs[3]}
-            alt="Second slide"
+            alt="Fourth slide"
             id="mvpImg"
           />
           <Carousel.Caption>
-            <h3>Multiple Artist Slides</h3>
+            <h3>Investigating Australia</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
             src={imageURLs[4]}
-            alt="Second slide"
+            alt="Fifth slide"
             id="mvpImg"
           />
           <Carousel.Caption>
-            <h3>Clicking The "Listen Here" Button</h3>
+            <h3>Map highlighting China</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={imageURLs[5]}
+            alt="Sixth slide"
+            id="mvpImg"
+          />
+          <Carousel.Caption>
+            <h3>Investigating China</h3>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

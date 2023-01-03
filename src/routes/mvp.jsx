@@ -6,11 +6,15 @@ import TechStackCards from '../components/techStackCards.jsx';
 function MVP() {
 
   const URLs = [
-    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/home_avkzzg_powa0p.jpg',
-    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040572/Personal%20Site/highlight_sranqm_f9oncb.jpg',
-    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/popup_zbdptd_dqksar.jpg',
-    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/nextSlide_n9xmw4_wbmwv2.jpg',
-    'https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668040571/Personal%20Site/resultOfRedirect_msp8ag_sqlwoy.jpg'
+
+    'http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_900/v1672776512/Personal%20Site/Screenshot_from_2023-01-03_14-00-46_zcryft.png',
+    'http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_900/v1672776514/Personal%20Site/Screenshot_from_2023-01-03_14-01-19_iintmn.png',
+    'https://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,h_540,w_900/v1672776513/Personal%20Site/Screenshot_from_2023-01-03_13-55-26_m6dzcu.png',
+    'http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_900/v1672776515/Personal%20Site/Screenshot_from_2023-01-03_14-00-54_uq8roz.png',
+    'http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_900/v1672776512/Personal%20Site/Screenshot_from_2023-01-03_14-00-30_lvvoow.png',
+    'http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_900/v1672776513/Personal%20Site/Screenshot_from_2023-01-03_14-01-12_sbjxq3.png',
+
+
   ]
 
   return (
