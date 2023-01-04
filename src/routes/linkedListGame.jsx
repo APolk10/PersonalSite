@@ -31,12 +31,6 @@ function LinkedListGame() {
 
   var test;
 
-  function onNewMonsterSegmentClick() {
-    // create a new value for the node
-    // instantiate new segment
-    // invoke addSegment to attach
-  }
-
   function addMonsterSegment() {
     const newSegment = addSegment("purple");
     setSegments(newSegment);
