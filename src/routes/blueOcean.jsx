@@ -15,8 +15,8 @@ function BlueOcean() {
             <p id="construction-subheader">(Fondly nicknamed Duguid Construction)</p>
           </div>
         </div>
-        {/* <p>This website was built based on the detailed request of a client. Their service consisted mainly of home repairs and improvements and their business was growing.</p>
-        <img className="construction-img" id="construction-main" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127646/Personal%20Site/Screenshot_from_2022-11-09_18-01-24_ftoiig.png" width="450vw" height="auto"></img>
+        <p>This website was built based on the detailed request of a client. Their service consisted mainly of home repairs and improvements and their business was growing.</p>
+        <img className="construction-img" id="construction-main" src="http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_700/v1672785690/Personal%20Site/Screenshot_from_2023-01-03_16-41-18_e2vtrg.png"></img>
         <div id="construction-accordion">
           <img className="construction-img" id="flatAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-18_wudfxd.png" width="450vw" height="auto"></img>
           <img className="construction-img" id="openAccordion" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127643/Personal%20Site/Screenshot_from_2022-11-09_18-00-04_a4xfiy.png" width="450vw" height="auto"></img>
@@ -27,7 +27,7 @@ function BlueOcean() {
         <div id="construction-maps">
           <img className="construction-img" id="mapZoomIn" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127644/Personal%20Site/Screenshot_from_2022-11-09_17-57-54_sp5v4r.png" width="450vw" height="auto"></img>
           <img className="construction-img" id="mapZoomInMore" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668127644/Personal%20Site/Screenshot_from_2022-11-09_17-58-07_upja4g.png" width="450vw" height="auto"></img>
-        </div> */}
+        </div>
         <TechStackCards technologies={['JavaScript', 'NodeJS', 'NextJS', 'GoogleMaps', 'AWS', 'MongoDB', 'Cloudinary']}></TechStackCards>
       </div>
     </div>

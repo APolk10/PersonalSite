@@ -129,18 +129,19 @@ table {
   }
   #sidebarNameHeader, #sidebarListHeader {
     font-size: 7vw !important;
+    padding-left: 12vw !important;
   }
   #listName {
-    margin-left: -11vw;
+    margin-left: -6vw;
   }
   #listBlock {
     display: flex;
     flex-direction: column !important;
     margin-left: 13vw;
-    font-size: 5vw !important;
+    font-size: 6vw !important;
   }
   #listText {
-    font-size: 5vw !important;
+    font-size: 6vw !important;
   }
   #detail, #aboutMeHeader, #aboutMeContainer {
     width: 79vw !important;
@@ -595,8 +596,7 @@ font-size: 1.5vw;
   margin: 1vh;
 }
 #construction-main {
-  border-bottom: black 2px solid;
-  border-right: black 5px solid;
+
 }
 #flatAccordion {
   border-right: black 1px solid;

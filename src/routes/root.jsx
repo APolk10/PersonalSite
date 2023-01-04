@@ -10,7 +10,7 @@ import Footer from '../components/footer.jsx';
 
 export default function Root(props) {
   const[isOpen, setOpen] = useState(false);
-  const[width, setWidth] = useState(1000);
+  const[width, setWidth] = useState(window.innerWidth);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
@@ -19,18 +19,19 @@ export default function Root(props) {
   function openAndCloseNav() {
     // allows initial render to have fade in but no other lifecycle changes
     document.getElementById("detail").style.animation = "none";
-    console.log(width);
+
     if (!isOpen) {
       if (width < 450) {
-        document.getElementById("mySidebar").style.width = "45vw";
-        document.getElementById("menubtn").style.marginLeft = "60vw";
-        document.getElementById("menubtn").style.width = "25vw";
+        document.getElementById("mySidebar").style.width = "60vw";
+        document.getElementById("menubtn").style.marginLeft = "52vw";
+        document.getElementById("menubtn").style.width = "35vw";
         document.getElementById("menubtn").style.fontSize = "5vw";
         document.getElementById("navbarList").style.opacity = "1";
         document.getElementById("navbarList").style.paddingLeft = "6vw";
         setOpen(true);
       } else {
         document.getElementById("mySidebar").style.width = "17vw";
+        // document.getElementById("listName").style.marginLeft = "5vw";
         document.getElementById("menubtn").style.marginLeft = "1.5vw";
         document.getElementById("menubtn").style.width = "10vw";
         document.getElementById("menubtn").style.fontSize = "1.2vw";
