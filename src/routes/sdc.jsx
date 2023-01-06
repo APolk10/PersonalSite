@@ -16,7 +16,7 @@ function SDC() {
         <p id="sdc-answers">
           This was an overhaul of a legacy server of an eCommerce site that I had worked on a team to rebuild. The website (see below) struggled under the load of increased web traffic. I rebuilt the backend of a legacy API that services the ratings and reviews section of the site. It was expected to support 100+ users/second at a response time under 100ms after the upgrade.
         </p>
-        <p id="sdc-answers-special">I was given a week to do this.</p>
+        <p id="sdc-answers-special">I was given a week to complete the overhaul.</p>
         <img id="sdc-gif" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670788042/Personal%20Site/FEC_gif_xosd4d.gif"></img>
         <div id="sdc-paragraphQuestions">This was my process:</div>
         <div id="sdc-steps">
