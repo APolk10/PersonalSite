@@ -79,13 +79,10 @@ function LinkedListGame() {
       <div id="ll-container">
         <div id="ll-gamebox">
           <div>
-            {segmentContainer.length > 0 ? segmentContainer.map(segment => {
-              console.log('segmentColor', segment)
-              return (
-                <div key={`segmentPath-${segment.data}`} className={`segmentPath-${segment.data}`}>
+            {segmentContainer.length > 0 ? segmentContainer.map(segment =>
+              <div key={`segmentPath-${segment.data}`} className={`segmentPath-${segment.data}`}>
                 <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}}></div>
               </div>
-              )}
             ) : <></>}
           </div>
         </div >
