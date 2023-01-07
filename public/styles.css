@@ -742,7 +742,7 @@ width: 40vw;
 }
 .segment-1 {
   position: absolute;
-  background-color: yellow;
+  /* background-color: yellow; */
   border-radius: 100%;
   z-index: 9;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -759,7 +759,7 @@ width: 40vw;
 }
 .segment-2 {
   position: absolute;
-  background-color: blue;
+  /* background-color: blue; */
   border-radius: 100%;
   z-index: 8;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -776,7 +776,7 @@ width: 40vw;
 }
 .segment-3 {
   position: absolute;
-  background-color: green;
+  /* background-color: green; */
   border-radius: 100%;
   z-index: 7;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -793,7 +793,7 @@ width: 40vw;
 }
 .segment-4 {
   position: absolute;
-  background-color: orange;
+  /* background-color: orange; */
   border-radius: 100%;
   z-index: 6;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -810,7 +810,7 @@ width: 40vw;
 }
 .segment-5 {
   position: absolute;
-  background-color: rgb(37, 147, 155);
+  /* background-color: rgb(37, 147, 155); */
   border-radius: 100%;
   z-index: 6;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -827,7 +827,7 @@ width: 40vw;
 }
 .segment-6 {
   position: absolute;
-  background-color: rgb(182, 24, 35);
+  /* background-color: rgb(182, 24, 35); */
   border-radius: 100%;
   z-index: 6;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -844,7 +844,7 @@ width: 40vw;
 }
 .segment-7 {
   position: absolute;
-  background-color: rgb(71, 162, 32);
+  /* background-color: rgb(71, 162, 32); */
   border-radius: 100%;
   z-index: 6;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -861,7 +861,7 @@ width: 40vw;
 }
 .segment-8 {
   position: absolute;
-  background-color: rgb(115, 106, 106);
+  /* background-color: rgb(115, 106, 106); */
   border-radius: 100%;
   z-index: 6;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;
@@ -878,7 +878,7 @@ width: 40vw;
 }
 .segment-9 {
   position: absolute;
-  background-color: rgb(149, 99, 200);
+  /* background-color: rgb(149, 99, 200); */
   border-radius: 100%;
   z-index: 6;
   animation: segmentY 2.5s alternate infinite linear, showAnimation 1s ease-in 1s;

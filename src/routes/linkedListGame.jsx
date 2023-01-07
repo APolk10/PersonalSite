@@ -3,36 +3,34 @@ import { useState, setState, useEffect } from 'react';
 
 // define lastInterval to stagger release
 var currentTimeToWait = 0;
-var head = {color: "purple", data: 0, next: undefined};
+var head = {color: "purple", data: 0, next: null};
 
 // build a linked list constructor
 class MonsterSegment {
-  constructor(randomColor) {
+  constructor() {
     this.data = currentTimeToWait;
-    this.color = randomColor
+    this.color = "#" + Math.floor(Math.random()*16777215).toString(16);
     this.next = null;
   }
 }
 
 // allow for adding segments to monster
-function addSegment(color) {
+function addSegment() {
   currentTimeToWait += 1;
-  let newSegment = new MonsterSegment(color);
+  let newSegment = new MonsterSegment();
   newSegment.next = head;
   head = newSegment;
   return newSegment;
 }
 
-//
+// React Code
 function LinkedListGame() {
-  const [color, setColor] = useState("purple");
+
   const [segments, setSegments] = useState({});
   const [segmentContainer, setSegmentContainer] = useState([]);
 
-  var test;
-
   function addMonsterSegment() {
-    const newSegment = addSegment("purple");
+    const newSegment = addSegment();
     setSegments(newSegment);
     document.getAnimations().forEach((anim) => {
       anim.cancel();
@@ -44,22 +42,20 @@ function LinkedListGame() {
     var copyOfSegments = segments;
     var collectionOfSegmentData = [];
 
-    if (copyOfSegments.next) {
+    if (copyOfSegments) {
       while (copyOfSegments.next) {
-        collectionOfSegmentData.unshift(copyOfSegments.data)
+        collectionOfSegmentData.unshift(copyOfSegments)
         copyOfSegments = copyOfSegments.next;
       }
-      collectionOfSegmentData.push(0);
-    }
-    if (collectionOfSegmentData.length === 0) {
-      return [0];
+      // allows head of worm to be static color
+      collectionOfSegmentData.unshift({color: "purple", data: 0, next: null})
     }
     return collectionOfSegmentData;
   }
 
   function resetAnimation() {
     // sets state to original version
-    head = {color: "purple", data: 0, next: undefined};
+    head = {color: "purple", data: 0, next: null};
     currentTimeToWait = 0;
     setSegments({});
     setSegmentContainer([]);
@@ -83,10 +79,13 @@ function LinkedListGame() {
       <div id="ll-container">
         <div id="ll-gamebox">
           <div>
-            {segmentContainer.length > 0 ? segmentContainer.map(segment =>
-            <div key={`segmentPath-${segment}`} className={`segmentPath-${segment}`}>
-              <div key={`segment-${segment}`} className={`segment-${segment}`}></div>
-            </div>
+            {segmentContainer.length > 0 ? segmentContainer.map(segment => {
+              console.log('segmentColor', segment)
+              return (
+                <div key={`segmentPath-${segment.data}`} className={`segmentPath-${segment.data}`}>
+                <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}}></div>
+              </div>
+              )}
             ) : <></>}
           </div>
         </div >
