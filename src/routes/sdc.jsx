@@ -47,7 +47,7 @@ function SDC() {
         <div id="sdc-steps">
           Step Five: Load balancing with Nginx
         </div>
-        <img id="sdc-images" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668710535/SDC/SDC_workflow_xsxuzy.png" />
+        <img id="sdc-loadBalancer" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1668710535/SDC/SDC_workflow_xsxuzy.png" />
         <p id="sdc-answers">
           I launched three more AWS instances. Two would serve as remotely connected servers to the database on the original instance. After tunneling to remotely connect from the two remote servers I was good to go. The third extra instance would act as the load balancing diverter. As traffic was sent toward my load balancer, it would split the traffic evenly to the two remotely connected instances. My numbers improved again however the metadata query that had the most aggregation and joins still lagged behind the product ID pull. It became clear that, although there was improvement, there would be diminishing returns no matter how horizontal I were to scale. In the future I would need to upgrade my database hosting machine.
         </p>

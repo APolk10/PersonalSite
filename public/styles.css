@@ -521,6 +521,12 @@ font-size: 1.5vw;
 #sdc-images {
   border: black 2px solid;
   width: 40vw;
+  padding: 1vw;
+  background-color: white;
+  height: auto;
+}
+#sdc-loadBalancer {
+  width: 40vw;
   height: auto;
 }
 #sdc-schema {
