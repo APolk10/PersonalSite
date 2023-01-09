@@ -28,6 +28,7 @@ function LinkedListGame() {
 
   const [segments, setSegments] = useState({});
   const [segmentContainer, setSegmentContainer] = useState([]);
+  const [isPaused, setPause] = useState();
 
   function addMonsterSegment() {
     const newSegment = addSegment();
@@ -51,6 +52,34 @@ function LinkedListGame() {
       collectionOfSegmentData.unshift({color: "purple", data: 0, next: null})
     }
     return collectionOfSegmentData;
+  }
+
+  function handleSegmentClick(e) {
+ //   console.log('clicked', e.target.attributes.data, e.target.attributes.color, e.target.attributes.next.data);
+    console.log(e.target.classList.value, e.target);
+     const clickedSegment = e.target.classList.value;
+//    document.getElementById(clickedSegment).style.width = "25vw";
+    pauseWorm();
+
+ //   document.getElementById(clickedSegment).style.width = '10vw';
+  }
+
+  function resizeSegment(segment) {
+
+  }
+
+  function pauseWorm() {
+    if (isPaused) {
+      document.getAnimations().forEach((anim) => {
+        anim.play();
+      })
+      setPause(false);
+    } else {
+      document.getAnimations().forEach((anim) => {
+        anim.pause();
+      })
+      setPause(true);
+    }
   }
 
   function resetAnimation() {
@@ -81,7 +110,9 @@ function LinkedListGame() {
           <div>
             {segmentContainer.length > 0 ? segmentContainer.map(segment =>
               <div key={`segmentPath-${segment.data}`} className={`segmentPath-${segment.data}`}>
-                <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}}></div>
+                <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}} color={segment.color} data={segment.data} next={segment.next} onClick={handleSegmentClick}>
+
+              </div>
               </div>
             ) : <></>}
           </div>
