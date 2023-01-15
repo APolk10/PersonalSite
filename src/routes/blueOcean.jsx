@@ -16,7 +16,10 @@ function BlueOcean() {
           </div>
         </div>
         <p>This website was built based on the detailed request of a client. Their service consisted mainly of home repairs and improvements and their business was growing.</p>
-        <img className="construction-img" id="construction-main" src="http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_700/v1672785690/Personal%20Site/Screenshot_from_2023-01-03_16-41-18_e2vtrg.png"></img>
+        {/* <img className="construction-img" id="construction-main" src="http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_700/v1672785690/Personal%20Site/Screenshot_from_2023-01-03_16-41-18_e2vtrg.png"></img> */}
+        <img src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1673819746/Personal%20Site/ezgif.com-gif-maker_ayhfvh.gif"></img>
+        <img src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1673820349/Personal%20Site/ezgif.com-gif-maker_1_rcpug9.gif"></img>
+        <img src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1673820706/Personal%20Site/ezgif.com-gif-maker_2_sfk2tg.gif"></img>
 
         <TechStackCards technologies={['JavaScript', 'NodeJS', 'NextJS', 'GoogleMaps', 'AWS', 'MongoDB', 'Cloudinary']}></TechStackCards>
       </div>

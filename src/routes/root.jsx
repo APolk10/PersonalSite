@@ -31,7 +31,6 @@ export default function Root(props) {
         setOpen(true);
       } else {
         document.getElementById("mySidebar").style.width = "17vw";
-        // document.getElementById("listName").style.marginLeft = "5vw";
         document.getElementById("menubtn").style.marginLeft = "1.5vw";
         document.getElementById("menubtn").style.width = "10vw";
         document.getElementById("menubtn").style.fontSize = "1.2vw";
