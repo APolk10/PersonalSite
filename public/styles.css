@@ -77,12 +77,9 @@ table {
   display: block;
   transition: 0.8s;
 }
-
 .sidebar a:hover {
   color: black;
 }
-
-
 #menubtn {
   font-size: 1.6vw;
   top: 1.5vh;
@@ -100,7 +97,6 @@ table {
   height: 6vh;
   transition: 0.8s;
 }
-
 .openbtn:hover {
   background-color: rgb(25, 193, 212);
 }
@@ -198,7 +194,6 @@ table {
   }
 }
 /* END MOBILE */
-
 @keyframes entryFadeIn {
   0% {
     opacity: 0;
@@ -207,7 +202,6 @@ table {
     opacity: 1;
   }
 }
-
 @keyframes entryFadeOut {
   0% {
     opacity: 1;
@@ -226,7 +220,6 @@ table {
   font-weight: 500;
   margin-top: -2vh;
   margin-bottom: 4vh;
-  /* background-color: rgba(154, 153, 153, 0.8); */
   width: 65vw;
   height: 15vh;
   text-shadow: 2px 2px gray;
@@ -339,11 +332,7 @@ font-size: 1.5vw;
   align-items: center;
   text-align: center;
   margin-top: -3vh;
-  /* min-height: 100vh; */
   width: 65vw;
-  /* animation: entryFadeIn ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
 }
 #mvp-outer-container {
   display: flex;
@@ -448,7 +437,6 @@ font-size: 1.5vw;
   width: 45vw;
   height: 58.3vh;
 }
-
 #techCardGroup {
   display: flex;
   flex-direction: row;
@@ -472,10 +460,6 @@ font-size: 1.5vw;
   font-size: 2vh;
   text-shadow: 1px 1px gray;
 }
-#techCard:hover {
-  /* background-color: whitesmoke; */
-}
-
 #cardIcon {
   width: 8vw;
 }
@@ -539,8 +523,10 @@ font-size: 1.5vw;
   background-color: white;
   border: 1px black solid;
 }
-#sdc-gif {
+#sdc-gif, .construction-gif {
+  border: black 1px solid;
   width: 40vw;
+  height: auto;
 }
 .sdc-paragraphs {
   width: 45vw;
@@ -549,9 +535,8 @@ font-size: 1.5vw;
   font-size: 1.25vw;
   margin-bottom: 8vh;
 }
-#sdc-answers {
+#sdc-answers, .construction-text {
   width: 55vw;
-  /* font-size: .95vw; */
   font-size: 1.15vw;
 }
 #sdc-answers-special {
@@ -560,7 +545,7 @@ font-size: 1.5vw;
   text-decoration: underline;
 }
 
-#sdc-paragraphQuestions {
+#sdc-paragraphQuestions, .construction-header {
   font-size: 2.5vw;
   font-weight: 200;
   margin-bottom: 3vh;
@@ -596,13 +581,6 @@ font-size: 1.5vw;
   font-size: 1vw;
   font-style: italic;
   text-shadow: none;
-}
-.construction-img {
-  /* border: 2px black solid; */
-  margin: 1vh;
-}
-#construction-main {
-
 }
 #flatAccordion {
   border-right: black 1px solid;
@@ -697,9 +675,6 @@ width: 40vw;
   margin-right: 10vw;
   width: 55vw;
   height: 70vh;
-  /* animation: entryFadeIn ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
 }
 
 @keyframes showAnimation {

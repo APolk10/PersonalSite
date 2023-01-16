@@ -4,10 +4,8 @@ import TechStackCards from '../components/techStackCards.jsx';
 function Home() {
     return (
       <div id="aboutMeOuter">
-        {/* <div id="aboutMeHeader">Former music teacher explores a new passion...</div> */}
         <div id="aboutMeHeader">Welcome to my portfolio!</div>
           <div id="aboutMeContainer">
-            {/* <div id="aboutMeTopRow" className="aboutMeRow"></div> */}
             <div className="aboutMeRow">
               <div id="aboutMeBioBlock">
                 <p className="aboutMeBio" id="aboutMeBio">
