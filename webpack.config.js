@@ -31,6 +31,7 @@ module.exports = {
     historyApiFallback: true,
     allowedHosts: [
       '.amazonaws.com',
+      'adam-polk.com',
     ]
   }
 }

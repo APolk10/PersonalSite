@@ -181,16 +181,70 @@ table {
   }
   #aboutMeHackReactor {
     margin-top: -10vh !important;
-    width: 40vw !important;
-    height: auto !important;
-  }
-  #aboutMePython {
     width: 50vw !important;
+    padding: 2vw;
     height: auto !important;
     background-color: rgba(245, 245, 245, 0.276);
   }
+  #aboutMePython {
+    width: 50vw !important;
+    padding: 1vw;
+    height: auto !important;
+    background-color: rgba(245, 245, 245, 0.276);
+  }
+  #hack-reactor-text {
+    margin-top: -10vh !important;
+  }
+  #mvp-title-logo {
+    align-items: center !important;
+    justify-content: center;
+  }
+  #mvp-header {
+    font-size: 8vw !important;
+  }
+  #mvp-githubLink {
+    width: 10vw !important;
+  }
+  #mvp-title-logo, #mvp-paragraphQuestion-1, .mvp-paragraphQuestions, #icon-header, #sdc-title, #techCardGroup, #photography-header, #ll-title {
+    width: 79vw !important;
+  }
+  #mvp-paragraphQuestion-1, .mvp-paragraphQuestions {
+    font-size: 4vw !important;
+  }
+  #mvp-underlinedText, #mvp-paragraph-1 {
+    margin: 0 !important;
+    margin-bottom: 3vh !important;
+    font-size: 3.5vw !important;
+    text-align: center;
+  }
+  #mvp-paragraph-headers {
+    font-size: 4vw !important;
+    margin-bottom: 1vh !important;
+    text-decoration: underline;
+  }
+  #mvpCarousel {
+    width: 72vw !important;
+  }
+  #photography-header {
+    margin-left: -7vw !important;
+  }
+  #ll-title {
+    margin-left: 0vw !important;
+  }
   #linkedIn, #github {
     width: 13vw !important;
+  }
+  #icon-header {
+    font-size: 4vw !important;
+  }
+  #techCardGroup {
+    margin-top: 5vh !important;
+    align-items: center;
+    height: 30vh;
+  }
+  #techCard {
+    width: 20vw !important;
+    height: 15vh !important;
   }
 }
 /* END MOBILE */
@@ -571,6 +625,9 @@ font-size: 1.5vw;
   gap: 4vh;
   width: 60vw;
 }
+.construction-header {
+  margin-bottom: 0;
+}
 #construction-header {
   display: flex;
   flex-direction: column;
@@ -581,6 +638,23 @@ font-size: 1.5vw;
   font-size: 1vw;
   font-style: italic;
   text-shadow: none;
+}
+.construction-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 60vw;
+}
+.construction-roles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  border: 1px solid black;
+  width: 10vw;
+  height: 5vh;
+  font-size: 1.7vw;
 }
 #flatAccordion {
   border-right: black 1px solid;
