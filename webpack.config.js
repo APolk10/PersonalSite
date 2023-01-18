@@ -32,6 +32,7 @@ module.exports = {
     allowedHosts: [
       '.amazonaws.com',
       'adam-polk.com',
+      'www.adam-polk.com',
     ]
   }
 }
