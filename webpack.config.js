@@ -29,11 +29,10 @@ module.exports = {
     compress: true,
     port: 3000,
     historyApiFallback: true,
-    disableHostCheck: true,
-    // allowedHosts: [
-    //   '.amazonaws.com',
-    //   'adam-polk.com',
-    //   '.adam-polk.com',
-    // ]
+    allowedHosts: [
+      '.amazonaws.com',
+      'adam-polk.com',
+      '.adam-polk.com',
+    ]
   }
 }
