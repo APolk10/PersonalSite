@@ -3,7 +3,7 @@ This repository showcases some of the projects I have worked on up until this po
 
 To view the live site please click below:
 
-adam-polk.com
+adam-polk.com // coming soon!
 
 Thanks for checking it out!
 
