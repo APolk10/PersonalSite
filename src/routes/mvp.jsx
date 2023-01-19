@@ -54,10 +54,10 @@ function MVP() {
           The MySQL database was a simple addition to this website for me to create baseline analytic data. Each time a user clicks a country, this is submitted to my database via a POST request which updated a counter. Each country has separate metrics that could later on be retrieved and displayed.
           </p>
         <p className="mvp-paragraphQuestions">What was my inspiration?</p>
-        <p id="mvp-paragraph-1">I created this application over the course of <u>two days</u>. My musical background fueled my creativity for this project. I wanted to show world music in a way I had not seen before and help connect people to artists they would not normally find. </p>
+        <p id="mvp-paragraph-1">I created this application over the course of <u>two days</u>. My music background fueled my creativity for this project. I wanted to show world music in a way I had not seen before and help connect people to artists they would not normally find. </p>
       <div>
-          <p id="icon-header">Technologies used:</p>
-          <TechStackCards technologies={['JavaScript', 'NodeJS', 'ReactJS', 'ExpressJS', 'MySQL', 'MusicBrainz API']}>          </TechStackCards>
+        <p id="icon-header">Technologies used:</p>
+        <TechStackCards technologies={['JavaScript', 'NodeJS', 'ReactJS', 'ExpressJS', 'MySQL', 'MusicBrainz API']}>          </TechStackCards>
       </div>
       </div>
     </div>

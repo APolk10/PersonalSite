@@ -170,6 +170,9 @@ table {
     padding: 3vw !important;
     font-size: 3.5vw !important;
   }
+  #aboutMeBio, {
+    padding: 4vw !important;
+  }
   #aboutMeRowTwo {
     flex-direction: column-reverse !important;
     justify-content: space-around !important;
@@ -200,6 +203,7 @@ table {
     justify-content: center;
   }
   #mvp-header {
+    margin-top: 3vh !important;
     font-size: 8vw !important;
   }
   #mvp-githubLink {
@@ -208,17 +212,26 @@ table {
   #mvp-title-logo, #mvp-paragraphQuestion-1, .mvp-paragraphQuestions, #icon-header, #sdc-title, #techCardGroup, #photography-header, #ll-title {
     width: 79vw !important;
   }
+
   #mvp-paragraphQuestion-1, .mvp-paragraphQuestions {
     font-size: 4vw !important;
+
   }
   #mvp-underlinedText, #mvp-paragraph-1 {
+    background-color: rgba(245, 245, 245, 0.514) !important;
+    width: 65vw !important;
+    padding: 5vw !important;
     margin: 0 !important;
     margin-bottom: 3vh !important;
     font-size: 3.5vw !important;
     text-align: center;
   }
-  #mvp-paragraph-headers {
+  #mvp-underlinedText {
+    margin-top: -2vh !important;
     font-size: 4vw !important;
+  }
+  #mvp-paragraph-headers {
+    font-size: 5vw !important;
     margin-bottom: 1vh !important;
     text-decoration: underline;
   }
@@ -436,7 +449,7 @@ font-size: 1.5vw;
   margin-bottom: 4vh;
   font-style: oblique;
   text-align: center;
-  font-size: 1.1vw;
+  font-size: 1.35vw;
   width: 50vw;
 }
 #mvp-paragraph-headers {
@@ -469,7 +482,7 @@ font-size: 1.5vw;
   margin-top: -1vh;
 }
 #mvp-underlinedText {
-  font-size: 1.25vw;
+  font-size: 1.45vw;
   margin-top: 2vh;
   margin-bottom: 1vh;
 }
@@ -591,20 +604,38 @@ font-size: 1.5vw;
 }
 #sdc-answers, .construction-text {
   width: 55vw;
-  font-size: 1.15vw;
+  font-size: 1.35vw;
 }
 #sdc-answers-special {
   width: 55vw;
-  font-size: 1.05vw;
+  font-size: 1.25vw;
   text-decoration: underline;
 }
 
 #sdc-paragraphQuestions, .construction-header {
   font-size: 2.5vw;
-  font-weight: 200;
   margin-bottom: 3vh;
   font-style: italic;
   text-indent: 0;
+}
+#sdc-paragraphQuestions {
+  display: flex;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  width: 65vw;
+  height: 10vh;
+}
+#sdc-pageHead {
+  display: flex;
+  background-color: whitesmoke;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vw;
+  font-style: italic;
+  margin-top: -5vh;
+  width: 65vw;
+  height: 10vh;
 }
 #sdc-steps {
   font-size: 1.75vw;
@@ -652,8 +683,9 @@ font-size: 1.5vw;
   margin-top: 4vh;
   margin-bottom: 4vh;
   border: 1px solid black;
-  width: 10vw;
-  height: 5vh;
+  background-color: whitesmoke;
+  width: 12vw;
+  height: 7vh;
   font-size: 1.7vw;
 }
 #flatAccordion {

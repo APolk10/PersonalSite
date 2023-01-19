@@ -30,6 +30,7 @@ function BlueOcean() {
         <p className="construction-text">Another of the main features I worked on was the integration and connection to the Google Maps API. I wanted to manage company specific state in a way that allowed all jobs to be displayed on the map widget for an employee who logs in, as well as global jobs to be displayed for managers. The maps API was a challenge to work with at first, but after understanding how to properly leverage it allowed for a very rewarding feature.</p>
         <p className="construction-text">Below showcases the map functionality as from the perspective of an employee role.</p>
         <img className="construction-gif" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1673820349/Personal%20Site/ezgif.com-gif-maker_1_rcpug9.gif"></img>
+        <p id="icon-header">Technologies used:</p>
         <TechStackCards technologies={['JavaScript', 'NodeJS', 'NextJS', 'GoogleMaps', 'AWS', 'MongoDB', 'Cloudinary']}></TechStackCards>
       </div>
     </div>
