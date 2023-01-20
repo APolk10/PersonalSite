@@ -980,6 +980,14 @@ width: 40vw;
   width: 15vw;
   height: 6vh;
 }
+#ll-finalComment {
+  width: 50vw;
+  font-style: italic;
+  font-size: 1.45vw;
+  margin-top: 4vh;
+  margin-left: -9vw;
+  margin-bottom: 4vh;
+}
 #siteFooter {
   display: flex;
   justify-content: center;

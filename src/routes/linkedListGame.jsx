@@ -121,6 +121,7 @@ function LinkedListGame() {
           <button className="ll-buttons" type="button" onClick={resetAnimation}>Reset worm</button>
           <button className="ll-buttons" type="button" onClick={addMonsterSegment}>Add segment</button>
         </div>
+        <p id='ll-finalComment'>The above worm uses a linked list class structure and I wrote the functions for this page to iterate through the linked list as well as randomize all but the first color of the segments. The cap for segments is 10 and although this is not the fully fledged Terraria boss, it does interact with you a bit if you are brave enough to click a segment!</p>
       </div>
     </div>
   )
