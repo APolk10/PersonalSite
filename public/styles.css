@@ -586,16 +586,13 @@ font-size: 1.5vw;
 }
 #sdc-schema {
   width: 50vw;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-  padding-left: 3.5vw;
-  padding-right: 3.5vw;
+  padding: 2vw;
   height: auto;
   background-color: white;
   border: 1px black solid;
 }
 #sdc-schema:hover {
-  transform: scale(1.9);
+  transform: scale(1.8);
 }
 #sdc-gif, .construction-gif {
   border: black 1px solid;
