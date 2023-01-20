@@ -317,14 +317,17 @@ table {
   display: flex;
   align-items: center;
   text-indent: 2vw;
-  font-size: 2.4vh;
+  font-size: 2.5vh;
   text-align: center;
   font-style: italic;
   background-color: whitesmoke;
   height: 50vh;
-
   width: 25vw;
   padding: 3vw;
+  overflow-y:auto;
+}
+#aboutMeBio {
+  font-size: 2.9vh;
 }
 .aboutMeRow {
   display: flex;
@@ -582,13 +585,16 @@ font-size: 1.5vw;
 }
 #sdc-schema {
   width: 50vw;
-  padding-top: 6vh;
-  padding-bottom: 6vh;
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
   height: auto;
   background-color: white;
   border: 1px black solid;
+}
+#sdc-schema:hover {
+  transform: scale(1.9);
 }
 #sdc-gif, .construction-gif {
   border: black 1px solid;
