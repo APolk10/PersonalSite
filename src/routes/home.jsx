@@ -4,7 +4,7 @@ import TechStackCards from '../components/techStackCards.jsx';
 function Home() {
     return (
       <div id="aboutMeOuter">
-        <div id="aboutMeHeader">Welcome to my portfolio!</div>
+        <div  id="aboutMeHeader">Welcome to my portfolio!</div>
           <div id="aboutMeContainer">
             <div className="aboutMeRow">
               <div id="aboutMeBioBlock">
