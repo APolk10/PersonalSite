@@ -327,7 +327,7 @@ table {
   overflow-y:auto;
 }
 #aboutMeBio {
-  font-size: 2.9vh;
+  font-size: 2.7vh;
 }
 .aboutMeRow {
   display: flex;
@@ -485,6 +485,7 @@ font-size: 1.5vw;
   margin-top: -1vh;
 }
 #mvp-underlinedText {
+  text-indent: 0;
   font-size: 1.45vw;
   margin-top: 2vh;
   margin-bottom: 1vh;
@@ -574,13 +575,13 @@ font-size: 1.5vw;
 }
 #sdc-images {
   border: black 2px solid;
-  width: 40vw;
+  width: 50vw;
   padding: 1vw;
   background-color: white;
   height: auto;
 }
 #sdc-loadBalancer {
-  width: 40vw;
+  width: 50vw;
   height: auto;
 }
 #sdc-schema {
@@ -598,7 +599,7 @@ font-size: 1.5vw;
 }
 #sdc-gif, .construction-gif {
   border: black 1px solid;
-  width: 40vw;
+  width: 50vw;
   height: auto;
 }
 .sdc-paragraphs {
@@ -609,11 +610,11 @@ font-size: 1.5vw;
   margin-bottom: 8vh;
 }
 #sdc-answers, .construction-text {
-  width: 55vw;
+  width: 50vw;
   font-size: 1.35vw;
 }
 #sdc-answers-special {
-  width: 55vw;
+  width: 50vw;
   font-size: 1.25vw;
   text-decoration: underline;
 }
@@ -770,11 +771,10 @@ width: 40vw;
   text-shadow: 2px 2px gray;
 }
 #ll-description {
-  width: 45vw;
+  width: 50vw;
   font-style: italic;
-  padding-right: .5vw;
-  font-size: 1.25vw;
-  margin-left: 15vw;
+  font-size: 1.45vw;
+  margin-left: 13vw;
   margin-bottom: 8vh;
 }
 #ll-gamebox {
