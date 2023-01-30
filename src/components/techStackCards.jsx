@@ -1,4 +1,4 @@
-import React, { useState, setState } from 'react';
+import React from 'react';
 
 const icons = {
   GitHub: "https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png",

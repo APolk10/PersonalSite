@@ -1,18 +1,15 @@
 import React from 'react';
-import { useState } from 'react';
-import PortfolioCarousel from '../components/carouselBuilder.jsx';
 import TechStackCards from '../components/techStackCards.jsx';
 
 function SDC() {
-
   return (
     <div id="sdc-outer-container">
       <div id="sdc-container">
         <div id="sdc-title">
-          <a target="_blank" href="https://github.com/APolk10/SEGA-Project-Atelier.git">
+          <a id="sdc-ghLink" target="_blank" rel="noreferrer" href="https://github.com/APolk10/SEGA-Project-Atelier.git">
             <img id="mvp-githubLink" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png"></img>
           </a>
-          <p>Server Rebuild for RESTful API</p>
+          <p id="sdc-title-text">Server Rebuild for RESTful API</p>
         </div>
         <div id="sdc-pageHead">What is this application?</div>
         <p id="sdc-answers">
@@ -32,7 +29,7 @@ function SDC() {
         </p>
         <div id="sdc-steps">Step Three: Local performance tests</div>
         <p id="sdc-answers">
-          Now it was time to begin testing. I wrote a few K6 scripts in NodeJS to allow for local testing and after running the first test, I was disappointed. Multiple seconds for each call even with light numbers of requests/second. This meant I needed to work to streamline the process. The biggest change was adding indexes to the most trafficed request points. By picking coordinated table locations and ID's that were most used within query lookups I was able to see significant gains. My numbers looked much better. I was able to achieve under a 10ms response time well past 1000 requests per second for both of the main API calls. To further test I randomized the product ID sent to the database between 1-1,000,000 to avoid the database caching and the results were still looking good. Around a 15-20ms response time at the 1000 requests/second threshold. I was feeling pretty good so I moved to deploy.
+          Now it was time to begin testing. I wrote a few K6 scripts in NodeJS to allow for local testing and after running the first test, I was disappointed. Multiple seconds for each call even with light numbers of requests/second. This meant I needed to work to streamline the process. The biggest change was adding indexes to the most trafficed request points. By picking coordinated table locations and ID&apos;s that were most used within query lookups I was able to see significant gains. My numbers looked much better. I was able to achieve under a 10ms response time well past 1000 requests per second for both of the main API calls. To further test I randomized the product ID sent to the database between 1-1,000,000 to avoid the database caching and the results were still looking good. Around a 15-20ms response time at the 1000 requests/second threshold. I was feeling pretty good so I moved to deploy.
         </p>
         <div id="sdc-steps">Step Four: Deployment to AWS</div>
         <p id="sdc-answers">

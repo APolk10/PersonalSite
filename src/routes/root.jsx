@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Outlet, Link } from 'react-router-dom';
-import Home from './home.jsx';
+import { Outlet } from 'react-router-dom';
 import SideBar from '../components/sideBar.jsx';
-import MVP from './mvp.jsx';
-import SDC from './sdc.jsx';
-import BlueOcean from './blueOcean.jsx';
-import Photography from './photography.jsx';
-import LinkedListGame from './linkedListGame.jsx';
+
 import Footer from '../components/footer.jsx';
 
-export default function Root(props) {
+export default function Root() {
   const[isOpen, setOpen] = useState(false);
   const[width, setWidth] = useState(window.innerWidth);
 

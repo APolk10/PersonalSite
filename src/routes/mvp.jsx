@@ -21,7 +21,7 @@ function MVP() {
     <div id="mvp-outer-container">
       <div className="example" id="mvp-container">
         <div id="mvp-title-logo">
-          <a target="_blank" href="https://github.com/APolk10/MVP">
+          <a target="_blank" rel="noreferrer" href="https://github.com/APolk10/MVP">
             <img id="mvp-githubLink" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png"></img>
           </a>
           <p id="mvp-header">Discover Music By Country</p>

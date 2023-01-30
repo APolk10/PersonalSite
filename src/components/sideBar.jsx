@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const SideBar = function({ openAndCloseNav }) {
   return (
     <div id="mySidebar" className="sidebar">
-      <h1 id="sidebarNameHeader">Adam's</h1>
+      <h1 id="sidebarNameHeader">Adam&apos;s</h1>
       <div id="sidebarListHeader">
         Portfolio
       </div>

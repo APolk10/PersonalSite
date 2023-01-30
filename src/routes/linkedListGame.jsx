@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, setState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 // define lastInterval to stagger release
 var currentTimeToWait = 0;
@@ -55,13 +55,8 @@ function LinkedListGame() {
   }
 
   function handleSegmentClick(e) {
- //   console.log('clicked', e.target.attributes.data, e.target.attributes.color, e.target.attributes.next.data);
-    console.log(e.target.classList.value, e.target);
-     const clickedSegment = e.target.classList.value;
-//    document.getElementById(clickedSegment).style.width = "25vw";
+    //  const clickedSegment = e.target.classList.value;
     pauseWorm();
-
- //   document.getElementById(clickedSegment).style.width = '10vw';
   }
 
   function resizeSegment(segment) {
@@ -104,13 +99,14 @@ function LinkedListGame() {
           I got the core idea from a game I had played called Terraria. In this game there is a boss who resembles a segmented worm. When fighting this worm, each link can be attacked and broken individually, creating new and indpendent worms. One became two and so the subdivision would continue, until the boss was defeated.
         </p>
         <p id='ll-description'>Below is my representation using vanilla CSS, JavaScript and React.</p>
+        <p id='ll-description'>(Best viewed on desktop or in landscape mode)</p>
       </div>
       <div id="ll-container">
         <div id="ll-gamebox">
           <div>
             {segmentContainer.length > 0 ? segmentContainer.map(segment =>
               <div key={`segmentPath-${segment.data}`} className={`segmentPath-${segment.data}`}>
-                <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}} color={segment.color} data={segment.data} next={segment.next} onClick={handleSegmentClick}>
+                <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}} color={segment.color} data={segment.data}  onClick={handleSegmentClick}>
 
               </div>
               </div>

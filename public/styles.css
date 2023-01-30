@@ -155,59 +155,60 @@ table {
   .aboutMeRow {
     flex-direction: column !important;
     font-size: 4vw !important;
-    justify-content: space-around !important;
     width: 65vw !important;
-    height: 70vh !important;
+    height: 85vh !important;
   }
   #aboutMeBioBlock {
     width: 50vw !important;
     height: 28vh !important;
-    font-size: 2.5vw !important;
   }
   #aboutMeBio, .aboutMeBio {
     width: 50vw !important;
     height: fit-content !important;
     padding: 3vw !important;
-    font-size: 3.5vw !important;
+    font-size: 2vh !important;
   }
-  #aboutMeBio, {
+  #aboutMeBio {
     padding: 4vw !important;
   }
   #aboutMeRowTwo {
     flex-direction: column-reverse !important;
     justify-content: space-around !important;
-    margin-bottom: 4vh !important;
+    padding-top: 4vh !important;
   }
   #aboutMeHeadshot {
-    width: 45vw !important;
+    width: 50vw !important;
     height: auto !important;
   }
   #aboutMeHackReactor {
     margin-top: -10vh !important;
-    width: 50vw !important;
+    width: 60vw !important;
     padding: 2vw;
     height: auto !important;
     background-color: rgba(245, 245, 245, 0.276);
   }
   #aboutMePython {
-    width: 50vw !important;
+    width: 60vw !important;
     padding: 1vw;
     height: auto !important;
     background-color: rgba(245, 245, 245, 0.276);
   }
   #hack-reactor-text {
-    margin-top: -10vh !important;
+    height: 50vh !important;
   }
   #mvp-title-logo {
     align-items: center !important;
     justify-content: center;
+    flex-direction: row-reverse !important;
   }
   #mvp-header {
     margin-top: 3vh !important;
     font-size: 8vw !important;
   }
   #mvp-githubLink {
-    width: 10vw !important;
+    width: 12vw !important;
+    margin-top: 3vh !important;
+    margin-right: 3vw !important;
   }
   #mvp-title-logo, #mvp-paragraphQuestion-1, .mvp-paragraphQuestions, #icon-header, #sdc-title, #techCardGroup, #photography-header, #ll-title {
     width: 79vw !important;
@@ -241,23 +242,70 @@ table {
   #photography-header {
     margin-left: -7vw !important;
   }
+  #sdc-pageHead {
+    width: 79vw !important;
+    font-size: 2.5vh !important;
+  }
+  #sdc-title-text {
+    font-size: 3.5vh !important;
+    margin-right: -1vw !important;
+    margin-top: 3vh !important;
+  }
+  #sdc-title {
+    gap: 0vw !important;
+    flex-direction: row-reverse !important;
+    height: 20vh !important;
+  }
+  #sdc-paragraphQuestions, .construction-list {
+    width: 79vw !important;
+    font-size: 2.5vh !important;
+  }
+  #sdc-answers, #sdc-steps, #sdc-title, .construction-text, #ll-description, #ll-finalComment, .construction-header, #sdc-answers-special {
+    font-size: 2.25vh !important;
+  }
+  #sdc-gif, #sdc-loadBalancer, #sdc-images, .construction-gif {
+    width: 70vw !important;
+  }
+  #construction-header {
+    font-size: 3.5vh !important;
+    margin-top: 4vh !important;
+  }
+  #construction-subheader {
+    font-size: 2vh !important;
+  }
+  .construction-roles {
+    width: 22vw !important;
+    font-size: 2vh !important;
+  }
   #ll-title {
     margin-left: 0vw !important;
+    font-size: 3.5vh !important;
+    padding-top: 3vh !important;
+  }
+  .ll-buttons {
+    width: 35vw !important;
   }
   #linkedIn, #github {
     width: 13vw !important;
   }
   #icon-header {
-    font-size: 4vw !important;
+    font-size: 2.5vh!important;
   }
   #techCardGroup {
-    margin-top: 5vh !important;
+    margin-top: 2vh !important;
     align-items: center;
-    height: 30vh;
+    height: auto;
   }
   #techCard {
-    width: 20vw !important;
-    height: 15vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 3vh !important;
+    width: 30vw !important;
+    font-size: 2.5vh !important;
+    height: auto !important;
+  }
+  #cardIcon {
+    width: 10vh !important;
   }
 }
 /* END MOBILE */
@@ -724,8 +772,10 @@ width: 40vw;
 }
 #photography-header {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
+  gap: 2vw;
   font-family: Apple Chancery, cursive;
   font-size: 3.5vw;
   font-weight: 500;
