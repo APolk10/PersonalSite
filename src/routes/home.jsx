@@ -8,7 +8,7 @@ function Home() {
             <div className="aboutMeRow">
               <div id="aboutMeBioBlock">
                 <p className="aboutMeBio" id="aboutMeBio">
-                  My name is Adam Polk and I&apos;m a former elementary music educator going on a new adventure. I started my coding journey in 2021 when a band director friend and I reconnected.He was raving about his new field and software job. Before I knew it, I was already thinking about whether or not this could be a good fit for me.
+                  My name is Adam Polk and I&apos;m a former elementary music educator going on a new adventure. I started my coding journey in 2021 when a band director friend and I reconnected. He was raving about his new field and software job. Before I knew it, I was already thinking about whether or not this could be a good fit for me.
                 </p>
               </div>
               <img id="aboutMeHeadshot" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_480/v1670438935/Personal%20Site/IMG_5342_n6cjh6.jpg" width="450vw" height="auto"></img>
