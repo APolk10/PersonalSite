@@ -6,7 +6,7 @@ function SDC() {
     <div id="sdc-outer-container">
       <div id="sdc-container">
         <div id="sdc-title">
-          <a id="sdc-ghLink" target="_blank" rel="noreferrer" href="https://github.com/APolk10/SEGA-Project-Atelier.git">
+          <a target="_blank" rel="noreferrer" href="https://github.com/APolk10/SEGA-Project-Atelier.git">
             <img id="mvp-githubLink" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png"></img>
           </a>
           <p id="sdc-title-text">Server Rebuild for RESTful API</p>

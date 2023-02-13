@@ -33,6 +33,7 @@ body {
   height: 100%;
 	line-height: 1;
   background-image: url("https://res.cloudinary.com/dbvgiuj6d/image/upload/q_auto:good/v1670295857/Personal%20Site/pexels-rudolf-jakkel-418831_u57yaq.jpg");
+  background-size: cover;
 }
 #root {
   height: 100%;
@@ -356,6 +357,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  scrollbar-width: none;
 }
 #aboutMeBioClosing {
   padding-right: 40vw;
@@ -363,7 +365,8 @@ table {
 }
 .aboutMeBio {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   text-indent: 2vw;
   font-size: 2.5vh;
   text-align: center;
@@ -371,11 +374,18 @@ table {
   background-color: whitesmoke;
   height: 50vh;
   width: 25vw;
-  padding: 3vw;
+  padding: 6vh;
   overflow-y:auto;
+  overflow-x: hidden;
+}
+.aboutMeBio::-webkit-scrollbar {
+  width: .5vw;
+  background-color: grey;
+  opacity: .75;
+
 }
 #aboutMeBio {
-  font-size: 2.7vh;
+  font-size: 2.8vh;
 }
 .aboutMeRow {
   display: flex;
@@ -391,7 +401,7 @@ table {
   background-color: whitesmoke;
   margin: 1vw;
   width: auto;
-  height: 49vh;
+  height: 85%;
 }
 #aboutMePython {
   width: 20vw;
