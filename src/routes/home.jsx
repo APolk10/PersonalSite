@@ -17,7 +17,7 @@ function Home() {
           <img id="aboutMePython" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1671507266/Personal%20Site/python-logo-generic_ej8vix.svg"></img>
             <div id="aboutMeBioBlock">
               <p className="aboutMeBio">
-                  See, the truth was I had been wondering what was next in my life for a few years now. I love music, and I love education, but I also knew that it was time for a change. I decided to act on that feeling and bought a book about Python. I loved it from the very start. I remember wrestling through setting up my environment for the first time and the first print(&apos;Hello World&apos;) and all of the other fun firsts. What started as an effor t to dip my toes into the pool of software, turned into a deep dive into a complete life change.
+                  See, the truth was I had been wondering what was next in my life for a few years now. I love music, and I love education, but I also knew that it was time for a change. I decided to act on that feeling and bought a book about Python. I loved it from the very start. I remember wrestling through setting up my environment for the first time and the first print(&apos;Hello World&apos;) and all of the other fun firsts. What started as an effort to dip my toes into the pool of software, turned into a deep dive into a complete life change.
                 </p>
             </div>
           </div>
