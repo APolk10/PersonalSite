@@ -54,7 +54,7 @@ function LinkedListGame() {
     return collectionOfSegmentData;
   }
 
-  function handleSegmentClick(e) {
+  function handleSegmentClick() {
     //  const clickedSegment = e.target.classList.value;
     pauseWorm();
   }

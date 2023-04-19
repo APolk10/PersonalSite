@@ -308,6 +308,10 @@ table {
   #cardIcon {
     width: 10vh !important;
   }
+  .application-news-box {
+    width: 79vw !important;
+    font-size: 2.5vh !important;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -512,6 +516,39 @@ font-size: 1.5vw;
   height: 10vh;
   width: 65vw;
 }
+
+@keyframes flash {
+  0% {
+    background-color: whitesmoke;
+  }
+  50% {
+    background-color: rgb(182, 94, 94);
+  }
+  100% {
+    background-color: whitesmoke;
+  }
+}
+
+.application-news-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 65vw;
+  margin-top: -1vh;
+  font-size: 2vw;
+  height: 15vh;
+  background-color: rgb(182, 94, 94);
+  color: black;
+  animation: flash 2s infinite;
+}
+.application-news-box:hover {
+  animation: none;
+}
+.application-news {
+  color: black;
+}
+
 #mvp-paragraph-1 {
   margin-top: 4vh;
   margin-bottom: 4vh;

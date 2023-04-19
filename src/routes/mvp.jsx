@@ -27,6 +27,11 @@ function MVP() {
           <p id="mvp-header">Discover Music By Country</p>
         </div>
         <div id="mvp-aboveCarousel">
+          <div className="application-news-box" >
+            <p className="application-news">Psst! Check out the remake!</p>
+            <a href="https://world-of-music.onrender.com/" rel="noreferrer" target="_blank" className="application-news">https://world-of-music.onrender.com/</a>
+            <p>(works best on desktop)</p>
+          </div>
           <p id="mvp-paragraphQuestion-1" className="mvp-paragraphQuestions">What does this application do?</p>
           <u id="mvp-underlinedText">Discover Music by Country connects the user to music from any country in the world.</u>
           <p id="mvp-paragraph-1">
