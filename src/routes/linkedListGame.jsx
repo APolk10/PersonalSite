@@ -59,10 +59,6 @@ function LinkedListGame() {
     pauseWorm();
   }
 
-  function resizeSegment(segment) {
-
-  }
-
   function pauseWorm() {
     if (isPaused) {
       document.getAnimations().forEach((anim) => {
@@ -93,7 +89,7 @@ function LinkedListGame() {
   return (
     <div>
       <div id='ll-title'>Linked List Monster!</div>
-      <div>
+      <div id='ll-body'>
         <p id='ll-description'>I created this as a visual aid for linked lists as I found many online representations less interesting to look at.</p>
         <p id='ll-description'>
           I got the core idea from a game I had played called Terraria. In this game there is a boss who resembles a segmented worm. When fighting this worm, each link can be attacked and broken individually, creating new and indpendent worms. One became two and so the subdivision would continue, until the boss was defeated.
