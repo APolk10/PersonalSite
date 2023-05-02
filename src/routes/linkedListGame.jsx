@@ -87,7 +87,7 @@ function LinkedListGame() {
   }, [segments])
 
   return (
-    <div>
+    <div id='ll-page'>
       <div id='ll-title'>Linked List Monster!</div>
       <div id='ll-body'>
         <p id='ll-description'>I created this as a visual aid for linked lists as I found many online representations less interesting to look at.</p>

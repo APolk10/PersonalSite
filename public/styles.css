@@ -840,6 +840,10 @@ width: 40vw;
   width: 65vw;
   height: 20vh;
 }
+.photographyGif {
+  margin-top: 3vh;
+  width: 55vw;
+}
 #photography-placeholder {
   font-size: 2.5vw;
 }
@@ -850,6 +854,9 @@ width: 40vw;
 #github {
   width: 4vw;
   height: auto;
+}
+#ll-page {
+
 }
 #ll-container {
   display: flex;

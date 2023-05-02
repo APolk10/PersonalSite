@@ -12,6 +12,9 @@ function Photography() {
             </a>
           </div>
         <div id="photography-placeholder">Coming Soon!</div>
+        <div>
+          <img className='photographyGif' src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1683060372/Personal%20Site/photographySite_jfzx3y.gif'></img>
+        </div>
       </div>
         {/* <TechStackCards technologies={['NextJS']}>          </TechStackCards> */}
     </div>
