@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
     return (
       <div id="aboutMeOuter">
-        <div  id="aboutMeHeader">Welcome to my portfolio!</div>
+        <div className="pageTitle">Welcome to my portfolio!</div>
           <div id="aboutMeContainer">
             <div className="aboutMeRow">
               <div id="aboutMeBioBlock">

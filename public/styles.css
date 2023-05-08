@@ -104,7 +104,7 @@ table {
 #main {
   transition: margin-left .8s;
   margin-left: 17vw;
-  background-color: rgba(229, 229, 229, .9);
+  /* background-color: rgba(245, 245, 245, 0.8); */
 }
 
 /* MOBILE */
@@ -113,9 +113,10 @@ table {
     min-height: 100vh !important;
   }
   #main {
-    margin-left: 11vw;
-    width: 100%;
-    background-color: rgba(229, 229, 229, .7);
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    width: 85%;
   }
   #menubtn {
     margin-top: -5vh;
@@ -148,9 +149,10 @@ table {
   #aboutMeHeader {
     font-size: 8vw !important;
     padding-left: 5vw !important;
+    padding-top: 4.5vh !important;
   }
   #aboutMeOuter {
-    margin-bottom: 1vw !important;
+    margin-left: 15% !important;
   }
   .aboutMeRow {
     flex-direction: column !important;
@@ -196,7 +198,10 @@ table {
   #hack-reactor-text {
     height: 50vh !important;
   }
-  #mvp-title-logo {
+  .pageTitle {
+    margin-top: 4.5vh !important;
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center !important;
     justify-content: center;
     flex-direction: row-reverse !important;
@@ -210,21 +215,14 @@ table {
     margin-top: 3vh !important;
     margin-right: 3vw !important;
   }
-
   #specialHeader .textHeader {
     font-size: 4vw !important;
   }
-  #mvp-underlinedText, .subText {
-    background-color: rgba(245, 245, 245, 0.514) !important;
-    padding: 5vw !important;
-    margin: 0 !important;
-    margin-bottom: 3vh !important;
-    font-size: 3.5vw !important;
-    text-align: center;
+  .subText {
+    text-indent: 3rem !important;
   }
-  #mvp-underlinedText {
-    margin-top: -2vh !important;
-    font-size: 4vw !important;
+  #underlinedText {
+    font-size: 1rem !important;
   }
   .textHeader {
     font-size: 5vw !important;
@@ -276,7 +274,7 @@ table {
   #linkedIn, #github {
     width: 13vw !important;
   }
-  #icon-header {
+  .icon-header {
     font-size: 2.5vh!important;
   }
   .techCardGroup {
@@ -325,23 +323,36 @@ table {
   }
 }
 
+#container {
+  display: flex;
+  position: absolute;
+  min-height: 100vh;
+  flex-direction: row;
+}
+#detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -3vh;
+  width: 65vw;
+}
 .outerContainer {
   display: flex;
   flex-direction: row;
   margin-top: -6.5vh;
+  background-color: rgba(0, 0, 0, 0.847);
   width: auto;
 }
-
 .dataContainer {
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
-  margin-top: 1vh;
-  margin-bottom: 2vh;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
   width: 92.5%;
   padding: 5% 5% 5% 5%;
 }
-
 .textHeader {
   display: flex;
   align-items: center;
@@ -354,12 +365,15 @@ table {
 }
 .subText {
   font-size: 1.2rem;
+  text-align: left;
+  text-indent: 5rem;
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding-left: 5%;
   padding-right: 5%;
 }
 
+/* ABOUT ME PAGE */
 #aboutMeHeader {
   display: flex;
   align-items: center;
@@ -370,8 +384,9 @@ table {
   margin-top: -2vh;
   margin-bottom: 4vh;
   width: 65vw;
-  height: 15vh;
+  height: 20vh;
   text-shadow: 2px 2px gray;
+  background-color: rgba(205, 227, 225, .8);
 }
 #aboutMeContainer {
   display: flex;
@@ -415,7 +430,6 @@ table {
   width: .5vw;
   background-color: grey;
   opacity: .75;
-
 }
 #aboutMeBio {
   font-size: 2.8vh;
@@ -445,14 +459,13 @@ table {
   height: auto;
 }
 #aboutMeOuter {
-  margin-bottom: 5vh;
+  padding-bottom: 5vh;
+  margin-top: -6vh;
+  background-color: rgba(245, 245, 245, 0.8);
+  width: 100%;
 }
-#container {
-  display: flex;
-  position: absolute;
-  min-height: 100vh;
-  flex-direction: row;
-}
+
+/* SIDEBAR */
 #sidebarNameHeader {
   padding-left: 3vw;
   padding-bottom: 1vw;
@@ -485,22 +498,16 @@ display: flex;
 flex-direction: column;
 font-size: 1.5vw;
 }
-#detail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: -3vh;
-  width: 65vw;
-}
-#mvp-container {
+
+/* MVP/MUSIC */
+.pageContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-#mvp-title-logo {
+.pageTitle {
   display: flex;
   flex-direction: row;
   display: flex;
@@ -512,8 +519,8 @@ font-size: 1.5vw;
   margin-top: 1vh;
   margin-bottom: 1vh;
   background-color: rgba(205, 227, 225, .8);
-  width: 65vw;
-  height: 16vh;
+  width: 100%;
+  height: 20vh;
   text-shadow: 2px 2px gray;
 }
 #mvp-githubLink {
@@ -568,11 +575,12 @@ font-size: 1.5vw;
 .application-news {
   color: black;
 }
-#mvp-underlinedText {
+#underlinedText {
   text-indent: 0;
-  font-size: 1.5vw;
-  margin-top: 2vh;
-  margin-bottom: 1vh;
+  font-size: 1.75vw;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  text-decoration: underline;
 }
 #mvpCarousel {
   border: black groove 8px;
@@ -592,6 +600,8 @@ font-size: 1.5vw;
   width: 45vw;
   height: 58.3vh;
 }
+
+/* TECH CARDS */
 .techCardGroup {
   display: flex;
   flex-direction: row;
@@ -620,58 +630,22 @@ font-size: 1.5vw;
 .cardIcon {
   width: 8vw;
 }
-#sdc-outer-container {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-}
-#sdc-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4vh;
-  align-items: center;
-  text-align: center;
-  width: 60vw;
-}
-#sdc-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 2vw;
-  font-size: 3.5vw;
-  font-weight: 500;
-  margin-top: -5.5vh;
-  margin-bottom: 1vh;
-  background-color: rgba(205, 227, 225, .8);
-  width: 65vw;
-  height: 16vh;
-  text-shadow: 2px 2px gray;
-}
-#sdc-intro-container {
-  display: flex;
-  flex-direction: row;
-  gap: 5vw;
-  width: 55vw;
-  justify-content: center;
-  align-items: center;
-}
-#sdc-intro-text {
-  width: 20vw;
-}
-#sdc-images {
-  border: black 2px solid;
-  width: 50vw;
+
+/* SDC/API REBUILD */
+#sdc-images, #sdc-loadBalancer, #sdc-gif {
+  border: black 1px solid;
+  width: 100%;
   padding: 1vw;
+  margin-top: 3vh;
   background-color: white;
   height: auto;
+  margin-bottom: 2vh;
 }
-#sdc-loadBalancer {
-  width: 50vw;
-  height: auto;
+#sdc-loadBalancer, #sdc-gif {
+  padding: 0vw;
 }
 #sdc-schema {
-  width: 50vw;
+  width: 100%;
   padding: 2vw;
   height: auto;
   background-color: white;
@@ -680,26 +654,10 @@ font-size: 1.5vw;
 #sdc-schema:hover {
   transform: scale(1.8);
 }
-#sdc-gif, .construction-gif {
-  border: black 1px solid;
-  width: 50vw;
-  height: auto;
-}
-.sdc-paragraphs {
-  width: 45vw;
-  font-style: italic;
-  padding-right: .5vw;
-  font-size: 1.25vw;
-  margin-bottom: 8vh;
-}
+
 #sdc-answers, .construction-text {
   width: 50vw;
   font-size: 1.35vw;
-}
-#sdc-answers-special {
-  width: 50vw;
-  font-size: 1.25vw;
-  text-decoration: underline;
 }
 
 #sdc-paragraphQuestions, .construction-header {
@@ -708,32 +666,8 @@ font-size: 1.5vw;
   font-style: italic;
   text-indent: 0;
 }
-#sdc-paragraphQuestions {
-  display: flex;
-  background-color: whitesmoke;
-  align-items: center;
-  justify-content: center;
-  width: 65vw;
-  height: 10vh;
-}
-#sdc-pageHead {
-  display: flex;
-  background-color: whitesmoke;
-  align-items: center;
-  justify-content: center;
-  font-size: 2.5vw;
-  font-style: italic;
-  margin-top: -5vh;
-  width: 65vw;
-  height: 10vh;
-}
-#sdc-steps {
-  font-size: 1.75vw;
-  font-weight: 200;
-  margin-bottom: 3vh;
-  text-decoration: underline;
-  text-indent: 0;
-}
+
+/* BLUE OCEAN / CONSTRUCTION SITE */
 #constructionContainer {
   display: flex;
   flex-direction: row;
@@ -799,6 +733,7 @@ display: flex;
 width: 40vw;
 }
 
+/* PHOTOGRAPHY SITE */
 #photography-outer-container {
   display: flex;
   flex-direction: row;
@@ -831,6 +766,8 @@ width: 40vw;
 #photography-placeholder {
   font-size: 2.5vw;
 }
+
+/* FOOTER ICONS */
 #linkedIn {
   width: 4.25vw;
   height: auto;
@@ -839,6 +776,8 @@ width: 40vw;
   width: 4vw;
   height: auto;
 }
+
+/* LINKED LIST GAME */
 #ll-page {
 
 }
@@ -1086,12 +1025,13 @@ width: 40vw;
   margin-left: -9vw;
   margin-bottom: 4vh;
 }
+
+/* FOOTER */
 #siteFooter {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15vw;
-  font-size: 1.5vw;
   padding-top: 4vh;
   padding-bottom: 4vh;
   background-color: rgba(205, 227, 225, .8);

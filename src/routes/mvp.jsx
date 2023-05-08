@@ -19,8 +19,8 @@ function MVP() {
 
   return (
     <div className="outerContainer">
-      <div id="mvp-container">
-        <div id="mvp-title-logo">
+      <div className="pageContainer">
+        <div className="pageTitle">
           <a target="_blank" rel="noreferrer" href="https://github.com/APolk10/MVP">
             <img id="mvp-githubLink" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png"></img>
           </a>
@@ -32,7 +32,7 @@ function MVP() {
             <a href="https://world-of-music.onrender.com/" rel="noreferrer" target="_blank" className="application-news">https://world-of-music.onrender.com/</a>
           </div>
           <p className="textHeader" id="specialHeader">What does this application do?</p>
-          <u id="mvp-underlinedText">Discover Music by Country connects the user to music from any country in the world.</u>
+          <u id="underlinedText">Discover Music by Country connects the user to music from any country in the world.</u>
           <p className="subText">
             When a country is selected, music data from that region pops up in a modal screen. This screen can be sifted through using the left and right arrows. If the user finds something that intestests them they can click the blue button to be redirected to Spotify where that particular artist will conveniently be searched for automatically. This application has been rewarding from the very beginning as both myself as well as my close friends and colleagues have discovered awesome new music selections from across the globe.
           </p>
