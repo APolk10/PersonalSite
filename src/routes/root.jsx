@@ -42,6 +42,7 @@ export default function Root() {
         document.getElementById("menubtn").style.marginTop = "-5vh";
         document.getElementById("menubtn").style.width = "25vw";
         document.getElementById("menubtn").style.fontSize = "5vw";
+        // document.getElementById("menubtn").innerText = "&#9776;"
         document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
         document.getElementById("navbarList").style.opacity = "0";
       } else {

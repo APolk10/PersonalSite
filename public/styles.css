@@ -115,7 +115,7 @@ table {
   #main {
     display: flex;
     flex-direction: column;
-    margin-left: 7.5%;
+    margin-left: 8%;
     width: 85%;
   }
   #menubtn {
@@ -141,7 +141,7 @@ table {
     font-size: 6vw !important;
   }
   #detail, #aboutMeHeader, #aboutMeContainer {
-    width: 100% !important;
+    width: 85vw !important;
   }
   #aboutMeContainer {
     margin-top: 0vw !important;
@@ -151,9 +151,7 @@ table {
     padding-left: 5vw !important;
     padding-top: 4.5vh !important;
   }
-  #aboutMeOuter {
-    margin-left: 15% !important;
-  }
+
   .aboutMeRow {
     flex-direction: column !important;
     font-size: 4vw !important;
@@ -200,8 +198,11 @@ table {
   }
   .pageTitle {
     margin-top: 4.5vh !important;
+    font-size: 2.25rem !important;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 8% !important;
+    height: 25vh !important;
     align-items: center !important;
     justify-content: center;
     flex-direction: row-reverse !important;
@@ -341,7 +342,7 @@ table {
   display: flex;
   flex-direction: row;
   margin-top: -6.5vh;
-  background-color: rgba(0, 0, 0, 0.847);
+  background-color: rgba(48, 48, 48, 0.896);
   width: auto;
 }
 .dataContainer {
@@ -351,7 +352,7 @@ table {
   margin-top: 3vh;
   margin-bottom: 5vh;
   width: 92.5%;
-  padding: 5% 5% 5% 5%;
+  padding: 3% 5% 5% 5%;
 }
 .textHeader {
   display: flex;
@@ -437,7 +438,7 @@ table {
 .aboutMeRow {
   display: flex;
   flex-direction: row;
-  background-color: rgba(24, 61, 37, 0.322);
+  background-color: rgba(24, 61, 37, 0.5);
   justify-content: space-around;
   align-items: center;
   width: 60vw;
@@ -516,7 +517,6 @@ font-size: 1.5vw;
   gap: 2vw;
   font-size: 3.5vw;
   font-weight: 500;
-  margin-top: 1vh;
   margin-bottom: 1vh;
   background-color: rgba(205, 227, 225, .8);
   width: 100%;
@@ -545,13 +545,13 @@ font-size: 1.5vw;
 
 @keyframes flash {
   0% {
-    background-color: whitesmoke;
+    color: black;
   }
   50% {
-    background-color: rgb(182, 94, 94);
+    color: rgb(182, 94, 94);
   }
   100% {
-    background-color: whitesmoke;
+    color: black;
   }
 }
 
@@ -561,19 +561,17 @@ font-size: 1.5vw;
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: -1vh;
-  margin-bottom: 3vh;
+  margin-top: 1vh;
   font-size: 2vw;
   height: 15vh;
-  background-color: rgb(182, 94, 94);
-  color: black;
-  animation: flash 2s infinite;
+
 }
-.application-news-box:hover {
+.application-news:hover {
   animation: none;
 }
 .application-news {
   color: black;
+  animation: flash 2s infinite;
 }
 #underlinedText {
   text-indent: 0;
