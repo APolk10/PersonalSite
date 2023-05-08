@@ -21,15 +21,15 @@ const icons = {
 
 function TechStackCards({...stack}) {
   return (
-    <div id="techCardGroup">
+    <div className="techCardGroup">
       {stack.technologies.map((technology) => (
-        <div id="techCard" key={`${technology}`}>
-          <img id="cardIcon" src={icons[technology]}></img>
+        <div className="techCard" key={`${technology}`}>
+          <img className="cardIcon" src={icons[technology]}></img>
           {technology}
         </div>
       ))}
     </div>
   )
-};
+}
 
 export default TechStackCards;
