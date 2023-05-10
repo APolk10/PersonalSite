@@ -534,7 +534,23 @@ font-size: 1.5vw;
   width: 100%;
   height: 20vh;
   text-shadow: 2px 2px gray;
+  background: linear-gradient(-45deg, #74ad79b5, #c8af4a93, #74ad79b5, #c8af4a93);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 #pageTitleAlt {
   font-size: 4.75rem;
   /* font-family: sans-serif; */
