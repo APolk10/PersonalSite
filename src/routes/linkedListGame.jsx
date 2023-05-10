@@ -87,35 +87,37 @@ function LinkedListGame() {
   }, [segments])
 
   return (
-    <div id='ll-page'>
-      <div id='ll-title'>Linked List Monster!</div>
-      <div id='ll-body'>
-        <p id='ll-description'>I created this as a visual aid for linked lists as I found many online representations less interesting to look at.</p>
-        <p id='ll-description'>
-          I got the core idea from a game I had played called Terraria. In this game there is a boss who resembles a segmented worm. When fighting this worm, each link can be attacked and broken individually, creating new and indpendent worms. One became two and so the subdivision would continue, until the boss was defeated.
-        </p>
-        <p id='ll-description'>Below is my representation using vanilla CSS, JavaScript and React.</p>
-        <p id='ll-description'>(Best viewed on desktop or in landscape mode)</p>
-      </div>
-      <div id="ll-container">
-        <div id="ll-gamebox">
-          <div>
-            {segmentContainer.length > 0 ? segmentContainer.map(segment =>
-              <div key={`segmentPath-${segment.data}`} className={`segmentPath-${segment.data}`}>
-                <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}} color={segment.color} data={segment.data}  onClick={handleSegmentClick}>
+    <div className="outerContainer">
+      <div className="pageContainer">
+        <div className="pageTitle">Linked List Monster!</div>
+        <div className="dataContainer">
+          <p className="subTextAlt">I created this as a visual aid for linked lists as I found many online representations less interesting to look at.</p>
+          <p className="subTextAlt">
+            I got the core idea from a game I had played called Terraria. In this game there is a boss who resembles a segmented worm. When fighting this worm, each link can be attacked and broken individually, creating new and indpendent worms. One became two and so the subdivision would continue, until the boss was defeated.
+          </p>
+          <p className="subTextAlt">Below is my representation using vanilla CSS, JavaScript and React.</p>
+          <p className="subTextAlt">(Best viewed on desktop or in landscape mode)</p>
+          <div id="ll-container">
+            <div id="ll-gamebox">
+              <div>
+                {segmentContainer.length > 0 ? segmentContainer.map(segment =>
+                  <div key={`segmentPath-${segment.data}`} className={`segmentPath-${segment.data}`}>
+                    <div key={`segment-${segment.data}`} className={`segment-${segment.data}`} style={{'backgroundColor': segment.color}} color={segment.color} data={segment.data}  onClick={handleSegmentClick}>
 
+                  </div>
+                  </div>
+                ) : <></>}
               </div>
-              </div>
-            ) : <></>}
+            </div >
+            <div id="ll-buttonBox">
+              <button className="ll-buttons" type="button" onClick={resetAnimation}>Reset worm</button>
+              <button className="ll-buttons" type="button" onClick={addMonsterSegment}>Add segment</button>
+            </div>
+            <p className="subTextAlt">The above worm uses a linked list class structure and I wrote the functions for this page to iterate through the linked list as well as randomize all but the first color of the segments. The cap for segments is 10 and although this is not the fully fledged Terraria boss, it does interact with you a bit if you are brave enough to click a segment!</p>
           </div>
-        </div >
-        <div id="ll-buttonBox">
-          <button className="ll-buttons" type="button" onClick={resetAnimation}>Reset worm</button>
-          <button className="ll-buttons" type="button" onClick={addMonsterSegment}>Add segment</button>
         </div>
-        <p id='ll-finalComment'>The above worm uses a linked list class structure and I wrote the functions for this page to iterate through the linked list as well as randomize all but the first color of the segments. The cap for segments is 10 and although this is not the fully fledged Terraria boss, it does interact with you a bit if you are brave enough to click a segment!</p>
+        </div>
       </div>
-    </div>
   )
 }
 export default LinkedListGame;

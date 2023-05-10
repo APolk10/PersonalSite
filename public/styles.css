@@ -374,6 +374,12 @@ table {
   padding-left: 5%;
   padding-right: 5%;
 }
+.subTextAlt {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
 
 /* ABOUT ME PAGE */
 #aboutMeHeader {
@@ -738,39 +744,6 @@ width: 40vw;
 }
 
 /* LINKED LIST GAME */
-#ll-page {
-
-}
-#ll-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10vw;
-}
-#ll-body {
-  margin-top: 4vh;
-}
-#ll-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3.5vw;
-  background-color: rgba(205, 227, 225, .8);
-  width: 65vw;
-  height: 15vh;
-  margin-left: 5vw;
-  margin-top: -5.5vh;
-  margin-bottom: 4vh;
-  text-shadow: 2px 2px gray;
-}
-#ll-description {
-  width: 50vw;
-  font-style: italic;
-  font-size: 1.45vw;
-  margin-left: 12vw;
-  margin-bottom: 8vh;
-}
 #ll-gamebox {
   display: flex;
   flex-direction: column;
@@ -778,9 +751,9 @@ width: 40vw;
   border: 2px black solid;
   background-color: rgb(86, 166, 198);
   background-image: linear-gradient(rgb(86, 166, 198), rgb(74, 38, 38));
-  margin-right: 10vw;
-  width: 55vw;
+  width: 100%;
   height: 70vh;
+  margin-bottom: 2vh;
 }
 
 @keyframes showAnimation {
@@ -968,22 +941,14 @@ width: 40vw;
   gap: 2vw;
   align-items: center;
   justify-content: center;
-  width: 55vw;
+  width: 100%;
   margin-top: 4vh;
-  margin-right: 10vw;
+  margin-bottom: 2vh;
 }
 .ll-buttons {
   font-size: 2.5vh;
   width: 15vw;
   height: 6vh;
-}
-#ll-finalComment {
-  width: 50vw;
-  font-style: italic;
-  font-size: 1.45vw;
-  margin-top: 6vh;
-  margin-left: -9vw;
-  margin-bottom: 4vh;
 }
 
 /* FOOTER */
