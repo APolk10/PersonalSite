@@ -247,10 +247,10 @@ table {
     flex-direction: row-reverse !important;
     height: 20vh !important;
   }
-  #sdc-paragraphQuestions, .construction-list {
+  .construction-list {
     font-size: 2.5vh !important;
   }
-  #sdc-answers, #sdc-steps, #sdc-title, .construction-text, #ll-description, #ll-finalComment, .construction-header, #sdc-answers-special {
+  #ll-description, #ll-finalComment, .construction-header, #sdc-answers-special {
     font-size: 2.25vh !important;
   }
   #construction-header {
@@ -367,7 +367,7 @@ table {
 .subText {
   font-size: 1.2rem;
   text-align: left;
-  text-indent: 5rem;
+  text-indent: 3.5rem;
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding-left: 5%;
@@ -530,6 +530,10 @@ font-size: 1.5vw;
   border-bottom: 2px solid grey;
   border-top: 2px solid grey;
 }
+#specialHeaderStart {
+  border-bottom: 2px solid grey;
+  margin-bottom: 1vh;
+}
 .icon-header {
   display: flex;
   justify-content: center;
@@ -543,18 +547,6 @@ font-size: 1.5vw;
   width: 100%;
 }
 
-@keyframes flash {
-  0% {
-    color: black;
-  }
-  50% {
-    color: rgb(182, 94, 94);
-  }
-  100% {
-    color: black;
-  }
-}
-
 .application-news-box {
   display: flex;
   align-items: center;
@@ -562,21 +554,17 @@ font-size: 1.5vw;
   flex-direction: column;
   width: 100%;
   margin-top: 1vh;
-  font-size: 2vw;
+  font-size: 1.75vw;
   height: 15vh;
-
 }
-/* .application-news:hover {
-  animation: none;
-} */
+
 .application-news {
   color: black;
-  /* animation: flash 2s infinite; */
 }
 #underlinedText {
   text-indent: 0;
   font-size: 1.75vw;
-  margin-top: 4vh;
+  margin-top: 3vh;
   margin-bottom: 2vh;
   text-decoration: underline;
 }
@@ -630,7 +618,7 @@ font-size: 1.5vw;
 }
 
 /* SDC/API REBUILD */
-#sdc-images, #sdc-loadBalancer, #sdc-gif {
+#sdc-images, #sdc-loadBalancer, #sdc-gif, .construction-gif {
   border: black 1px solid;
   width: 100%;
   padding: 1vw;
@@ -653,34 +641,7 @@ font-size: 1.5vw;
   transform: scale(1.8);
 }
 
-#sdc-answers, .construction-text {
-  width: 50vw;
-  font-size: 1.35vw;
-}
-
-#sdc-paragraphQuestions, .construction-header {
-  font-size: 2.5vw;
-  margin-bottom: 3vh;
-  font-style: italic;
-  text-indent: 0;
-}
-
 /* BLUE OCEAN / CONSTRUCTION SITE */
-#constructionContainer {
-  display: flex;
-  flex-direction: row;
-}
-#constructionLeftContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 4vh;
-  width: 60vw;
-}
-.construction-header {
-  margin-bottom: 0;
-}
 #construction-header {
   display: flex;
   flex-direction: column;
@@ -692,11 +653,15 @@ font-size: 1.5vw;
   font-style: italic;
   text-shadow: none;
 }
+#extraSpace {
+  margin-bottom: 6vh;
+}
 .construction-list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 60vw;
+  margin-top: 2vh;
+  width: 100%;
 }
 .construction-roles {
   display: flex;

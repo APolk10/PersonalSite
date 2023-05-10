@@ -12,7 +12,7 @@ function SDC() {
           <p id="sdc-title-text">Server Rebuild for RESTful API</p>
         </div>
         <div className="dataContainer">
-          <div className="textHeader" id="specialHeader">What is this application?</div>
+          <div className="textHeader" id="specialHeaderStart">What is this application?</div>
           <p className="subText">
             This was an overhaul of a legacy server of an eCommerce site that I had worked on a team to rebuild. The website (see below) struggled under the load of increased web traffic. I rebuilt the backend of a legacy API that services the ratings and reviews section of the site. It was expected to support 100+ users/second at a response time under 100ms after the upgrade. I was given a week to complete this rebuilt.
           </p>
