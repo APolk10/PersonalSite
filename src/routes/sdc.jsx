@@ -16,7 +16,7 @@ function SDC() {
           <p className="subText">
             This was an overhaul of a legacy server of an eCommerce site that I had worked on a team to rebuild. The website (see below) struggled under the load of increased web traffic. I rebuilt the backend of a legacy API that services the ratings and reviews section of the site. It was expected to support 100+ users/second at a response time under 100ms after the upgrade. I was given a week to complete this rebuilt.
           </p>
-          <img className="siteGifsAlt" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670788042/Personal%20Site/FEC_gif_xosd4d.gif"></img>
+          <img className="siteGifs" id="siteGifsAlt" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670788042/Personal%20Site/FEC_gif_xosd4d.gif"></img>
           <div className="textHeader" id="specialHeaderStart">This was my process:</div>
           <div id="underlinedText">Step One: Transfer databases</div>
           <img id="sdc-schema" src="http://res.cloudinary.com/dbvgiuj6d/image/upload/c_scale,w_900/v1670790427/Personal%20Site/Adam_Polk_SDC_Schema_and_Model_s4mcem.jpg"></img>

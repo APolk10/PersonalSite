@@ -648,6 +648,10 @@ font-size: 1.5vw;
   height: auto;
   margin-bottom: 2vh;
 }
+/* .siteGifs {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+} */
 #siteGifsAlt {
   border: none;
 }
