@@ -344,7 +344,7 @@ table {
   margin-top: -6.5vh;
   background-color: rgba(48, 48, 48, 0.896);
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 .dataContainer {
   display: flex;
@@ -619,7 +619,7 @@ font-size: 1.5vw;
 }
 
 /* SDC/API REBUILD */
-#sdc-images, #sdc-loadBalancer, #sdc-gif, .construction-gif {
+#sdc-images, #sdc-loadBalancer, .siteGifs {
   border: black 1px solid;
   width: 100%;
   padding: 1vw;
@@ -628,7 +628,7 @@ font-size: 1.5vw;
   height: auto;
   margin-bottom: 2vh;
 }
-#sdc-loadBalancer, #sdc-gif {
+#sdc-loadBalancer {
   padding: 0vw;
 }
 #sdc-schema {
@@ -722,10 +722,6 @@ width: 40vw;
   background-color: rgba(205, 227, 225, .8);
   width: 65vw;
   height: 20vh;
-}
-.photographyGif {
-  margin-top: 3vh;
-  width: 55vw;
 }
 #photography-placeholder {
   font-size: 2.5vw;

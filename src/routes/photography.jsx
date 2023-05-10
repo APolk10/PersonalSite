@@ -14,7 +14,7 @@ function Photography() {
         <div className="dataContainer">
           <div id="photography-placeholder">Coming Soon!</div>
           <div>
-            <img id='sdc-gif' src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1683060372/Personal%20Site/photographySite_jfzx3y.gif'></img>
+            <img className='siteGifs' src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1683060372/Personal%20Site/photographySite_jfzx3y.gif'></img>
           </div>
           {/* <TechStackCards technologies={['NextJS']}>          </TechStackCards> */}
         </div>
