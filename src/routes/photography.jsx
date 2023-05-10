@@ -1,5 +1,5 @@
 import React from 'react';
-import TechStackCards from '../components/techStackCards.jsx';
+// import TechStackCards from '../components/techStackCards.jsx';
 
 function Photography() {
   return (

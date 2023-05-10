@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const SideBar = function({ openAndCloseNav }) {
   return (
@@ -50,6 +51,10 @@ const SideBar = function({ openAndCloseNav }) {
       </nav>
     </div>
   )
+}
+
+SideBar.propTypes = {
+  openAndCloseNav: PropTypes.func
 }
 
 export default SideBar;

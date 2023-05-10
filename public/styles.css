@@ -566,12 +566,12 @@ font-size: 1.5vw;
   height: 15vh;
 
 }
-.application-news:hover {
+/* .application-news:hover {
   animation: none;
-}
+} */
 .application-news {
   color: black;
-  animation: flash 2s infinite;
+  /* animation: flash 2s infinite; */
 }
 #underlinedText {
   text-indent: 0;

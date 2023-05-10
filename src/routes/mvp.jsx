@@ -29,7 +29,7 @@ function MVP() {
         <div className="dataContainer">
           <p className="textHeader" id="specialHeader">What does this application do?</p>
           <div className="application-news-box" >
-            <p className="application-news">Check out the remake on desktop!</p>
+            <p className="application-news"><mark>Check out the remake on desktop!</mark></p>
             <a href="https://world-of-music.onrender.com/" rel="noreferrer" target="_blank" className="application-news">https://world-of-music.onrender.com/</a>
           </div>
           <u id="underlinedText">Discover Music by Country connects the user to music from any country in the world.</u>
