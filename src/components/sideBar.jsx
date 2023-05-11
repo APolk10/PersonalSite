@@ -44,7 +44,7 @@ const SideBar = function({ openAndCloseNav }) {
           <li id="listName">
             <Link id="listBlock" to={`linkedListGame`} onClick={openAndCloseNav}>
               <p id="listText">Linked List</p>
-              <p id="listText">Game</p>
+              <p id="listText">Monster</p>
             </Link>
           </li>
         </ul>

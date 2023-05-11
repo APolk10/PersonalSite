@@ -28,11 +28,12 @@ function MVP() {
         </div>
         <div className="dataContainer">
           <p className="textHeader" id="specialHeaderStart">What does this application do?</p>
+          <p className="italic">Discover Music by Country connects the user to music from any country in the world.</p>
           <div className="application-news-box" >
             <p className="application-news"><mark>*Check out the remake!*</mark></p>
+            <img className="smallGif" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1683823211/womGif_ukf2gd.gif"></img>
             <a href="https://world-of-music.onrender.com/" rel="noreferrer" target="_blank" className="application-news">https://world-of-music.onrender.com/</a>
           </div>
-          <u id="underlinedText">Discover Music by Country connects the user to music from any country in the world.</u>
           <p className="subText">
             When a country is selected, music data from that region pops up in a modal screen. This screen can be sifted through using the left and right arrows. If the user finds something that intestests them they can click the blue button to be redirected to Spotify where that particular artist will conveniently be searched for automatically. This application has been rewarding from the very beginning as both myself as well as my close friends and colleagues have discovered awesome new music selections from across the globe.
           </p>

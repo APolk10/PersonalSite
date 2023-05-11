@@ -9,7 +9,7 @@ function SDC() {
           <a target="_blank" rel="noreferrer" href="https://github.com/APolk10/SEGA-Project-Atelier.git">
             <img id="mvp-githubLink" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1670455086/Personal%20Site/github-mark_g6mb0a.png"></img>
           </a>
-          <p id="sdc-title-text">Server Rebuild for RESTful API</p>
+          <p id="sdc-title-text">RESTful API Rebuild</p>
         </div>
         <div className="dataContainer">
           <div className="textHeader" id="specialHeaderStart">What is this application?</div>
