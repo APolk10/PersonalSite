@@ -32,7 +32,7 @@ function BlueOcean() {
           <p className="subText">Below showcases the map functionality as from the perspective of an employee role.</p>
           <img className="siteGifs" src="https://res.cloudinary.com/dbvgiuj6d/image/upload/v1673820349/Personal%20Site/ezgif.com-gif-maker_1_rcpug9.gif"></img>
           <p className="icon-header" id="specialHeader">Technologies used:</p>
-          <TechStackCards technologies={['JavaScript', 'NodeJS', 'NextJS', 'GoogleMaps', 'AWS', 'MongoDB', 'Cloudinary']}></TechStackCards>
+          <TechStackCards technologies={['JavaScript', 'NodeJS', 'NextJS', 'ReactJS', 'GoogleMaps', 'AWS', 'MongoDB', 'Cloudinary']}></TechStackCards>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-// import TechStackCards from '../components/techStackCards.jsx';
+import TechStackCards from '../components/techStackCards.jsx';
 
 function Photography() {
   return (
@@ -20,7 +20,8 @@ function Photography() {
             <p className="subText">This is a portfolio website that is being constructed for a client who is a talented photographer. He is in the beginning stages of growing his brand and wanted something to reflect his work and allow potential clients to contact him.</p>
             <img className='siteGifs' id="siteGifsAlt" src='https://res.cloudinary.com/dbvgiuj6d/image/upload/v1683060372/Personal%20Site/photographySite_jfzx3y.gif'></img>
           </div>
-          {/* <TechStackCards technologies={['NextJS']}>          </TechStackCards> */}
+          <p className="icon-header" id="specialHeader">Technologies used:</p>
+          <TechStackCards technologies={['JavaScript', 'NodeJS', 'NextJS', 'ReactJS', 'Cloudinary']}></TechStackCards>
         </div>
       </div>
     </div>
