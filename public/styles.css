@@ -83,8 +83,7 @@ table {
 }
 #menubtn {
   font-size: 1.6vw;
-  top: 1.5vh;
-  position: sticky;
+  position: fixed;
   cursor: pointer;
   background-color: rgba(67, 143, 143, .8);
   z-index: 11;
@@ -102,9 +101,10 @@ table {
   background-color: rgb(25, 193, 212);
 }
 #main {
+  display: flex;
   transition: margin-left .8s;
   margin-left: 17vw;
-  /* background-color: rgba(245, 245, 245, 0.8); */
+  width: 100vw;
 }
 
 /* MOBILE */
@@ -119,10 +119,9 @@ table {
     width: 85%;
   }
   #menubtn {
-    margin-top: -5vh;
     margin-left: 1vw;
-    width: 25vw;
-    font-size: 5vw;
+    width: 25vw !important;
+    font-size: 5vw !important;
   }
   #sidebarNameHeader, #sidebarListHeader {
     font-size: 7vw !important;
@@ -200,15 +199,18 @@ table {
     height: 50vh !important;
   }
   .pageTitle {
-    margin-top: 4.5vh !important;
     font-size: 2.25rem !important;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 8% !important;
     height: 25vh !important;
     align-items: center !important;
-    justify-content: center;
     flex-direction: row-reverse !important;
+  }
+  #pageTitleAlt2 {
+    font-size: 1.2em !important;
+  }
+  .italic {
+    font-size: 3.75vw !important;
   }
   #mvp-header {
     margin-top: 3vh !important;
@@ -223,7 +225,7 @@ table {
     font-size: 4vw !important;
   }
   .subText {
-    text-indent: 3rem !important;
+    text-indent: 1.5rem !important;
   }
   #underlinedText {
     font-size: 1rem !important;
@@ -328,26 +330,24 @@ table {
 
 #container {
   display: flex;
-  position: absolute;
   min-height: 100vh;
   flex-direction: row;
 }
 #detail {
   display: flex;
+  position: absolute;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: -3vh;
   width: 65vw;
+  height: 100%;
 }
 .outerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -6.5vh;
   background-color: rgba(48, 48, 48, 0.896);
   width: 100%;
-  height: 100%;
 }
 #outerContainerAlt {
   /* background-color: rgba(245, 245, 245, 0.896); */
@@ -374,7 +374,7 @@ table {
 .subText {
   font-size: 1.2rem;
   text-align: left;
-  text-indent: 3.5rem;
+  text-indent: 3rem;
   margin-top: 2vh;
   margin-bottom: 2vh;
   padding-left: 5%;
@@ -523,7 +523,6 @@ font-size: 1.5vw;
 .pageTitle {
   display: flex;
   flex-direction: row;
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 2vw;
@@ -553,11 +552,18 @@ font-size: 1.5vw;
 
 #pageTitleAlt {
   font-size: 4.75rem;
-  /* font-family: sans-serif; */
   font-family: Apple Chancery, cursive;
   text-shadow: none;
+  font-weight: 500;
+}
+#pageTitleAlt2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9em;
+  padding: 3%;
+  font-family: Apple Chancery, cursive;
   font-weight: 800;
-  /* background-color: whitesmoke; */
 }
 #mvp-githubLink {
   width: 6vw;
@@ -565,10 +571,11 @@ font-size: 1.5vw;
 #specialHeader {
   border-bottom: 2px solid grey;
   border-top: 2px solid grey;
+  margin-bottom: 3vh;
 }
 #specialHeaderStart {
   border-bottom: 2px solid grey;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 .icon-header {
   display: flex;
@@ -776,7 +783,12 @@ width: 40vw;
   height: 20vh;
 }
 #photography-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2.5vw;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
 }
 
 /* FOOTER ICONS */

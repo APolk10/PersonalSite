@@ -5,7 +5,7 @@ function Home() {
     return (
       <div className="outerContainer" id="outerContainerAlt">
         <div className="pageTitle" id="pageTitleAlt">
-          <div className="animate__animated animate__tada">Welcome to my Portfolio!</div>
+          <div className="animate__animated animate__tada" id="pageTitleAlt2">Welcome to my Portfolio!</div>
         </div>
           <div id="aboutMeContainer">
             <div className="aboutMeRow">

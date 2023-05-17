@@ -19,7 +19,7 @@ export default function Root() {
     if (!isOpen) {
       if (width < 450) {
         document.getElementById("mySidebar").style.width = "60vw";
-        document.getElementById("menubtn").style.marginLeft = "52vw";
+        document.getElementById("menubtn").style.marginLeft = "54vw";
         document.getElementById("menubtn").style.width = "35vw";
         document.getElementById("menubtn").style.fontSize = "5vw";
         document.getElementById("navbarList").style.opacity = "1";
@@ -39,10 +39,9 @@ export default function Root() {
       if (width < 450) {
         document.getElementById("mySidebar").style.width = "0";
         document.getElementById("menubtn").style.marginLeft = "1vw";
-        document.getElementById("menubtn").style.marginTop = "-5vh";
+        // document.getElementById("menubtn").style.marginTop = "-5vh";
         document.getElementById("menubtn").style.width = "25vw";
         document.getElementById("menubtn").style.fontSize = "5vw";
-        // document.getElementById("menubtn").innerText = "&#9776;"
         document.getElementById("menubtn").style.backgroundColor = "rgba(67, 143, 143, .8)";
         document.getElementById("navbarList").style.opacity = "0";
       } else {
